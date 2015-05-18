@@ -1,0 +1,12 @@
+ set terminal postscript enhanced 
+ set output '| C:\texlive\2014\bin\win32\ps2pdf - electric_field_vs_polarization.pdf'
+ set title "electric field vs polarization " font ",20"
+   set xlabel "electric field (E)"
+ # set ylabel "Dispalcement {u}" 
+  set ylabel "Polarization {p}"
+ set style data lines
+ set key left box 
+ # set yrange [-1:1]
+ # set xrange [-15:15]
+
+ plot "gnu_out_put.gnu" using 2:3 title "electric field vs polarization" 

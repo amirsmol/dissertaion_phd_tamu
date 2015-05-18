@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  New template code for TAMU Theses and Dissertations starting Fall 2012.  
+%  For more info about this template or the 
+%  TAMU LaTeX User's Group, see http://www.howdy.me/.
+%
+%  Author: Wendy Lynn Turner 
+%	 Version 1.0 
+%  Last updated 8/5/2012 
+%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                           SECTION I
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+
+\pagestyle{plain} % No headers, just page numbers
+\pagenumbering{arabic} % Arabic numerals
+\setcounter{page}{1} 
+
+
+\chapter{\uppercase {Introduction}}
+Discovery of electro-mechanical coupling effect which was first seen on natural materials dates back to early days.
+For example, Quartz and Rochelle salt are shown to exhibit electro-mechanical coupling behavior \cite{Lines1977}.
+The ability of the materials to generate electric displacement when subjected to a mechanical force or displacement was called a direct effect.
+The reason was, that the direct electro-mechanical coupling response was experimentally observed and quantified first.  
+Curie brothers have studied the direct piezoelectric response \cite{Curie1882,Mould2007}
+ which is attributed to the crystal structures of the materials.
+The inverse piezoelectric effect is observed when an electric field input causes deformations in the materials.
+This phenomena was also observed and mathematically quantified by Curie \cite{Curie1882,Mould2007}. 
+The electro-mechanical coupling effect in ceramics is due to electric polarization.
+Materials that have a spontaneous electric polarization that can be reversed by the application of an external electric field are known as ferroelectric \cite{Lines1977}.
+The piezoelectric ceramics considered in this study are ferroelectric materials.
+Piezoelectric materials first found their applications in sonar devices for emitting ultrasonic waves. 
+Other applications of piezoelectric ceramics, are for sensors and actuators.
+The sensing and actuation are limited to small ranges of motion.
+Atomic force microscopy (AFM), and data reader and recorder from electro magnetic hard disk drives are just some of these applications. 
+Recently, piezoelectric materials are being used in energy harvester devices \cite{erturk2011piezoelectric}. 
+
+
+Piezoelectric ceramics can undergo relatively small displacements that limit their applications in mechanical systems.
+There have been innovations in production of new amplification architectures for piezoelectric materials.
+The telescopic actuators \cite{Alexander2003,Alexander}, piezo stack actuators \cite{Ardelean2004}, and active fiber composites \cite{ben2010temperature} are devices utilizing several actuation architectures.
+There have been applications and designs of piezoelectric materials and devices in order to increase motion capability.
+The variable geometry trusses are one of these possible applications that will be discussed and considered in this dissertation. 
+Prior to designing active structures made of piezoelectric materials, there is a need to understand the electro-mechanical response of active materials.
+This has been done through the development of constitutive models.
+Consequently, analytical/numerical tools that allow for analyzing active structures are also needed. 
+
+% Variable Geometry Trusses are discussed are alo discussed in this dissertation as another application of active materials.
+% A VGT can be considered as a multi link robot.
+% In this case VGTs are open-loop linkages with many degrees of freedoms. 
+% In the analyses of VGT as a robot and controlling its movement we have to form solution method in two ways.
+% First, to related strain to be produced in each truss element with overall configuration of truss.
+% Next, to relate the desired shape of the truss for placement of specific point of the truss.
+% For example if we need a beam like truss to have its endpoint in a specific point in space.
+% The second problems will have many solution due to so many degrees of freedoms that VGT system offers.
+% This research is offering a way to choose the best possible solution to second problem.  
+% Also we offer a way for analyzing and simulating a truss system  required for the first problem.\\
+
+This section presents a brief literature review.
+The review focuses on the response of electro-active ceramic based materials,
+ electro-mechanical constitutive models and numerical methods for analyzing electro-mechanical response of active materials and structures.
+Motivation and research objectives are discussed at the end of this chapter. 
+\\
+
+\section{Literature Review} 
+\subsection{Material Response}
+In this study piezoelectric materials are being classified as hard and soft materials. 
+Stiff electro-active materials are typically made of ceramics, such as lead zirconate titanate (PZT) and barium titanate ($BaTiO_3$).
+The polymeric based materials, such as polyvinylidene fluoride (PVDF) and dielectric elastomer, are examples of soft electro-active materials. 
+This literature review focuses on the piezoelectric ceramics based materials. 
+Experimental studies on polarized piezoelectric materials, i.e. PZT, and piezoelectric devices \cite{Crawley1990,Ardelean2004,anderson1989piezoceramic} shows nonlinear \footnote{The nonlinear behavior is considered when the responses do not satisfy proportionality and superposition conditions.} electro-mechanical response, especially under large electric fields. 
+Linear electro-mechanical constitutive equation is only applicable when piezoelectric materials are subjected to relatively small stimuli.
+The large electric field applied will cause nonlinear response that does not follow proportionality and superposition of the input.
+Therefore, linear electro-mechanical constitutive equations, can lead to substantial error when large electric fields are applied to electro active 
+materials and devices \cite{Hall2001}. 
+There have been several studies on understanding the nonlinear response of piezoelectric materials.
+These studies are done by taking the coupling coefficient dependent on the electric fields \cite{Crawley1990}.
+Another way to model the nonlinearity is by incorporating higher order electro-mechanical coupling effect in the constitutive equations. 
+There are examples of nonlinear constitutive equation based on a higher order electro-mechanical coupling effect and their finite element implementation.
+Some of these constitutive equations can be found in \cite{Bassiouny19881297,tiersten1993electroelastic,Maugin2010,Muliana2011a,Sohrabi2011},
+ in which a linearized strain is considered.
+Therefore, these models are applicable for materials undergoing small strains such as ceramics based piezoelectric materials.
+
+Another aspect that has been observed in experimental studies of piezoelectric ceramics is their rate dependent responses \cite{Zhou2010,Zhou2006}. 
+These effects are shown by time and field dependent piezoelectric coupling coefficients and hysteresis electro-mechanical coupling. 
+Devices made of piezoelectric materials, such as actuators, sensors and energy harvesters often to operate under oscillating stimuli, 
+at various frequencies. 
+It has been observed that behaviors of piezoelectric materials, even under relatively low input regimes, are history dependent\cite{Crawley1990,anderson1989piezoceramic}. 
+At higher amplitude of electro-mechanical stimuli, piezoelectric materials experience pronounced nonlinear time-dependent behaviors. 
+It is then necessary to incorporate the nonlinear and time-dependent electro-mechanical coupling responses for analyzing performance of piezoelectric devices.
+ 
+Several experimental studies have also been conducted on understanding response of ceramics based electro active materials 
+under cyclic electric fields with amplitudes higher than the coercive electric field limits of the materials. 
+Under such loading conditions, materials exhibit polarization switching.
+This Nonlinear effect has been reported in Schmidt \cite{schmidtcoercive1981}, Gookin et al. \cite{gookinelectro-optic1984} and \cite{raey}.  
+It was also shown that compressive stresses that are applied along the poling axis of the ferroelectric materials could induce depolarization of the poled ferroelectric materials \cite{lynch1996effect, chena1998, raey}. 
+Fang and Li \cite{raey} experimentally studied changes in polarization and strain responses of a PZT specimen under a cyclic electric field input. 
+After several cycles, the saturated polarization response converges to a constant value, which is slightly smaller than the one measured in the first cycle. 
+An experimental study on a polarized PZT specimen under cyclic electric fields with the maximum amplitude of 85 percent of the coercive electric field of the PZT, reported by Crawley and Anderson \cite{Crawley1990}, 
+also showed nonlinear hystersis electro-mechanical response.  
+They observed that the effects of creep and loading rate on the piezoelectric constant were more significant at larger strains and lower frequencies. 
+The electrical and mechanical responses of ferroelectric materials are time and frequency dependent.
+The experimental evidence of this phenomena is shown by Fett and Thun \cite{fettdetermination1998}, Schaeufele and Hardtl \cite{schaufele1996ferroelastic}, Zhou and Kamlah \cite{zhoudetermination2005,Zhou2006}, Ben Atitallah et al. \cite{ben2010temperature}.
+Among others, Zhou and Kamlah \cite{zhoudetermination2005,Zhou2006} showed the creep response in a soft PZT under static electric fields and compressive stresses, which were more pronounced at higher stresses and at electric fields near the coercive electric field.
+
+There have been constitutive models developed to predict nonlinear electro-mechanical behaviors of electro-active ceramics undergoing polarization switching.
+These models can be classified as phenomenological (macroscopic) model based on continuum mechanics approach and micro-mechanics based models.
+In an analogy to rate-independent plasticity theory, the macroscopic constitutive models have been formulated for predicting polarization switching response in ferroelectric materials due to electric field inputs. 
+In such cases, strains and electric displacements are additively decomposed into reversible and irreversible components.
+The irreversible component incorporates the switching mechanism. 
+Examples of the macroscopic models can be found in Bassiouny et al. \cite{Bassiouny1988,Bassiouny19881297}, Huang and Tiersten \cite{huang1998electroelastic,huang1998analytical}, Kamlah and Tsakmakis \cite{kamlahphenomenological1999}, Linnemann et al. \cite{Linnemann20091149}, Muliana \cite{Muliana2011}. 
+Massalas et al. \cite{Massalas19941075} and Chen \cite{Chen201049} presented nonlinear electro-mechanical constitutive equations for materials with memory-dependent (viz. viscoelastic materials). 
+They also incorporated the dissipation of energy due to the visco-elastic effect, which is converted into heat. 
+It is known that the macroscopic response of materials depends strongly upon their micro-structural response, which occurs at various length scales. 
+Microscopically motivated constitutive models that take into account polarization response of each crystal in predicting the overall nonlinear electro-mechanical response of ferroelectric materials can be found in Chen and Lynch \cite{chena1998}, Fan et al. \cite{raey}, Li and Weng \cite{Li19993493,Li200179}, Smith et al. \cite{Smith2003719,Smith200646}, Su and Landis \cite{Su2007280}.
+
+Finite element (FE) method has been used for analyzing linear electro-mechanical responses of piezoelectric materials and structures. 
+Allik and Hughes \cite{Allik1970} are among the first authors to present FE formulation of piezoelectric materials which is used in commercial FE codes. 
+A review of various finite element formulations for simulating linear electro-mechanical responses of piezoelectric materials is presented in Benjeddou, \cite{Benjeddou2000}.
+FE method has also been used for analyzing coupled  piezo-electro-hygro thermo viscoelasto-dynamic-problems \cite{Yi1999} which focuses on linear viscoelastic and field coupling response. 
+FE analyses of nonlinear electro-mechanical and hysteresis polarization switching responses of structures consisting of conductive and ferroelectric materials are mainly available for time (rate)-independent behavior, e.g. Kamlah and Bohle \cite{Kamlah2001605}, Landis \cite{Landis2002}, Zeng et al. \cite{NME:NME556}, Li and Fang \cite{Li2004959}, Zhang et al. \cite{Zhang2005185}, Klinkel \cite{Klinkel20067197}, Wang and Kamlah \cite{0964-1726-18-10-104008}, Linnemann et al. \cite{Linnemann20091149}, Klinkel et al. \cite{Klinkel2006349}, and Muliana and Lin \cite{Muliana2011a}. 
+Macroscopic constitutive models where considered in the above FE analyses.
+Zeng et al. \cite{NME:NME556} presented incremental and iterative solutions for problems involving polarization switching due to high electric field and heat generation from the dissipation of energy during the domain reversal process. 
+FE methods that also include the time (rate) - dependent effects are currently limited. 
+Kim and Jiang \cite{Kim2002} presented FE algorithm for simulating macroscopic polarization and strain responses in ferroelectric materials undergoing domain switching. 
+They also defined the functions for the rate of change of the mass fractions, which allow for incorporating rate-dependent loading.
+\\
+
+\subsection{Structural Behavior}
+
+\subsubsection{Active Composite Beams}
+Piezoelectric ceramics have been used in the form of layered composite beams. 
+Their applications can be found for structural health monitoring, actuators and, recently energy harvesting devices. 
+In the case of energy harvesting devices piezoelectric materials offer large power generating capacity compared to other energy harvesting sources \cite{erturk2011piezoelectric}. 
+However, the small strains in piezoelectric ceramics limits their applications for motion generation. 
+In order to overcome this restriction they are normally used in the form of stacked beams, bimorph and multi-layer beams which forms a composite structure. 
+The piezo ceramics can be used in many different forms in order to magnify the displacement resulted from electromechanical coupling. 
+When large forces are expected in the device the stacked piezoelectric is used,
+ while, the bimorph configuration is preferred when the devices are intended to achieve large displacements.
+Low and Guo \cite{low1995modeling} have formulated a mathematical model for a three layer composite piezoelectric bimorph beam.
+A state variable was introduced in order to incorporate the hystersis response. 
+An experimental set up for an actuator consists of four bimorph beams, one moving plate, two guides, and one base.
+Each pair of bimorph beams was connected with two small hinges at each end so that
+ the ends are free from moment and the only force acting on each end
+ is the reacting force. 
+They applied electric field with amplitude of 100 V on the beam with thickness of 0.0075 inch.
+This would result in 2620 V/m electric field through the thickness of each piezo electric layer of the bimorph beam. 
+They used the data from the test to calibrate the material parameters in their mathematical model.
+A mathematical model for bending of piezoelectric composite layered beam was also developed by Raja et al. \cite{raja2004bending}.
+A sandwich beams was considered in their research. 
+They presented a closed form solution for bending of a composite piezoelectric bimorph beam, and
+ they compared the result from their analytical solution with ABAQUS finite element analyses.
+They also examine the effect of PZT-5H patches on bending of sandwich beam.  
+They have shown that the transverse deflection of the beam predicted by their method correlates with results available in literature and also finite element analyses performed in ABAQUS.
+
+Activation in shear mode for producing bending in a composite beam was studied by Kheidar et al. \cite{khdeir2001deflection}.
+They compared the bending behaviors in beam by utilizing piezo electric patches for shear mode and extension mode.  
+A first order beam theory was presented for the composite piezoelectric beam. 
+The effect of transverse shear deformation was considered.
+They have shown that using piezo electric patches in shear mode for actuation can lead to higher bending deflection. 
+A comparison between extension and shear actuations was also considered by Benjeddou et al. \cite{benjeddou1999new}.
+They analytically investigated patched beam for static and dynamic responses.
+They also performed finite element simulations for PZT-5H actuated beam and compare the responses to those of the analytical model. 
+Rakotondrabe et al. \cite{rakotondrabe2006plurilinear} used a piezoelectric unimorph system for controlling bending deformations of an active beam.
+They have conducted experiments on the piezoelectric unimorph beam and compensated vibration of piezoelectric unimorph.
+Using piezoelectric in controlling vibration in the active beam is shown to be effective to reduce unwanted vibration.
+The analytical results are shown to be in good agreement with their experiments \cite{rakotondrabe2008hysteresis}.  
+Utilizing a piezoelectric composite beam as an actuator for adaptive structures has been considered by Correia et al. \cite{franco2000modelling}.
+They treated the adaptive beam as a multilayered composite and offered general properties of the beam.
+They compared their work with experiments and other results from literature.
+They also offered a comprehensive review on different piezoelectric models and experiments used in multifunctional composites.
+Suleman and Venkayya \cite{suleman1995simple} examined polymeric piezo electric beams under bending. 
+They used finite element for analyzing bending of a PVDF beam.
+They considered PVDF bimorph beam for sensing and also actuation.
+They showed that their finite element analyses is in a good agreement with the sensing and actuation experiments using PVDF beam. \\
+  
+
+\subsubsection{Active Trusses} 
+Truss systems consist of relatively slender members connected by joints.
+The joints connect the translations and allow the members to rotate with respect to each others. 
+Recent advances in active materials, such as shape memory and electro-active materials, allow for generating autonomous compliant structures,
+in which the structure can change their shape from one configuration to another configuration. 
+This shape change is controlled by utilizing the multifunctional properties of active materials. 
+Employing embedded piezoelectric actuation to actuate truss like system has been proposed by Moored et al. \cite{moored2011analytical}.
+They compared this type of actuation with other strategies such as tension wires for tensegrity truss like structures that aims to mimic flapping of an artificial pectoral fin.
+They proposed that their approach costs minimal power consumption and shows the simple design of a high performance tensegrity-based artificial pectoral fin.
+There have been several studies on understanding the geometry of these truss systems actuated by shape memory and piezoelectric materials.
+Sofla et al. \cite{sofla2009shape} studies morphing hinged truss structures, where they used shape memory wires in order to activate their structure. 
+They presented an experimental study of their prototype for different configurations. 
+They have used a truss structure made of tetrahedrons truss elements. 
+Macareno et al. \cite{Macareno2008346} considered a linear truss made of 3D tetrahedral units for Variable Geometry Trusses (VGTs). 
+They discussed manufacturing of prototype and the actuation methodology of the VGTs.
+They showed that their VGT configuration made of five-module is quite capable for positioning purposes. 
+They have presented the detailed design of their joints and used finite element analyses in order to support the design and motion control of VGTs. 
+Aguirrebeitia et al. \cite{aguirrebeitia2009metamodeling} applied optimization technique for VGTs to modify their trusses. 
+Aviles et al. \cite{Avis2000233} investigated the position problems in the open-loop variable geometry trusses. 
+An optimization scheme is designed \cite{Avis2000233} in order to minimize the actuator's displacement and consequently its energy. 
+This method has been applied to different truss architectures in specific to modular tetrahedral linear truss. 
+Recently, Bilbao et al. \cite{Bilbao2012134} have considered dynamic analyses of their previously designed modular configuration.
+
+
+\section{Motivation and Research Objectives} 
+Experimental studies show that the electro - mechanical response of piezoelectric materials is time- (and rate-) dependent.
+This time dependency is observed even for ceramics based piezoelectric materials, 
+subjected to electric fields and mechanical loadings. 
+The electro-mechanical response of these materials also depends strongly upon the applied electric fields and mechanical stresses. 
+There have been constitutive models derived for predicting nonlinear electro-mechanical response of piezoelectric ceramics based materials.
+These models are focusing on time (rate) independent.
+Modeling the time-dependent electro-mechanical response of piezoelectric and ferroelectric ceramics based materials is still limited. 
+The goal in this work is to capture the nonlinear and time-dependent response of electro active materials, 
+through formulating constitutive material models and providing solutions methods.
+The solution methods allows for analyzing coupled nonlinear electro-mechanical and time dependent response in active structures.
+The analyses can support design of electro-active structures.
+
+The objectives of this study are to:
+
+1)	Formulate nonlinear time-dependent electro-mechanical constitutive models of piezoelectric ceramics with small deformation gradients taking into account polarization switching and minor hysteretic behaviors.
+
+2)	Develop FE methods for analyzing the nonlinear and time-dependent electro-mechanical responses for piezoelectric ceramics.
+
+3)	Perform large scale analyses of active structures undergoing various histories of electro-mechanical stimuli. 
