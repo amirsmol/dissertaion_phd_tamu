@@ -1,0 +1,4033 @@
+Activated IntelXE (14.0) Compiler set (14.0.0-080). See: module help intelXE/compilers/14.0.0.080
+Activated Intel XE (14.0) MKL 11.1.0. Use ' module help intelXE/mkl/11.1.0.080' for help.
+Activated Intel 14.1 (XE) MPI version 4.1.1 (036). Use 'module help intelXE/mpi/4.1.1.036' To get you started.
+Activated gnuplot 4.6.0 on gcc_4.5.1 Compiler set; $ module help gnuplot/4.6.0/gcc_4.5.1
+/g/home/amirsmol/.bash_profile: line 9: cd: /g/home/amirsmol/00_afc_reduced_time/Elec_Mech_FEM: No such file or directory
+Activated gnuplot 4.6.0 on gcc_4.5.1 Compiler set; $ module help gnuplot/4.6.0/gcc_4.5.1
+ifort -O3    -o\
+	./bin/run.exe \
+	src/linearsolvers.f90 src/femgeometry.f90 src/materialbehavior.f90 src/femlibs.f90  driver/elec_mech_fem.f90 -mkl -lmkl_lapack95_lp64
+./bin/run.exe
+May 20 2015   8:13:47.282 PM
+ Number to equations to solve=        2604
+ Number to nodes=         651
+ length  1.400000180000000E-004  1.749999940000000E-004  7.499998899999998E-004
+ n_fixed_boundary         226
+ n_constraint=         452
+ number of time steps         200
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.000000000000000E+000 error=  0.000000000000000E+000 normalforce=
+  0.000000000000000E+000
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  9.999999776482582E-003 error=   41.7400515571877      normalforce=
+   41.7400515571877     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  9.999999776482582E-003 error=  2.559816932970171E-004 normalforce=
+   41.7400515571877     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  1.999999955296516E-002 error=   83.3150010687755      normalforce=
+   83.3150010671977     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  1.999999955296516E-002 error=  4.630533765165057E-004 normalforce=
+   83.3150010671977     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  2.999999932944775E-002 error=   124.560399542703      normalforce=
+   124.560399541125     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  2.999999932944775E-002 error=  6.726439084931643E-004 normalforce=
+   124.560399541125     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  3.999999910593033E-002 error=   165.313101525311      normalforce=
+   165.313101523451     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  3.999999910593033E-002 error=  8.817025733610095E-004 normalforce=
+   165.313101523451     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  4.999999888241291E-002 error=   205.411910413297      normalforce=
+   205.411910411048     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  4.999999888241291E-002 error=  1.089103200371511E-003 normalforce=
+   205.411910411048     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  5.999999865889549E-002 error=   244.698216066234      normalforce=
+   244.698216063543     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  5.999999865889549E-002 error=  1.294041042727618E-003 normalforce=
+   244.698216063543     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  6.999999843537807E-002 error=   283.016622186123      normalforce=
+   283.016622182961     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  6.999999843537807E-002 error=  1.495718921703243E-003 normalforce=
+   283.016622182961     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  7.999999821186066E-002 error=   320.215560984727      normalforce=
+   320.215560981077     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  7.999999821186066E-002 error=  1.693369950358089E-003 normalforce=
+   320.215560981077     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  8.999999798834324E-002 error=   356.147892707312      normalforce=
+   356.147892703164     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  8.999999798834324E-002 error=  1.886241715642588E-003 normalforce=
+   356.147892703164     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  9.999999776482582E-002 error=   390.671487641380      normalforce=
+   390.671487636731     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  9.999999776482582E-002 error=  2.073596513975894E-003 normalforce=
+   390.671487636731     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.109999997541308      error=   423.649788308277      normalforce=
+   423.649788303126     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.109999997541308      error=  2.254711298592920E-003 normalforce=
+   423.649788303126     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.119999997317791      error=   454.952349613913      normalforce=
+   454.952349608264     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.119999997317791      error=  2.428879053769176E-003 normalforce=
+   454.952349608264     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.129999997094274      error=   484.455354822068      normalforce=
+   484.455354815927     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.129999997094274      error=  2.595410627649461E-003 normalforce=
+   484.455354815927     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.139999996870756      error=   512.042105309331      normalforce=
+   512.042105302709     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.139999996870756      error=  2.753636947825706E-003 normalforce=
+   512.042105302709     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.149999996647239      error=   537.603482164477      normalforce=
+   537.603482157384     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.149999996647239      error=  2.902911538170765E-003 normalforce=
+   537.603482157384     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.159999996423721      error=   561.038377806415      normalforce=
+   561.038377798866     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.159999996423721      error=  3.042613276375846E-003 normalforce=
+   561.038377798866     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.169999996200204      error=   582.254095913472      normalforce=
+   582.254095905482     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.169999996200204      error=  3.172149369287820E-003 normalforce=
+   582.254095905482     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.179999995976686      error=   601.166718082070      normalforce=
+   601.166718073658     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.179999995976686      error=  3.290958509091854E-003 normalforce=
+   601.166718073658     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.189999995753169      error=   617.701435764518      normalforce=
+   617.701435755706     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.189999995753169      error=  3.398514176551795E-003 normalforce=
+   617.701435755706     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.199999995529652      error=   631.792846172918      normalforce=
+   631.792846163728     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.199999995529652      error=  3.494328045363807E-003 normalforce=
+   631.792846163728     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.209999995306134      error=   643.385210978751      normalforce=
+   643.385210969207     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.209999995306134      error=  3.577953441754250E-003 normalforce=
+   643.385210969207     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.219999995082617      error=   652.432676784867      normalforce=
+   652.432676774997     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.219999995082617      error=  3.648988797671151E-003 normalforce=
+   652.432676774997     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.229999994859099      error=   658.899456497801      normalforce=
+   658.899456487631     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.229999994859099      error=  3.707081046078474E-003 normalforce=
+   658.899456487631     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.239999994635582      error=   662.759970882993      normalforce=
+   662.759970872554     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.239999994635582      error=  3.751928889564759E-003 normalforce=
+   662.759970872554     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.249999994412065      error=   663.998949743010      normalforce=
+   663.998949732332     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.249999994412065      error=  3.783285884594039E-003 normalforce=
+   663.998949732332     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.259999994188547      error=   662.611492318543      normalforce=
+   662.611492307659     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.259999994188547      error=  3.800963279831089E-003 normalforce=
+   662.611492307659     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.269999993965030      error=   658.603086673277      normalforce=
+   658.603086662220     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.269999993965030      error=  3.804832560280602E-003 normalforce=
+   658.603086662220     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.279999993741512      error=   651.989587985950      normalforce=
+   651.989587974753     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.279999993741512      error=  3.794827647624548E-003 normalforce=
+   651.989587974753     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.289999993517995      error=   642.797155835467      normalforce=
+   642.797155824166     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.289999993517995      error=  3.770946726113185E-003 normalforce=
+   642.797155824166     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.299999993294477      error=   631.062150727148      normalforce=
+   631.062150715777     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.299999993294477      error=  3.733253673094702E-003 normalforce=
+   631.062150715777     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.309999993070960      error=   616.830990269373      normalforce=
+   616.830990257966     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.309999993070960      error=  3.681879088628411E-003 normalforce=
+   616.830990257966     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.319999992847443      error=   600.159965569549      normalforce=
+   600.159965558140     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.319999992847443      error=  3.617020938936642E-003 normalforce=
+   600.159965558140     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.329999992623925      error=   581.115018575608      normalforce=
+   581.115018564232     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.329999992623925      error=  3.538944848106880E-003 normalforce=
+   581.115018564232     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.339999992400408      error=   559.771481243785      normalforce=
+   559.771481232474     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.339999992400408      error=  3.447984104290543E-003 normalforce=
+   559.771481232474     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.349999992176890      error=   536.213777564374      normalforce=
+   536.213777553160     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.349999992176890      error=  3.344539470635649E-003 normalforce=
+   536.213777553160     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.359999991953373      error=   510.535089624108      normalforce=
+   510.535089613018     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.359999991953373      error=  3.229078950023956E-003 normalforce=
+   510.535089613018     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.369999991729856      error=   482.836989026029      normalforce=
+   482.836989015092     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.369999991729856      error=  3.102137703379740E-003 normalforce=
+   482.836989015092     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.379999991506338      error=   453.229035124794      normalforce=
+   453.229035114030     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.379999991506338      error=  2.964318430977157E-003 normalforce=
+   453.229035114030     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.389999991282821      error=   421.828341666541      normalforce=
+   421.828341655970     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.389999991282821      error=  2.816292657618561E-003 normalforce=
+   421.828341655970     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.399999991059303      error=   388.759113547518      normalforce=
+   388.759113537152     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.399999991059303      error=  2.658803628100628E-003 normalforce=
+   388.759113537152     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.409999990835786      error=   354.152155523773      normalforce=
+   354.152155513615     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.409999990835786      error=  2.492671902641983E-003 normalforce=
+   354.152155513615     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.419999990612268      error=   318.144354815222      normalforce=
+   318.144354805263     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.419999990612268      error=  2.318805469259857E-003 normalforce=
+   318.144354805263     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.429999990388751      error=   280.878139650633      normalforce=
+   280.878139640847     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.429999990388751      error=  2.138217465920478E-003 normalforce=
+   280.878139640847     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.439999990165234      error=   242.500915895260      normalforce=
+   242.500915885591     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.439999990165234      error=  1.952057024159083E-003 normalforce=
+   242.500915885591     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.449999989941716      error=   203.164483989512      normalforce=
+   203.164483979853     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.449999989941716      error=  1.761663416119285E-003 normalforce=
+   203.164483979853     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.459999989718199      error=   163.024438504988      normalforce=
+   163.024438495130     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.459999989718199      error=  1.568663264803307E-003 normalforce=
+   163.024438495130     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.469999989494681      error=   122.239552692943      normalforce=
+   122.239552682439     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.469999989494681      error=  1.375150766544127E-003 normalforce=
+   122.239552682439     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.479999989271164      error=   80.9711504598024      normalforce=
+   80.9711504474857     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.479999989271164      error=  1.184034892293611E-003 normalforce=
+   80.9711504474857     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.489999989047647      error=   39.3824682558299      normalforce=
+   39.3824682367663     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.489999989047647      error=  9.997334491105001E-004 normalforce=
+   39.3824682367663     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.499999988824129      error=   2.36199087311227      normalforce=
+   2.36199064135588     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.499999988824129      error=  8.297120491885771E-004 normalforce=
+   2.36199064135588     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.509999988600612      error=   44.0971067154422      normalforce=
+   44.0971067066220     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.509999988600612      error=  6.867614212920724E-004 normalforce=
+   44.0971067066220     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.519999988377094      error=   85.6577974373310      normalforce=
+   85.6577974341066     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.519999988377094      error=  5.916007693701733E-004 normalforce=
+   85.6577974341066     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.529999988153577      error=   126.879670236935      normalforce=
+   126.879670235271     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.529999988153577      error=  5.699307855242468E-004 normalforce=
+   126.879670235271     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.539999987930059      error=   167.599672711145      normalforce=
+   167.599672709985     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.539999987930059      error=  6.288142853581787E-004 normalforce=
+   167.599672709985     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.549999987706542      error=   207.656737598542      normalforce=
+   207.656737597455     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.549999987706542      error=  7.481638943132245E-004 normalforce=
+   207.656737597455     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.559999987483025      error=   246.892419876206      normalforce=
+   246.892419874973     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.559999987483025      error=  9.024986956402302E-004 normalforce=
+   246.892419874973     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.569999987259507      error=   285.151523485946      normalforce=
+   285.151523484441     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.569999987259507      error=  1.074728121798218E-003 normalforce=
+   285.151523484441     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.579999987035990      error=   322.282715209535      normalforce=
+   322.282715207682     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.579999987035990      error=  1.255188185154154E-003 normalforce=
+   322.282715207682     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.589999986812472      error=   358.139123264593      normalforce=
+   358.139123262342     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.589999986812472      error=  1.438351314033356E-003 normalforce=
+   358.139123262342     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.599999986588955      error=   392.578918253357      normalforce=
+   392.578918250676     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.599999986588955      error=  1.620809017861426E-003 normalforce=
+   392.578918250676     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.609999986365438      error=   425.465874166388      normalforce=
+   425.465874163255     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.609999986365438      error=  1.800261828686986E-003 normalforce=
+   425.465874163255     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.619999986141920      error=   456.669907222174      normalforce=
+   456.669907218579     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.619999986141920      error=  1.975021814468271E-003 normalforce=
+   456.669907218579     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.629999985918403      error=   486.067590411268      normalforce=
+   486.067590407206     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.629999985918403      error=  2.143759519473690E-003 normalforce=
+   486.067590407206     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.639999985694885      error=   513.542641709671      normalforce=
+   513.542641705141     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.639999985694885      error=  2.305369692167320E-003 normalforce=
+   513.542641705141     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.649999985471368      error=   538.986384030349      normalforce=
+   538.986384025356     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.649999985471368      error=  2.458897227907455E-003 normalforce=
+   538.986384025356     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.659999985247850      error=   562.298175093565      normalforce=
+   562.298175088118     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.659999985247850      error=  2.603495100145940E-003 normalforce=
+   562.298175088118     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.669999985024333      error=   583.385805515660      normalforce=
+   583.385805509772     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.669999985024333      error=  2.738400074803557E-003 normalforce=
+   583.385805509772     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.679999984800816      error=   602.165863541666      normalforce=
+   602.165863535350     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.679999984800816      error=  2.862918725588210E-003 normalforce=
+   602.165863535350     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.689999984577298      error=   618.564064979048      normalforce=
+   618.564064972323     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.689999984577298      error=  2.976419642980989E-003 normalforce=
+   618.564064972323     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.699999984353781      error=   632.515547027536      normalforce=
+   632.515547020423     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.699999984353781      error=  3.078329462354444E-003 normalforce=
+   632.515547020423     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.709999984130263      error=   643.965124842803      normalforce=
+   643.965124835326     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.709999984130263      error=  3.168131304966725E-003 normalforce=
+   643.965124835326     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.719999983906746      error=   652.867509819155      normalforce=
+   652.867509811338     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.719999983906746      error=  3.245364739559415E-003 normalforce=
+   652.867509811338     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.729999983683228      error=   659.187488727820      normalforce=
+   659.187488719691     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.729999983683228      error=  3.309626685145363E-003 normalforce=
+   659.187488719691     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.739999983459711      error=   662.900063002265      normalforce=
+   662.900062993853     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.739999983459711      error=  3.360572861168516E-003 normalforce=
+   662.900062993853     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.749999983236194      error=   663.990547619588      normalforce=
+   663.990547610925     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.749999983236194      error=  3.397919498136816E-003 normalforce=
+   663.990547610925     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.759999983012676      error=   662.454629186872      normalforce=
+   662.454629177990     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.759999983012676      error=  3.421445105416303E-003 normalforce=
+   662.454629177990     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.769999982789159      error=   658.298383002734      normalforce=
+   658.298382993668     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.769999982789159      error=  3.430992135150876E-003 normalforce=
+   658.298382993668     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.779999982565641      error=   651.538249026590      normalforce=
+   651.538249017373     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.779999982565641      error=  3.426468427113672E-003 normalforce=
+   651.538249017373     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.789999982342124      error=   642.200966850676      normalforce=
+   642.200966841345     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.789999982342124      error=  3.407848341327222E-003 normalforce=
+   642.200966841345     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.799999982118607      error=   630.323469932065      normalforce=
+   630.323469922656     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.799999982118607      error=  3.375173514992146E-003 normalforce=
+   630.323469922656     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.809999981895089      error=   615.952739503012      normalforce=
+   615.952739493561     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.809999981895089      error=  3.328553198626147E-003 normalforce=
+   615.952739493561     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.819999981671572      error=   599.145618737514      normalforce=
+   599.145618728059     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.819999981671572      error=  3.268164148692881E-003 normalforce=
+   599.145618728059     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.829999981448054      error=   579.968587909122      normalforce=
+   579.968587899698     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.829999981448054      error=  3.194250064179792E-003 normalforce=
+   579.968587899698     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.839999981224537      error=   558.497501429377      normalforce=
+   558.497501420021     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.839999981224537      error=  3.107120587658157E-003 normalforce=
+   558.497501420021     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.849999981001019      error=   534.817287807008      normalforce=
+   534.817287797754     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.849999981001019      error=  3.007149883333048E-003 normalforce=
+   534.817287797754     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.859999980777502      error=   509.021613714690      normalforce=
+   509.021613705572     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.859999980777502      error=  2.894774851816098E-003 normalforce=
+   509.021613705572     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.869999980553985      error=   481.212513492155      normalforce=
+   481.212513483204     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.869999980553985      error=  2.770493039294416E-003 normalforce=
+   481.212513483204     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.879999980330467      error=   451.499985551138      normalforce=
+   451.499985542384     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.879999980330467      error=  2.634860336245076E-003 normalforce=
+   451.499985542384     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.889999980106950      error=   420.001557278571      normalforce=
+   420.001557270040     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.889999980106950      error=  2.488488604960978E-003 normalforce=
+   420.001557270040     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.899999979883432      error=   386.841820159055      normalforce=
+   386.841820150770     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.899999979883432      error=  2.332043437395647E-003 normalforce=
+   386.841820150770     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.909999979659915      error=   352.151936955409      normalforce=
+   352.151936947388     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.909999979659915      error=  2.166242362967420E-003 normalforce=
+   352.151936947388     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.919999979436398      error=   316.069122896649      normalforce=
+   316.069122888903     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.919999979436398      error=  1.991854069427667E-003 normalforce=
+   316.069122888903     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.929999979212880      error=   278.736102925538      normalforce=
+   278.736102918067     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.929999979212880      error=  1.809699626851922E-003 normalforce=
+   278.736102918067     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.939999978989363      error=   240.300547152561      normalforce=
+   240.300547145350     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.939999978989363      error=  1.620657723517567E-003 normalforce=
+   240.300547145350     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.949999978765845      error=   200.914486749386      normalforce=
+   200.914486742393     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.949999978765845      error=  1.425678152831302E-003 normalforce=
+   200.914486742393     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.959999978542328      error=   160.733712592219      normalforce=
+   160.733712585347     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.959999978542328      error=  1.225813519684832E-003 normalforce=
+   160.733712585347     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.969999978318810      error=   119.917159033757      normalforce=
+   119.917159026784     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.969999978318810      error=  1.022295256302134E-003 normalforce=
+   119.917159026784     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.979999978095293      error=   78.6262752413083      normalforce=
+   78.6262752336281     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.979999978095293      error=  8.167325639644545E-004 normalforce=
+   78.6262752336281     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.989999977871776      error=   37.0243865888929      normalforce=
+   37.0243865777865     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.989999977871776      error=  6.117204502941664E-004 normalforce=
+   37.0243865777865     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.999999977648258      error=   4.72395144977559      normalforce=
+   4.72395139451368     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.999999977648258      error=  4.132263099759456E-004 normalforce=
+   4.72395139451368     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.00999997742474      error=   46.4536038626627      normalforce=
+   46.4536038593239     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.00999997742474      error=  2.438300127732573E-004 normalforce=
+   46.4536038593239     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.01999997720122      error=   87.9995099039619      normalforce=
+   87.9995099028952     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.01999997720122      error=  2.036008309378771E-004 normalforce=
+   87.9995099028952     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.02999997697771      error=   129.197335417861      normalforce=
+   129.197335417249     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.02999997697771      error=  3.422815207983034E-004 normalforce=
+   129.197335417249     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.03999997675419      error=   169.884123121531      normalforce=
+   169.884123120878     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.03999997675419      error=  5.342835591132036E-004 normalforce=
+   169.884123120878     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.04999997653067      error=   209.898937134342      normalforce=
+   209.898937133440     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.04999997653067      error=  7.375120268585070E-004 normalforce=
+   209.898937133440     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.05999997630715      error=   249.083499556081      normalforce=
+   249.083499554824     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.05999997630715      error=  9.427705690191095E-004 normalforce=
+   249.083499554824     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.06999997608364      error=   287.282816532308      normalforce=
+   287.282816530636     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.06999997608364      error=  1.146798030589528E-003 normalforce=
+   287.282816530636     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.07999997586012      error=   324.345791329809      normalforce=
+   324.345791327684     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.07999997586012      error=  1.347859951058043E-003 normalforce=
+   324.345791327684     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.08999997563660      error=   360.125821997080      normalforce=
+   360.125821994481     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.08999997563660      error=  1.544749946106506E-003 normalforce=
+   360.125821994481     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.09999997541308      error=   394.481381245796      normalforce=
+   394.481381242708     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.09999997541308      error=  1.736487036460898E-003 normalforce=
+   394.481381242708     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.10999997518957      error=   427.276576259523      normalforce=
+   427.276576255940     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.10999997518957      error=  1.922204334099288E-003 normalforce=
+   427.276576255940     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.11999997496605      error=   458.381686215395      normalforce=
+   458.381686211315     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.11999997496605      error=  2.101102580651713E-003 normalforce=
+   458.381686211315     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.12999997474253      error=   487.673675392567      normalforce=
+   487.673675387993     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.12999997474253      error=  2.272429302891451E-003 normalforce=
+   487.673675387993     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.13999997451901      error=   515.036679837863      normalforce=
+   515.036679832801     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.13999997451901      error=  2.435469354045866E-003 normalforce=
+   515.036679832801     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.14999997429550      error=   540.362465663629      normalforce=
+   540.362465658090     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.14999997429550      error=  2.589541033980227E-003 normalforce=
+   540.362465658090     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.15999997407198      error=   563.550857164991      normalforce=
+   563.550857158987     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.15999997407198      error=  2.733995181971958E-003 normalforce=
+   563.550857158987     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.16999997384846      error=   584.510133063109      normalforce=
+   584.510133056654     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.16999997384846      error=  2.868215963486412E-003 normalforce=
+   584.510133056654     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.17999997362494      error=   603.157389307098      normalforce=
+   603.157389300211     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.17999997362494      error=  2.991622695892585E-003 normalforce=
+   603.157389300211     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.18999997340143      error=   619.418866999563      normalforce=
+   619.418866992264     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.18999997340143      error=  3.103672313731632E-003 normalforce=
+   619.418866992264     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.19999997317791      error=   633.230244148626      normalforce=
+   633.230244140938     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.19999997317791      error=  3.203862246307505E-003 normalforce=
+   633.230244140938     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.20999997295439      error=   644.536890092450      normalforce=
+   644.536890084397     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.20999997295439      error=  3.291733528102667E-003 normalforce=
+   644.536890084397     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.21999997273088      error=   653.294081589871      normalforce=
+   653.294081581479     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.21999997273088      error=  3.366874023511917E-003 normalforce=
+   653.294081581479     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.22999997250736      error=   659.467179722394      normalforce=
+   659.467179713692     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.22999997250736      error=  3.428921652715693E-003 normalforce=
+   659.467179713692     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.23999997228384      error=   663.031766907839      normalforce=
+   663.031766898858     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.23999997228384      error=  3.477567527082904E-003 normalforce=
+   663.031766898858     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.24999997206032      error=   663.973743483659      normalforce=
+   663.973743474430     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.24999997206032      error=  3.512558913384001E-003 normalforce=
+   663.973743474430     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.25999997183681      error=   662.289383477909      normalforce=
+   662.289383468464     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.25999997183681      error=  3.533701950929114E-003 normalforce=
+   662.289383468464     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.26999997161329      error=   657.985349347263      normalforce=
+   657.985349337638     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.26999997161329      error=  3.540864059913951E-003 normalforce=
+   657.985349337638     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.27999997138977      error=   651.078665623787      normalforce=
+   651.078665614016     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.27999997138977      error=  3.533975986906344E-003 normalforce=
+   651.078665614016     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.28999997116625      error=   641.596651574692      normalforce=
+   641.596651564810     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.28999997116625      error=  3.513033449415345E-003 normalforce=
+   641.596651564810     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.29999997094274      error=   629.576813141454      normalforce=
+   629.576813131497     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.29999997094274      error=  3.478098350309567E-003 normalforce=
+   629.576813131497     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.30999997071922      error=   615.066694585711      normalforce=
+   615.066694575717     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.30999997071922      error=  3.429299553996225E-003 normalforce=
+   615.066694575717     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.31999997049570      error=   598.123690428770      normalforce=
+   598.123690418773     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.31999997049570      error=  3.366833229516711E-003 normalforce=
+   598.123690418773     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.32999997027218      error=   578.814818428569      normalforce=
+   578.814818418605     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.32999997027218      error=  3.290962785382994E-003 normalforce=
+   578.814818418605     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.33999997004867      error=   557.216454492110      normalforce=
+   557.216454482215     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.33999997004867      error=  3.202018449864207E-003 normalforce=
+   557.216454482215     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.34999996982515      error=   533.414030571885      normalforce=
+   533.414030562092     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.34999996982515      error=  3.100396569903038E-003 normalforce=
+   533.414030562092     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.35999996960163      error=   507.501696741276      normalforce=
+   507.501696731616     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.35999996960163      error=  2.986558745902624E-003 normalforce=
+   507.501696731616     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.36999996937811      error=   479.581948785577      normalforce=
+   479.581948776081     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.36999996937811      error=  2.861030976437586E-003 normalforce=
+   479.581948776081     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.37999996915460      error=   449.765222781708      normalforce=
+   449.765222772403     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.37999996915460      error=  2.724403057134116E-003 normalforce=
+   449.765222772403     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.38999996893108      error=   418.169458270223      normalforce=
+   418.169458261133     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.38999996893108      error=  2.577328626980674E-003 normalforce=
+   418.169458261133     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.39999996870756      error=   384.919631747523      normalforce=
+   384.919631738666     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.39999996870756      error=  2.420526459934634E-003 normalforce=
+   384.919631738666     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.40999996848404      error=   350.147262323494      normalforce=
+   350.147262314884     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.40999996848404      error=  2.254784009941090E-003 normalforce=
+   350.147262314884     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.41999996826053      error=   313.989891499962      normalforce=
+   313.989891491603     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.41999996826053      error=  2.080964927830860E-003 normalforce=
+   313.989891491603     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.42999996803701      error=   276.590539127679      normalforce=
+   276.590539119561     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.42999996803701      error=  1.900023689978631E-003 normalforce=
+   276.590539119561     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.43999996781349      error=   238.097137693792      normalforce=
+   238.097137685886     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.43999996781349      error=  1.713033331575364E-003 normalforce=
+   238.097137685886     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.44999996758997      error=   198.661947177482      normalforce=
+   198.661947169721     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.44999996758997      error=  1.521238447545935E-003 normalforce=
+   198.661947169721     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.45999996736646      error=   158.440952788286      normalforce=
+   158.440952780528     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.45999996736646      error=  1.326159833155249E-003 normalforce=
+   158.440952780528     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.46999996714294      error=   117.593247969374      normalforce=
+   117.593247961307     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.46999996714294      error=  1.129812438700247E-003 normalforce=
+   117.593247961307     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.47999996691942      error=   76.2804051064853      normalforce=
+   76.2804050972476     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.47999996691942      error=  9.351931785964211E-004 normalforce=
+   76.2804050972476     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.48999996669590      error=   34.6658364334276      normalforce=
+   34.6658364189821     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.48999996669590      error=  7.474699130645712E-004 normalforce=
+   34.6658364189821     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.49999996647239      error=   7.08585241960412      normalforce=
+   7.08585237165353     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.49999996647239      error=  5.772085592921459E-004 normalforce=
+   7.08585237165353     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.50999996624887      error=   48.8095132011819      normalforce=
+   48.8095131966083     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.50999996624887      error=  4.478403303258917E-004 normalforce=
+   48.8095131966083     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.51999996602535      error=   90.3401088436432      normalforce=
+   90.3401088419618     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.51999996602535      error=  4.022675300267473E-004 normalforce=
+   90.3401088419618     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.52999996580184      error=   131.513365760716      normalforce=
+   131.513365759747     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.52999996580184      error=  4.664333255062550E-004 normalforce=
+   131.513365759747     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.53999996557832      error=   172.166423849986      normalforce=
+   172.166423849113     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.53999996557832      error=  6.055567512291171E-004 normalforce=
+   172.166423849113     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.54999996535480      error=   212.138480647655      normalforce=
+   212.138480646619     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.54999996535480      error=  7.789901052558541E-004 normalforce=
+   212.138480646619     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.55999996513128      error=   251.271427378911      normalforce=
+   251.271427377576     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.55999996513128      error=  9.665502401371662E-004 normalforce=
+   251.271427377576     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.56999996490777      error=   289.410474354264      normalforce=
+   289.410474352553     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.56999996490777      error=  1.159266008242083E-003 normalforce=
+   289.410474352553     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.57999996468425      error=   326.404763237431      normalforce=
+   326.404763235296     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.57999996468425      error=  1.352655060654850E-003 normalforce=
+   326.404763235296     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.58999996446073      error=   362.107963762845      normalforce=
+   362.107963760257     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.58999996446073      error=  1.544099053555860E-003 normalforce=
+   362.107963760257     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.59999996423721      error=   396.378852542467      normalforce=
+   396.378852539407     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.59999996423721      error=  1.731833868386538E-003 normalforce=
+   396.378852539407     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.60999996401370      error=   429.081871672428      normalforce=
+   429.081871668885     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.60999996401370      error=  1.914528045352802E-003 normalforce=
+   429.081871668885     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.61999996379018      error=   460.087664929963      normalforce=
+   460.087664925934     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.61999996379018      error=  2.091090797936993E-003 normalforce=
+   460.087664925934     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.62999996356666      error=   489.273589439697      normalforce=
+   489.273589435182     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.62999996356666      error=  2.260577958915480E-003 normalforce=
+   489.273589435182     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.63999996334314      error=   516.524200785401      normalforce=
+   516.524200780405     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.63999996334314      error=  2.422143303494571E-003 normalforce=
+   516.524200780405     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.64999996311963      error=   541.731709648369      normalforce=
+   541.731709642900     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.64999996311963      error=  2.575012497111799E-003 normalforce=
+   541.731709642900     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.65999996289611      error=   564.796408166192      normalforce=
+   564.796408160261     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.65999996289611      error=  2.718469050832741E-003 normalforce=
+   564.796408160261     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.66999996267259      error=   585.627064325472      normalforce=
+   585.627064319094     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.66999996267259      error=  2.851847017243466E-003 normalforce=
+   585.627064319094     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.67999996244907      error=   604.141282828464      normalforce=
+   604.141282821657     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.67999996244907      error=  2.974527646417847E-003 normalforce=
+   604.141282821657     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.68999996222556      error=   620.265831006238      normalforce=
+   620.265830999021     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.68999996222556      error=  3.085938458581488E-003 normalforce=
+   620.265830999021     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.69999996200204      error=   633.936928489229      normalforce=
+   633.936928481625     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.69999996200204      error=  3.185553819978355E-003 normalforce=
+   633.936928481625     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.70999996177852      error=   645.100499489377      normalforce=
+   645.100499481409     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.70999996177852      error=  3.272896464475293E-003 normalforce=
+   645.100499481409     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.71999996155500      error=   653.712386695965      normalforce=
+   653.712386687659     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.71999996155500      error=  3.347539586099371E-003 normalforce=
+   653.712386687659     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.72999996133149      error=   659.738525939091      normalforce=
+   659.738525930477     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.72999996133149      error=  3.409109239766686E-003 normalforce=
+   659.738525930477     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.73999996110797      error=   663.155080929903      normalforce=
+   663.155080921010     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.73999996110797      error=  3.457286861263739E-003 normalforce=
+   663.155080921010     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.74999996088445      error=   663.948537544623      normalforce=
+   663.948537535483     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.74999996088445      error=  3.491811753124832E-003 normalforce=
+   663.948537535483     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.75999996066093      error=   662.115757279424      normalforce=
+   662.115757270071     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.75999996066093      error=  3.512483422591254E-003 normalforce=
+   662.115757270071     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.76999996043742      error=   657.663989664736      normalforce=
+   657.663989655202     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.76999996043742      error=  3.519163672492382E-003 normalforce=
+   657.663989655202     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.77999996021390      error=   650.610843589845      normalforce=
+   650.610843580166     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.77999996021390      error=  3.511778370653205E-003 normalforce=
+   650.610843580166     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.78999995999038      error=   640.984217651244      normalforce=
+   640.984217641457     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.78999995999038      error=  3.490318839546501E-003 normalforce=
+   640.984217641457     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.79999995976686      error=   628.822189800220      normalforce=
+   628.822189790360     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.79999995976686      error=  3.454842825179864E-003 normalforce=
+   628.822189790360     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.80999995954335      error=   614.172866726179      normalforce=
+   614.172866716282     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.80999995954335      error=  3.405475020219289E-003 normalforce=
+   614.172866716282     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.81999995931983      error=   597.094193571473      normalforce=
+   597.094193561576     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.81999995931983      error=  3.342407133234833E-003 normalforce=
+   597.094193561576     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.82999995909631      error=   577.653724730402      normalforce=
+   577.653724720541     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.82999995909631      error=  3.265897515236132E-003 normalforce=
+   577.653724720541     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.83999995887280      error=   555.928356638978      normalforce=
+   555.928356629188     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.83999995887280      error=  3.176270369954032E-003 normalforce=
+   555.928356629188     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.84999995864928      error=   532.004023612418      normalforce=
+   532.004023602732     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.84999995864928      error=  3.073914594449602E-003 normalforce=
+   532.004023602732     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.85999995842576      error=   505.975357933450      normalforce=
+   505.975357923902     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.85999995842576      error=  2.959282331411190E-003 normalforce=
+   505.975357923902     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.86999995820224      error=   477.945315535972      normalforce=
+   477.945315526592     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.86999995820224      error=  2.832887330481565E-003 normalforce=
+   477.945315526592     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.87999995797873      error=   448.024768764643      normalforce=
+   448.024768755458     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.87999995797873      error=  2.695303281951147E-003 normalforce=
+   448.024768755458     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.88999995775521      error=   416.332067821258      normalforce=
+   416.332067812294     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.88999995775521      error=  2.547162354968933E-003 normalforce=
+   416.332067812294     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.89999995753169      error=   382.992572632586      normalforce=
+   382.992572623862     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.89999995753169      error=  2.389154292759467E-003 normalforce=
+   382.992572623862     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.90999995730817      error=   348.138156991359      normalforce=
+   348.138156982890     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.90999995730817      error=  2.222026674720965E-003 normalforce=
+   348.138156982890     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.91999995708466      error=   311.906686931786      normalforce=
+   311.906686923578     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.91999995708466      error=  2.046587340733494E-003 normalforce=
+   311.906686923578     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.92999995686114      error=   274.441475402855      normalforce=
+   274.441475394901     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.92999995686114      error=  1.863710876149722E-003 normalforce=
+   274.441475394901     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.93999995663762      error=   235.890715396463      normalforce=
+   235.890715388737     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.93999995663762      error=  1.674352799216829E-003 normalforce=
+   235.890715388737     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.94999995641410      error=   196.406893772621      normalforce=
+   196.406893765063     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.94999995641410      error=  1.479579086272344E-003 normalforce=
+   196.406893765063     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.95999995619059      error=   156.146188100358      normalforce=
+   156.146188092838     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.95999995619059      error=  1.280628372145141E-003 normalforce=
+   156.146188092838     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.96999995596707      error=   115.267848900129      normalforce=
+   115.267848892351     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.96999995596707      error=  1.079049878032410E-003 normalforce=
+   115.267848892351     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.97999995574355      error=   73.9335697314238      normalforce=
+   73.9335697225563     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.97999995574355      error=  8.770375151326401E-004 normalforce=
+   73.9335697225563     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.98999995552003      error=   32.3068476190958      normalforce=
+   32.3068476050183     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.98999995552003      error=  6.783480739982293E-004 normalforce=
+   32.3068476050183     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.99999995529652      error=   9.44766371714161      normalforce=
+   9.44766368571195     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.99999995529652      error=  4.913405524260431E-004 normalforce=
+   9.44766368571195     
+ loadfactor amplitude=   83.0000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.000000000000000E+000 error=  0.000000000000000E+000 normalforce=
+  0.000000000000000E+000
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  9.999999776482582E-003 error=   188.584570288499      normalforce=
+   188.584570288499     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  9.999999776482582E-003 error=  1.156550512812970E-003 normalforce=
+   188.584570288499     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  1.999999955296516E-002 error=   376.423197599854      normalforce=
+   376.423197592761     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  1.999999955296516E-002 error=  2.093312553581854E-003 normalforce=
+   376.423197592761     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  2.999999932944775E-002 error=   562.772889500075      normalforce=
+   562.772889493035     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  2.999999932944775E-002 error=  3.044828792287357E-003 normalforce=
+   562.772889493035     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  3.999999910593033E-002 error=   746.896543035919      normalforce=
+   746.896543027638     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  3.999999910593033E-002 error=  3.999321399768536E-003 normalforce=
+   746.896543027638     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  4.999999888241291E-002 error=   928.065860300911      normalforce=
+   928.065860290880     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  4.999999888241291E-002 error=  4.954008717515467E-003 normalforce=
+   928.065860290880     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  5.999999865889549E-002 error=   1105.56422921483      normalforce=
+   1105.56422920276     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  5.999999865889549E-002 error=  5.907757878427821E-003 normalforce=
+   1105.56422920276     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  6.999999843537807E-002 error=   1278.68955806988      normalforce=
+   1278.68955805555     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  6.999999843537807E-002 error=  6.859575510570383E-003 normalforce=
+   1278.68955805555     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  7.999999821186066E-002 error=   1446.75705264211      normalforce=
+   1446.75705262535     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  7.999999821186066E-002 error=  7.808586688342244E-003 normalforce=
+   1446.75705262535     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  8.999999798834324E-002 error=   1609.10192488304      normalforce=
+   1609.10192486369     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  8.999999798834324E-002 error=  8.753807263507765E-003 normalforce=
+   1609.10192486369     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  9.999999776482582E-002 error=   1765.08202247721      normalforce=
+   1765.08202245511     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  9.999999776482582E-002 error=  9.693960694324115E-003 normalforce=
+   1765.08202245511     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.109999997541308      error=   1914.08036886443      normalforce=
+   1914.08036883942     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.109999997541308      error=  1.062727578047821E-002 normalforce=
+   1914.08036883942     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.119999997317791      error=   2055.50760367986      normalforce=
+   2055.50760365179     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.119999997317791      error=  1.155128979363858E-002 normalforce=
+   2055.50760365179     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.129999997094274      error=   2188.80431395863      normalforce=
+   2188.80431392738     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.129999997094274      error=  1.246267644672253E-002 normalforce=
+   2188.80431392738     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.139999996870756      error=   2313.44324688413      normalforce=
+   2313.44324684959     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.139999996870756      error=  1.335712778801292E-002 normalforce=
+   2313.44324684959     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.149999996647239      error=   2428.93139532729      normalforce=
+   2428.93139528938     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.149999996647239      error=  1.422932022446093E-002 normalforce=
+   2428.93139528938     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.159999996423721      error=   2534.81194792776      normalforce=
+   2534.81194788644     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.159999996423721      error=  1.507298882093773E-002 normalforce=
+   2534.81194788644     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.169999996200204      error=   2630.66609600323      normalforce=
+   2630.66609595850     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.169999996200204      error=  1.588111829510335E-002 normalforce=
+   2630.66609595850     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.179999995976686      error=   2716.11469013991      normalforce=
+   2716.11469009183     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.179999995976686      error=  1.664623594298507E-002 normalforce=
+   2716.11469009183     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.189999995753169      error=   2790.81973991147      normalforce=
+   2790.81973986012     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.189999995753169      error=  1.736076847190773E-002 normalforce=
+   2790.81973986012     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.199999995529652      error=   2854.48575079422      normalforce=
+   2854.48575073973     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.199999995529652      error=  1.801740952365810E-002 normalforce=
+   2854.48575073973     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.209999995306134      error=   2906.86089299064      normalforce=
+   2906.86089293317     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.209999995306134      error=  1.860944526491728E-002 normalforce=
+   2906.86089293317     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.219999995082617      error=   2947.73799753767      normalforce=
+   2947.73799747739     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.219999995082617      error=  1.913100028448042E-002 normalforce=
+   2947.73799747739     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.229999994859099      error=   2976.95537575999      normalforce=
+   2976.95537569713     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.229999994859099      error=  1.957718897343988E-002 normalforce=
+   2976.95537569713     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.239999994635582      error=   2994.39745882677      normalforce=
+   2994.39745876154     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.239999994635582      error=  1.994417892096050E-002 normalforce=
+   2994.39745876154     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.249999994412065      error=   2999.99525488211      normalforce=
+   2999.99525481475     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.249999994412065      error=  2.022918623057135E-002 normalforce=
+   2999.99525481475     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.259999994188547      error=   2993.72662194119      normalforce=
+   2993.72662187195     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.259999994188547      error=  2.043042659054074E-002 normalforce=
+   2993.72662187195     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.269999993965030      error=   2975.61635547245      normalforce=
+   2975.61635540160     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.269999993965030      error=  2.054704309919235E-002 normalforce=
+   2975.61635540160     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.279999993741512      error=   2945.73609031959      normalforce=
+   2945.73609024738     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.279999993741512      error=  2.057902594584934E-002 normalforce=
+   2945.73609024738     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.289999993517995      error=   2904.20401735118      normalforce=
+   2904.20401727786     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.289999993517995      error=  2.052713304261180E-002 normalforce=
+   2904.20401727786     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.299999993294477      error=   2851.18441595870      normalforce=
+   2851.18441588453     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.299999993294477      error=  2.039281598759862E-002 normalforce=
+   2851.18441588453     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.309999993070960      error=   2786.88700425232      normalforce=
+   2786.88700417756     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.309999993070960      error=  2.017815261756859E-002 normalforce=
+   2786.88700417756     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.319999992847443      error=   2711.56610952455      normalforce=
+   2711.56610944943     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.319999992847443      error=  1.988578569694588E-002 normalforce=
+   2711.56610944943     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.329999992623925      error=   2625.51966226306      normalforce=
+   2625.51966218780     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.329999992623925      error=  1.951886658987030E-002 normalforce=
+   2625.51966218780     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.339999992400408      error=   2529.08801769180      normalforce=
+   2529.08801761660     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.339999992400408      error=  1.908100283606134E-002 normalforce=
+   2529.08801761660     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.349999992176890      error=   2422.65260950189      normalforce=
+   2422.65260942693     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.349999992176890      error=  1.857620902453359E-002 normalforce=
+   2422.65260942693     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.359999991953373      error=   2306.63444109724      normalforce=
+   2306.63444102267     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.359999991953373      error=  1.800886104403059E-002 normalforce=
+   2306.63444102267     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.369999991729856      error=   2181.49242032297      normalforce=
+   2181.49242024891     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.369999991729856      error=  1.738365469370648E-002 normalforce=
+   2181.49242024891     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.379999991506338      error=   2047.72154426338      normalforce=
+   2047.72154418989     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.379999991506338      error=  1.670557040912594E-002 normalforce=
+   2047.72154418989     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.389999991282821      error=   1905.85094128963      normalforce=
+   1905.85094121673     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.389999991282821      error=  1.597984667345966E-002 normalforce=
+   1905.85094121673     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.399999991059303      error=   1756.44177810167      normalforce=
+   1756.44177802930     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.399999991059303      error=  1.521196569434030E-002 normalforce=
+   1756.44177802930     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.409999990835786      error=   1600.08504004314      normalforce=
+   1600.08503997115     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.409999990835786      error=  1.440765580561388E-002 normalforce=
+   1600.08503997115     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.419999990612268      error=   1437.39919346917      normalforce=
+   1437.39919339727     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.419999990612268      error=  1.357291679249591E-002 normalforce=
+   1437.39919339727     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.429999990388751      error=   1269.02773941348      normalforce=
+   1269.02773934118     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.429999990388751      error=  1.271407654758703E-002 normalforce=
+   1269.02773934118     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.439999990165234      error=   1095.63666823133      normalforce=
+   1095.63666815779     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.439999990165234      error=  1.183789122153200E-002 normalforce=
+   1095.63666815779     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.449999989941716      error=   917.911825286346      normalforce=
+   917.911825210179     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.449999989941716      error=  1.095170689150584E-002 normalforce=
+   917.911825210179     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.459999989718199      error=   736.556198101520      normalforce=
+   736.556198020166     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.459999989718199      error=  1.006370998153771E-002 normalforce=
+   736.556198020166     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.469999989494681      error=   552.287135705218      normalforce=
+   552.287135613428     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.469999989494681      error=  9.183307062360410E-003 normalforce=
+   552.287135613428     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.479999989271164      error=   365.833511173595      normalforce=
+   365.833511057917     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.479999989271164      error=  8.321696960873462E-003 normalforce=
+   365.833511057917     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.489999989047647      error=   177.932838615071      normalforce=
+   177.932838419125     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.489999989047647      error=  7.492972335341677E-003 normalforce=
+   177.932838419125     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.499999988824129      error=   10.6716471237553      normalforce=
+   10.6716444639573     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.499999988824129      error=  6.722118105770376E-003 normalforce=
+   10.6716444639573     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.509999988600612      error=   199.233915957664      normalforce=
+   199.233915843172     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.509999988600612      error=  6.010076801870617E-003 normalforce=
+   199.233915843172     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.519999988377094      error=   387.008120984140      normalforce=
+   387.008120937229     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.519999988377094      error=  5.386630260814032E-003 normalforce=
+   387.008120937229     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.529999988153577      error=   573.251522172682      normalforce=
+   573.251522147309     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.529999988153577      error=  4.902762286362769E-003 normalforce=
+   573.251522147309     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.539999987930059      error=   757.227436958609      normalforce=
+   757.227436942702     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.539999987930059      error=  4.608572731997228E-003 normalforce=
+   757.227436942702     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.549999987706542      error=   938.208151807150      normalforce=
+   938.208151795729     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.549999987706542      error=  4.546492812087034E-003 normalforce=
+   938.208151795729     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.559999987483025      error=   1115.47780064946      normalforce=
+   1115.47780063994     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.559999987483025      error=  4.732132414745246E-003 normalforce=
+   1115.47780063994     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.569999987259507      error=   1288.33519647504      normalforce=
+   1288.33519646585     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.569999987259507      error=  5.144684385862249E-003 normalforce=
+   1288.33519646585     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.579999987035990      error=   1456.09660486390      normalforce=
+   1456.09660485398     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.579999987035990      error=  5.740199233633660E-003 normalforce=
+   1456.09660485398     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.589999986812472      error=   1618.09844848585      normalforce=
+   1618.09844847444     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.589999986812472      error=  6.471805341831096E-003 normalforce=
+   1618.09844847444     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.599999986588955      error=   1773.69993186897      normalforce=
+   1773.69993185546     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.599999986588955      error=  7.300460666104692E-003 normalforce=
+   1773.69993185546     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.609999986365438      error=   1922.28557605488      normalforce=
+   1922.28557603880     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.609999986365438      error=  8.196473997459441E-003 normalforce=
+   1922.28557603880     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.619999986141920      error=   2063.26765311501      normalforce=
+   2063.26765309599     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.619999986141920      error=  9.137274720602138E-003 normalforce=
+   2063.26765309599     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.629999985918403      error=   2196.08851089819      normalforce=
+   2196.08851087593     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.629999985918403      error=  1.010476320577181E-002 normalforce=
+   2196.08851087593     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.639999985694885      error=   2320.22277881399      normalforce=
+   2320.22277878829     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.639999985694885      error=  1.108330465489407E-002 normalforce=
+   2320.22277878829     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.649999985471368      error=   2435.17944592698      normalforce=
+   2435.17944589769     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.649999985471368      error=  1.205849044363447E-002 normalforce=
+   2435.17944589769     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.659999985247850      error=   2540.50380314189      normalforce=
+   2540.50380310897     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.659999985247850      error=  1.301654403269497E-002 normalforce=
+   2540.50380310897     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.669999985024333      error=   2635.77924179756      normalforce=
+   2635.77924176102     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.669999985024333      error=  1.394420859606658E-002 normalforce=
+   2635.77924176102     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.679999984800816      error=   2720.62890155524      normalforce=
+   2720.62890151514     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.679999984800816      error=  1.482894908102584E-002 normalforce=
+   2720.62890151514     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.689999984577298      error=   2794.71716106309      normalforce=
+   2794.71716101953     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.689999984577298      error=  1.565930216498477E-002 normalforce=
+   2794.71716101953     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.699999984353781      error=   2857.75096550058      normalforce=
+   2857.75096545372     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.699999984353781      error=  1.642522469620240E-002 normalforce=
+   2857.75096545372     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.709999984130263      error=   2909.48098575177      normalforce=
+   2909.48098570177     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.709999984130263      error=  1.711833353129060E-002 normalforce=
+   2909.48098570177     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.719999983906746      error=   2949.70260462223      normalforce=
+   2949.70260456930     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.719999983906746      error=  1.773198921238069E-002 normalforce=
+   2949.70260456930     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.729999983683228      error=   2978.25672619883      normalforce=
+   2978.25672614318     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.729999983683228      error=  1.826123329228940E-002 normalforce=
+   2978.25672614318     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.739999983459711      error=   2995.03040515086      normalforce=
+   2995.03040509271     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.739999983459711      error=  1.870262542501947E-002 normalforce=
+   2995.03040509271     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.749999983236194      error=   2999.95729348325      normalforce=
+   2999.95729342285     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.749999983236194      error=  1.905403615957773E-002 normalforce=
+   2999.95729342285     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.759999983012676      error=   2993.01790297501      normalforce=
+   2993.01790291261     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.759999983012676      error=  1.931444060112087E-002 normalforce=
+   2993.01790291261     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.769999982789159      error=   2974.23968226445      normalforce=
+   2974.23968220031     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.769999982789159      error=  1.948373929042223E-002 normalforce=
+   2974.23968220031     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.779999982565641      error=   2943.69690827665      normalforce=
+   2943.69690821102     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.779999982565641      error=  1.956261542389898E-002 normalforce=
+   2943.69690821102     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.789999982342124      error=   2901.51039242231      normalforce=
+   2901.51039235547     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.789999982342124      error=  1.955242641852044E-002 normalforce=
+   2901.51039235547     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.799999982118607      error=   2847.84700273039      normalforce=
+   2847.84700266260     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.799999982118607      error=  1.945512266474122E-002 normalforce=
+   2847.84700266260     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.809999981895089      error=   2782.91900380446      normalforce=
+   2782.91900373597     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.809999981895089      error=  1.927318524708103E-002 normalforce=
+   2782.91900373597     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.819999981671572      error=   2706.98321721378      normalforce=
+   2706.98321714484     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.819999981671572      error=  1.900957534324337E-002 normalforce=
+   2706.98321714484     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.829999981448054      error=   2620.34000564007      normalforce=
+   2620.34000557093     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.829999981448054      error=  1.866768985011683E-002 normalforce=
+   2620.34000557093     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.839999981224537      error=   2523.33208479814      normalforce=
+   2523.33208472901     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.839999981224537      error=  1.825131958011778E-002 normalforce=
+   2523.33208472901     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.849999981001019      error=   2416.34316782985      normalforce=
+   2416.34316776094     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.849999981001019      error=  1.776460818180980E-002 normalforce=
+   2416.34316776094     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.859999980777502      error=   2299.79644753345      normalforce=
+   2299.79644746493     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.859999980777502      error=  1.721201139496157E-002 normalforce=
+   2299.79644746493     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.869999980553985      error=   2174.15292243185      normalforce=
+   2174.15292236387     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.869999980553985      error=  1.659825741778667E-002 normalforce=
+   2174.15292236387     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.879999980330467      error=   2039.90957330100      normalforce=
+   2039.90957323366     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.879999980330467      error=  1.592831020403151E-002 normalforce=
+   2039.90957323366     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.889999980106950      error=   1897.59739737103      normalforce=
+   1897.59739730440     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.889999980106950      error=  1.520733831137097E-002 normalforce=
+   1897.59739730440     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.899999979883432      error=   1747.77930797603      normalforce=
+   1747.77930791011     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.899999979883432      error=  1.444069263614815E-002 normalforce=
+   1747.77930791011     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.909999979659915      error=   1591.04790796013      normalforce=
+   1591.04790789483     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.909999979659915      error=  1.363389733004481E-002 normalforce=
+   1591.04790789483     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.919999979436398      error=   1428.02314564727      normalforce=
+   1428.02314558239     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.919999979436398      error=  1.279265960622554E-002 normalforce=
+   1428.02314558239     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.929999979212880      error=   1259.34986264643      normalforce=
+   1259.34986258163     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.929999979212880      error=  1.192290640966609E-002 normalforce=
+   1259.34986258163     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.939999978989363      error=   1085.69524319195      normalforce=
+   1085.69524312658     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.939999978989363      error=  1.103086019244847E-002 normalforce=
+   1085.69524312658     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.949999978765845      error=   907.746175107944      normalforce=
+   907.746175040930     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.949999978765845      error=  1.012317345133338E-002 normalforce=
+   907.746175040930     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.959999978542328      error=   726.206532835820      normalforce=
+   726.206532765122     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.959999978542328      error=  9.207155302988990E-003 normalforce=
+   726.206532765122     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.969999978318810      error=   541.794393271926      normalforce=
+   541.794393193302     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.969999978318810      error=  8.291148118234112E-003 normalforce=
+   541.794393193302     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.979999978095293      error=   355.239195430306      normalforce=
+   355.239195332657     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.979999978095293      error=  7.385162122635019E-003 normalforce=
+   355.239195332657     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.989999977871776      error=   167.278855185613      normalforce=
+   167.278855020120     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.989999977871776      error=  6.502294700395369E-003 normalforce=
+   167.278855020120     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+  0.999999977648258      error=   21.3431549044425      normalforce=
+   21.3431538908750     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+  0.999999977648258      error=  5.664079096254754E-003 normalforce=
+   21.3431538908750     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.00999997742474      error=   209.880740406594      normalforce=
+   209.880740328271     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.00999997742474      error=  4.876630738184331E-003 normalforce=
+   209.880740328271     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.01999997720122      error=   397.588147182191      normalforce=
+   397.588147151635     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.01999997720122      error=  4.177723002465646E-003 normalforce=
+   397.588147151635     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.02999997697771      error=   583.722900996771      normalforce=
+   583.722900981546     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.02999997697771      error=  3.636150253884844E-003 normalforce=
+   583.722900981546     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.03999997675419      error=   767.548749048865      normalforce=
+   767.548749040113     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.03999997675419      error=  3.338376950794034E-003 normalforce=
+   767.548749040113     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.04999997653067      error=   948.338571392038      normalforce=
+   948.338571386022     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.04999997653067      error=  3.358138436429725E-003 normalforce=
+   948.338571386022     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.05999997630715      error=   1125.37725703006      normalforce=
+   1125.37725702481     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.05999997630715      error=  3.698531461449502E-003 normalforce=
+   1125.37725702481     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.06999997608364      error=   1297.96453252365      normalforce=
+   1297.96453251793     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.06999997608364      error=  4.290368081026266E-003 normalforce=
+   1297.96453251793     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.07999997586012      error=   1465.41773190920      normalforce=
+   1465.41773190219     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.07999997586012      error=  5.050961698810700E-003 normalforce=
+   1465.41773190219     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.08999997563660      error=   1627.07449697197      normalforce=
+   1627.07449696302     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.08999997563660      error=  5.918975291305957E-003 normalforce=
+   1627.07449696302     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.09999997541308      error=   1782.29539719229      normalforce=
+   1782.29539718091     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.09999997541308      error=  6.855279904559431E-003 normalforce=
+   1782.29539718091     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.10999997518957      error=   1930.46645900189      normalforce=
+   1930.46645898768     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.10999997518957      error=  7.834852170656640E-003 normalforce=
+   1930.46645898768     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.11999997496605      error=   2071.00159434560      normalforce=
+   2071.00159432823     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.11999997496605      error=  8.840249699550764E-003 normalforce=
+   2071.00159432823     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.12999997474253      error=   2203.34491894243      normalforce=
+   2203.34491892166     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.12999997474253      error=  9.857680850164929E-003 normalforce=
+   2203.34491892166     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.13999997451901      error=   2326.97295107617      normalforce=
+   2326.97295105181     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.13999997451901      error=  1.087484005639416E-002 normalforce=
+   2326.97295105181     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.14999997429550      error=   2441.39668221821      normalforce=
+   2441.39668219017     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.14999997429550      error=  1.187982501106685E-002 normalforce=
+   2441.39668219017     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.15999997407198      error=   2546.16351129225      normalforce=
+   2546.16351126048     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.15999997407198      error=  1.286074101429178E-002 normalforce=
+   2546.16351126048     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.16999997384846      error=   2640.85903492999      normalforce=
+   2640.85903489452     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.16999997384846      error=  1.380575590359865E-002 normalforce=
+   2640.85903489452     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.17999997362494      error=   2725.10868663643      normalforce=
+   2725.10868659734     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.17999997362494      error=  1.470342735736157E-002 normalforce=
+   2725.10868659734     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.18999997340143      error=   2798.57921838114      normalforce=
+   2798.57921833854     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.18999997340143      error=  1.554314222406023E-002 normalforce=
+   2798.57921833854     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.19999997317791      error=   2860.98001875499      normalforce=
+   2860.98001870906     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.19999997317791      error=  1.631552766815907E-002 normalforce=
+   2860.98001870906     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.20999997295439      error=   2912.06426247861      normalforce=
+   2912.06426242951     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.20999997295439      error=  1.701273553817604E-002 normalforce=
+   2912.06426242951     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.21999997273088      error=   2951.62988671538      normalforce=
+   2951.62988666331     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.21999997273088      error=  1.762855887359312E-002 normalforce=
+   2951.62988666331     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.22999997250736      error=   2979.52039032753      normalforce=
+   2979.52039027271     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.22999997250736      error=  1.815839451521706E-002 normalforce=
+   2979.52039027271     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.23999997228384      error=   2995.62545291362      normalforce=
+   2995.62545285629     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.23999997228384      error=  1.859910012844318E-002 normalforce=
+   2995.62545285629     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.24999997206032      error=   2999.88137117901      normalforce=
+   2999.88137111941     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.24999997206032      error=  1.894880251002292E-002 normalforce=
+   2999.88137111941     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.25999997183681      error=   2992.27131091310      normalforce=
+   2992.27131085150     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.25999997183681      error=  1.920670274092766E-002 normalforce=
+   2992.27131085150     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.26999997161329      error=   2972.82537357678      normalforce=
+   2972.82537351342     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.26999997161329      error=  1.937290500526797E-002 normalforce=
+   2972.82537351342     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.27999997138977      error=   2941.62047723659      normalforce=
+   2941.62047717176     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.27999997138977      error=  1.944827894244737E-002 normalforce=
+   2941.62047717176     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.28999997116625      error=   2898.78005231669      normalforce=
+   2898.78005225065     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.28999997116625      error=  1.943435429663864E-002 normalforce=
+   2898.78005225065     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.29999997094274      error=   2844.47355337194      normalforce=
+   2844.47355330496     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.29999997094274      error=  1.933324153334498E-002 normalforce=
+   2844.47355330496     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.30999997071922      error=   2778.91578881338      normalforce=
+   2778.91578874571     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.30999997071922      error=  1.914757080427733E-002 normalforce=
+   2778.91578874571     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.31999997049570      error=   2702.36607123726      normalforce=
+   2702.36607116915     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.31999997049570      error=  1.888044246834829E-002 normalforce=
+   2702.36607116915     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.32999997027218      error=   2615.12719171862      normalforce=
+   2615.12719165032     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.32999997027218      error=  1.853538398787292E-002 normalforce=
+   2615.12719165032     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.33999997004867      error=   2517.54422212647      normalforce=
+   2517.54422205820     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.33999997004867      error=  1.811630977537535E-002 normalforce=
+   2517.54422205820     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.34999996982515      error=   2410.00315019798      normalforce=
+   2410.00315012993     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.34999996982515      error=  1.762748230309974E-002 normalforce=
+   2410.00315012993     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.35999996960163      error=   2292.92935277073      normalforce=
+   2292.92935270308     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.35999996960163      error=  1.707347415190872E-002 normalforce=
+   2292.92935270308     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.36999996937811      error=   2166.78591321205      normalforce=
+   2166.78591314494     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.36999996937811      error=  1.645913204744028E-002 normalforce=
+   2166.78591314494     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.37999996915460      error=   2032.07178970081      normalforce=
+   2032.07178963435     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.37999996915460      error=  1.578954485187548E-002 normalforce=
+   2032.07178963435     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.38999996893108      error=   1889.31984160702      normalforce=
+   1889.31984154126     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.38999996893108      error=  1.507001851203451E-002 normalforce=
+   1889.31984154126     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.39999996870756      error=   1739.09472177590      normalforce=
+   1739.09472171084     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.39999996870756      error=  1.430606175965248E-002 normalforce=
+   1739.09472171084     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.40999996848404      error=   1581.99064305339      normalforce=
+   1581.99064298893     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.40999996848404      error=  1.350338781250460E-002 normalforce=
+   1581.99064298893     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.41999996826053      error=   1418.62902788757      normalforce=
+   1418.62902782351     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.41999996826053      error=  1.266793870925071E-002 normalforce=
+   1418.62902782351     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.42999996803701      error=   1249.65605030302      normalforce=
+   1249.65605023898     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.42999996803701      error=  1.180594238046859E-002 normalforce=
+   1249.65605023898     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.43999996781349      error=   1075.74007997078      normalforce=
+   1075.74007990611     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.43999996781349      error=  1.092401729714746E-002 normalforce=
+   1075.74007990611     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.44999996758997      error=   897.569038483865      normalforce=
+   897.569038417412     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.44999996758997      error=  1.002934860907938E-002 normalforce=
+   897.569038417412     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.45999996736646      error=   715.847678295652      normalforce=
+   715.847678225279     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.45999996736646      error=  9.129975073987048E-003 normalforce=
+   715.847678225279     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.46999996714294      error=   531.294795084699      normalforce=
+   531.294795005905     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.46999996714294      error=  8.235252370784950E-003 normalforce=
+   531.294795005905     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.47999996691942      error=   344.640384574725      normalforce=
+   344.640384475516     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.47999996691942      error=  7.356607617262661E-003 normalforce=
+   344.640384475516     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.48999996669590      error=   156.622755080168      normalforce=
+   156.622754905040     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.48999996669590      error=  6.509202471939519E-003 normalforce=
+   156.622754905040     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.49999996647239      error=   32.0143939208807      normalforce=
+   32.0143932454226     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.49999996647239      error=  5.719509208830136E-003 normalforce=
+   32.0143932454226     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.50999996624887      error=   220.524909096468      normalforce=
+   220.524909020821     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.50999996624887      error=  4.992294831941801E-003 normalforce=
+   220.524909020821     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.51999996602535      error=   408.163142389283      normalforce=
+   408.163142358261     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.51999996602535      error=  4.372110661103664E-003 normalforce=
+   408.163142358261     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.52999996580184      error=   594.186893509125      normalforce=
+   594.186893492834     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.52999996580184      error=  3.925595514173525E-003 normalforce=
+   594.186893492834     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.53999996557832      error=   777.860348725896      normalforce=
+   777.860348715873     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.53999996557832      error=  3.723335121459519E-003 normalforce=
+   777.860348715873     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.54999996535480      error=   958.456990880660      normalforce=
+   958.456990873278     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.54999996535480      error=  3.811321731196150E-003 normalforce=
+   958.456990873278     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.55999996513128      error=   1135.26247309814      normalforce=
+   1135.26247309146     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.55999996513128      error=  4.178500858186772E-003 normalforce=
+   1135.26247309146     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.56999996490777      error=   1307.57744437113      normalforce=
+   1307.57744436394     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.56999996490777      error=  4.766516216059545E-003 normalforce=
+   1307.57744436394     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.57999996468425      error=   1474.72031583064      normalforce=
+   1474.72031582212     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.57999996468425      error=  5.509546538340055E-003 normalforce=
+   1474.72031582212     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.58999996446073      error=   1636.02995675863      normalforce=
+   1636.02995674815     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.58999996446073      error=  6.356450193046319E-003 normalforce=
+   1636.02995674815     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.59999996423721      error=   1790.86830967894      normalforce=
+   1790.86830966599     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.59999996423721      error=  7.272292882502752E-003 normalforce=
+   1790.86830966599     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.60999996401370      error=   1938.62291418245      normalforce=
+   1938.62291416665     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.60999996401370      error=  8.233299552133368E-003 normalforce=
+   1938.62291416665     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.61999996379018      error=   2078.70932950362      normalforce=
+   2078.70932948464     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.61999996379018      error=  9.222121242811887E-003 normalforce=
+   2078.70932948464     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.62999996356666      error=   2210.57344626570      normalforce=
+   2210.57344624329     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.62999996356666      error=  1.022467804514466E-002 normalforce=
+   2210.57344624329     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.63999996334314      error=   2333.69367825073      normalforce=
+   2333.69367822472     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.63999996334314      error=  1.122829395638383E-002 normalforce=
+   2333.69367822472     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.64999996311963      error=   2447.58302552474      normalforce=
+   2447.58302549503     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.64999996311963      error=  1.222072359327644E-002 normalforce=
+   2447.58302549503     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.65999996289611      error=   2551.79100075751      normalforce=
+   2551.79100072407     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.65999996289611      error=  1.318979326254802E-002 normalforce=
+   2551.79100072407     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.66999996267259      error=   2645.90541111739      normalforce=
+   2645.90541108024     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.66999996267259      error=  1.412346426266367E-002 normalforce=
+   2645.90541108024     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.67999996244907      error=   2729.55398869282      normalforce=
+   2729.55398865206     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.67999996244907      error=  1.501015602499609E-002 normalforce=
+   2729.55398865206     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.68999996222556      error=   2802.40586299164      normalforce=
+   2802.40586294739     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.68999996222556      error=  1.583917459185028E-002 normalforce=
+   2802.40586294739     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.69999996200204      error=   2864.17286969349      normalforce=
+   2864.17286964589     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.69999996200204      error=  1.660110944392035E-002 normalforce=
+   2864.17286964589     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.70999996177852      error=   2914.61069047881      normalforce=
+   2914.61069042805     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.70999996177852      error=  1.728810275547929E-002 normalforce=
+   2914.61069042805     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.71999996155500      error=   2953.51981942566      normalforce=
+   2953.51981937195     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.71999996155500      error=  1.789395265299421E-002 normalforce=
+   2953.51981937195     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.72999996133149      error=   2980.74635215196      normalforce=
+   2980.74635209553     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.72999996133149      error=  1.841406594638039E-002 normalforce=
+   2980.74635209553     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.73999996110797      error=   2996.18259458157      normalforce=
+   2996.18259452264     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.73999996110797      error=  1.884530918375091E-002 normalforce=
+   2996.18259452264     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.74999996088445      error=   2999.76748892631      normalforce=
+   2999.76748886513     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.74999996088445      error=  1.918581413620448E-002 normalforce=
+   2999.76748886513     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.75999996066093      error=   2991.48685519903      normalforce=
+   2991.48685513586     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.75999996066093      error=  1.943478226356744E-002 normalforce=
+   2991.48685513586     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.76999996043742      error=   2971.37344730225      normalforce=
+   2971.37344723736     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.76999996043742      error=  1.959231389856652E-002 normalforce=
+   2971.37344723736     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.77999996021390      error=   2939.50682347072      normalforce=
+   2939.50682340437     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.77999996021390      error=  1.965927129619016E-002 normalforce=
+   2939.50682340437     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.78999995999038      error=   2896.01303158015      normalforce=
+   2896.01303151260     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.78999995999038      error=  1.963717392573444E-002 normalforce=
+   2896.01303151260     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.79999995976686      error=   2841.06411056709      normalforce=
+   2841.06411049861     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.79999995976686      error=  1.952811947352227E-002 normalforce=
+   2841.06411049861     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.80999995954335      error=   2774.87740993186      normalforce=
+   2774.87740986272     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.80999995954335      error=  1.933472290617232E-002 normalforce=
+   2774.87740986272     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.81999995931983      error=   2697.71473001644      normalforce=
+   2697.71472994688     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.81999995931983      error=  1.906006676632183E-002 normalforce=
+   2697.71472994688     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.82999995909631      error=   2609.88128645773      normalforce=
+   2609.88128638799     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.82999995909631      error=  1.870765756820692E-002 normalforce=
+   2609.88128638799     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.83999995887280      error=   2511.72450291242      normalforce=
+   2511.72450284272     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.83999995887280      error=  1.828138488031448E-002 normalforce=
+   2511.72450284272     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.84999995864928      error=   2403.63263682881      normalforce=
+   2403.63263675933     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.84999995864928      error=  1.778548136827606E-002 normalforce=
+   2403.63263675933     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.85999995842576      error=   2286.03324370116      normalforce=
+   2286.03324363209     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.85999995842576      error=  1.722448353873244E-002 normalforce=
+   2286.03324363209     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.86999995820224      error=   2159.39148588144      normalforce=
+   2159.39148581292     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.86999995820224      error=  1.660319408032161E-002 normalforce=
+   2159.39148581292     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.87999995797873      error=   2024.20829263773      normalforce=
+   2024.20829256984     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.87999995797873      error=  1.592664773317974E-002 normalforce=
+   2024.20829256984     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.88999995775521      error=   1881.01837873719      normalforce=
+   1881.01837867000     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.88999995775521      error=  1.520008338298248E-002 normalforce=
+   1881.01837867000     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.89999995753169      error=   1730.38812939120      normalforce=
+   1730.38812932468     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.89999995753169      error=  1.442892601692848E-002 normalforce=
+   1730.38812932468     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.90999995730817      error=   1572.91335992840      normalforce=
+   1572.91335986246     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.90999995730817      error=  1.361878311920958E-002 normalforce=
+   1572.91335986246     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.91999995708466      error=   1409.21695905766      normalforce=
+   1409.21695899207     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.91999995708466      error=  1.277546159700703E-002 normalforce=
+   1409.21695899207     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.92999995686114      error=   1239.94642504260      normalforce=
+   1239.94642497696     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.92999995686114      error=  1.190501411872429E-002 normalforce=
+   1239.94642497696     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.93999995663762      error=   1065.77130453356      normalforce=
+   1065.77130446719     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.93999995663762      error=  1.101382813457310E-002 normalforce=
+   1065.77130446719     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.94999995641410      error=   887.380544187594      normalforce=
+   887.380544119262     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.94999995641410      error=  1.010877904785239E-002 normalforce=
+   887.380544119262     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.95999995619059      error=   705.479765552247      normalforce=
+   705.479765479691     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.95999995619059      error=  9.197483389563619E-003 normalforce=
+   705.479765479691     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.96999995596707      error=   520.788473992826      normalforce=
+   520.788473911223     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.96999995596707      error=  8.288713141634586E-003 normalforce=
+   520.788473911223     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.97999995574355      error=   334.037212705656      normalforce=
+   334.037212601911     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.97999995574355      error=  7.393084478494726E-003 normalforce=
+   334.037212601911     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.98999995552003      error=   145.964673104181      normalforce=
+   145.964672914239     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.98999995552003      error=  6.524829924993560E-003 normalforce=
+   145.964672914239     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           0 time=  9.999999776482582E-003
+   1.99999995529652      error=   42.6852280053819      normalforce=
+   42.6852274956865     
+ loadfactor amplitude=   375.000000000000     
+ 
+ iteration_number=           1 time=  9.999999776482582E-003
+   1.99999995529652      error=  5.707115989479103E-003 normalforce=
+   42.6852274956865     
+ loadfactor amplitude=   375.000000000000     
+ 
+ elapsed system clock=   1185.195    
+ elapsed cpu clock=   7707.51227900000     
+May 20 2015   8:33:32.477 PM
+gnuplot ./gnuplot/gnu_plotter.txt  
+*** ACTIVATED NODES: /var/spool/torque/aux//1520698.login006.sc.cluster.tamu ***\n
+*** OMP_NUM_THREADS: 8

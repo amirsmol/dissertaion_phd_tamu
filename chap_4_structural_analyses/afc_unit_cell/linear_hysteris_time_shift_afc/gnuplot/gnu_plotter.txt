@@ -1,0 +1,16 @@
+ set terminal postscript enhanced 
+ #set output '| C:\texlive\2014\bin\win32\ps2pdf - electric_field_vs_strains.pdf'
+ set output '| ps2pdf - electric_field_vs_strains.pdf'
+ set title "Strain-Electric Field Response of AFC" font ",20"
+ set xlabel "electric field (MV/m)"
+ set ylabel "strain {%}"
+ set style data points
+ set key left box 
+ set datafile separator ","
+   
+ plot "afc0001.gnu" using 3:4 title "Finite Element Model" with line, \
+      "afc0002.gnu" using 3:4 title "Finite Element Model" with line, \
+      "xp_gnu_afc_hysteresis_0_1_mvm.csv" using 1:2 title "Experiment",\
+      "xp_gnu_afc_hysteresis_0_7_mvm.csv" using 1:2 title "Experiment"
+
+
