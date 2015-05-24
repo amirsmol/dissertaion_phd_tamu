@@ -4,10 +4,10 @@
 %  For more info about this template or the 
 %  TAMU LaTeX User's Group, see http://www.howdy.me/.
 %s
-%  Author: Wendy Lynn Turner    
+%  Author: Wendy Lynn Turner        
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt]{report}          
+\documentclass[12pt]{report}             
 \usepackage[letterpaper]{geometry}  
 \geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.4in,rmargin=1.15in}
 \usepackage[doublespacing]{setspace} 
@@ -15,11 +15,12 @@
 \usepackage[rm, tiny,center, compact]{titlesec}
 \usepackage{indentfirst} 
 \usepackage{etoolbox} 
-\usepackage{tocvsec2}   
+\usepackage{tocvsec2}    
 \usepackage[titletoc]{appendix}   
 \usepackage{appendix} 
 \usepackage{tamuconfig} 
-\usepackage{graphicx}
+\usepackage{graphicx} 
+\usepackage{subcaption}  
 \usepackage{rotating}
 \usepackage{amsmath} 
 \usepackage{mathtools}  
@@ -28,10 +29,9 @@
 \reserveinserts{18} 
 \usepackage{morefloats}
 \usepackage{tikz}
-\usepackage{subcaption} 
 \usepackage{subfiles}
-
-
+ 
+ 
 % Added to fix issues with pdf searching in some versions of LaTeX
 %\usepackage[T1]{fontenc}\usepackage{lmodern}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,8 +47,8 @@
 %     linkcolor=black,
 %     citecolor=black,
 %     filecolor=black,
-%     urlcolor=black,
-% }
+%     urlcolor=black, 
+% }  
 %%%%%%%  End of hyperref setup.  One of these two options should work, but my motto with hyperref is when in doubt, comment it out!
 %%%%%%%%%  This hopefully fixes the problem with vertical spacing of section headings at the top of the page..  Commented out in 1.0.7
 % \preto\section{%
@@ -60,7 +60,7 @@
 % } 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\begin{document}
+\begin{document} 
  
 \renewcommand{\tamumanuscripttitle}{Nonlinear and rate-dependent hysteresis electro mechanical responses of ferro electric materials}
 \renewcommand{\tamupapertype}{Dissertation}
@@ -71,7 +71,7 @@
 % Uncomment out the next line if you have co-chairs.  You will also need to edit the titlepage.tex file.
 %\newcommand{\tamuchairtwo}{Additional Chair Name}
 
-\renewcommand{\tamumemberone}{Arun Srinivasa}
+\renewcommand{\tamumemberone}{Arun Srinivasa}  
 \newcommand{\tamumembertwo}{Miladin Radovic}
 \newcommand{\tamumemberthree}{Stefan Hurlebaus}
 \renewcommand{\tamudepthead}{Andreas A. Polycarpou}
@@ -87,13 +87,13 @@
 \include{./chap_3_minor_loop/chap_03_minor_loop_constitutive_model_for_polarized_piezo_electric}
 \include{./chap_4_structural_analyses/chap_04_structural_analyses}
 \include{./chap_5_active_trusses/chap_05_active_trusses} 
-\include{./chap_6_conclusion/chap_06_conclusion} 
+\include{./chap_6_conclusion/chap_06_conclusion}  
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \let\oldbibitem\bibitem 
 \renewcommand{\bibitem}{\setlength{\itemsep}{0pt}\oldbibitem}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+  
 \include{./additional_files/bibliography} 
 \phantomsection
 \addcontentsline{toc}{chapter}{REFERENCES}
@@ -102,7 +102,7 @@
 \bibliography{./additional_files/references}
 % \include{appendices}
 
-\today
+\today 
 
 \end{document}
 

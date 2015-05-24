@@ -864,20 +864,53 @@ Then the
 \end{equation}
 
 where ${a(|\textbf {E}|)}$ is the time shift factor that is defined with respect to norm of electric field vector and a material constant.
-
+ 
 \begin{equation}
 a_{ |\textbf {E}| }=e^{-\gamma_{E} \times |\textbf {E}|}
 \label{equation:time_scaling_factor}	
 \end{equation}
-
+ 
 \begin{figure} 
 \centering
 \includegraphics[trim = 0mm 0mm 0mm 0mm,width=5.0in]
 {./chap_4_structural_analyses/afc_unit_cell/linear_hysteris_time_shift_afc/time_shift_afc_electric_field_vs_strains.pdf}
-\caption{Nonlinear electro-mechanical hysteresis for different electric fields at 1Hz compared with experiment}
+\caption{Linear electro-mechanical hysteresis response of AFC model with time shift for different electric fields at 1Hz compared with experiment}
 \label{fig:time_shift_afc_electric_field_vs_strains}
 \end{figure}
 
 Figure \ref{fig:time_shift_afc_electric_field_vs_strains} shows the result of linear analyses, including the time shift concept for piezoelectric materials.
 The time shift material constant is taken as $\gamma_{E}=1.75 m/MV$ for this analyses.
+
+In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. 
+Different frequency inputs are applied to the same material constitutive model presented in this section. 
+
+The corresponding strains response of the model under different frequencies and amplitudes are shown in Figure \ref{fig:afc_Frequency_Effect}. 
+It is apparent from the results that higher frequency of loading reduces time-dependent (hysteresis) effect. 
+This is due to the fact that the material does not have enough time to exhibit time-dependent effect. 
+Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller. 
+Even for small frequencies of applied electric field the response of AFC is faster in higher electric field. 
+This is due to inclusion of time shift in the model. 
+This is the main reason for the pointy shape of hysteresis curves in smaller frequencies. 
+
+\begin{figure}
+\centering
+\subcaptionbox{Frequency 0.1 Hz}
+{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p1}}
+\subcaptionbox{Frequency 0.2 Hz}
+{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p2}}
+\subcaptionbox{Frequency 0.5 Hz}
+{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p5}}
+\subcaptionbox{Frequency 1.0 Hz}
+{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_1p0}}
+\subcaptionbox{Frequency 5.0 Hz}
+{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_5p0}}
+\subcaptionbox{Frequency 10.0 Hz}
+{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_10p0}}
+\caption{Effect of frequency of applied electric field on strain response of AFC}
+\label{fig:afc_Frequency_Effect}
+\end{figure}
+ 
+
+
+
 \clearpage
