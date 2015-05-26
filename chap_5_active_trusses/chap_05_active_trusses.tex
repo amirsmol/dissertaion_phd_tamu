@@ -472,3 +472,35 @@ This will also change the shape of hysteresis curve as it is shown in figure \re
 \label{fig:limiting_strain_linear_tetrahedral_time_dependent_efield_vs_displacement_nonlinear}
 \end{figure} 
 
+In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. 
+Different frequency inputs are applied to the same material constitutive model presented in this section. 
+
+The corresponding strains response of the truss under different frequencies and amplitudes are shown in Figure \ref{fig:truss_linear_Frequency_Effect}. 
+It is apparent from the results that higher frequency of loading reduces time-dependent (hysteresis) effect. 
+This is due to the fact that the material does not have enough time to exhibit time-dependent effect. 
+% Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller.
+In higher frequency the response is very similar to the non rate dependent analysis. 
+
+
+\begin{figure}
+\centering 
+\subcaptionbox{Frequency 0.1 Hz}
+{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p1.pdf}}
+\subcaptionbox{Frequency 0.2 Hz}
+{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p2.pdf}}
+\subcaptionbox{Frequency 0.5 Hz}
+{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p5.pdf}}
+\subcaptionbox{Frequency 2.0 Hz}
+{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_2p0.pdf}}
+\subcaptionbox{Frequency 5.0 Hz}
+{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_5p0.pdf}}
+\subcaptionbox{Frequency 10.0 Hz}
+{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_10p0.pdf}}
+\caption{Effect of frequency of applied electric field on strain response of tetrahedral truss}
+\label{fig:truss_linear_Frequency_Effect}
+\end{figure}
+ 
+
+
+
+\clearpage
