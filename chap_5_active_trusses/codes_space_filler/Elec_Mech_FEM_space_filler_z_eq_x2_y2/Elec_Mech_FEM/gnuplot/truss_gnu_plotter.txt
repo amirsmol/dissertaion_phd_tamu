@@ -1,0 +1,26 @@
+ set terminal postscript enhanced 
+ set output '| C:\texlive\2014\bin\win32\ps2pdf - linear_tetrahedral_time_dependent_efield_vs_displacement_nonlinear.pdf'
+ set title "stimuli vs displacement " font ",20"
+ set ylabel "normalized displacement u_{middle}/ \L_{beam}"
+ set xlabel "normalized electric field"
+ set style data lines
+ set key left box 
+ set datafile separator ","
+ set xrange [-1.2:1.2]
+   
+#set label 1 at 0.0,0.01
+#set label 1 'A'
+
+#set label 2 at 1.0,0.11
+#set label 2 'B'
+
+#set label 3 at 0.0,0.04
+#set label 3 'C'
+
+#set label 4 at -1.0,-0.11
+#set label 4 'D'  
+
+
+
+
+plot "./gnuplot/gnuplot0000.gnu" using ($3*2):4 title "stimuli vs displacement"

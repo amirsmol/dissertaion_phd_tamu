@@ -198,10 +198,31 @@ X_{2}^2&X_{1}\,X_{2}&X_{2}\cr X_{1}\,X_{2}&X_{1}^2&X_{1}\cr X_{2}&X_{1}&0\cr
 \end{figure}
 
 It is shown in figure \ref{fig:planar_truss_deformed_config} that the application of stimuli to each truss element based on equation represented for shape change can induce 
- desired shape into a structure made of smart trusses. 
+ desired shape into a structure made of smart trusses.  
 The space filler truss that has been discussed in the previous chapter can offer good flexibility for planar and even 3D shapes. 
 The length of all truss members are not equal in this truss configuration.
 Moreover, in the center of each truss members the elements truss members are crossing and this will reduce the feasibility of this truss configuration.
+
+Another shape that is considered for the planar truss is the saddle point surface.
+The shape $z=x^2-y^2$ is induced in the planar truss with the same procedure that is already described.
+If we assume that truss member are made of electro active materials with overall electromechanical coupling coefficient as $d_{311}^0=340pm/V$ the corresponding required electric field contour for each truss will be as in \ref{fig:planar_z_eq_x2_y2_efield_contour}.
+The strain induced in each truss for this truss configuration in shown in \ref{fig:planar_z_eq_x2_y2_strain_contour}.
+
+\begin{figure} 
+\centering
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_space_filler/planar_truss_z_eq_x2_y2_strain.png}
+\caption{The strain contour of planar space filler truss for the $z=x^2-y^2$ shape (displacement are scaled 20 times)}
+\label{fig:planar_z_eq_x2_y2_strain_contour}
+\end{figure} 
+
+\begin{figure} 
+\centering
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_space_filler/planar_truss_z_eq_x2_y2_elec_field.png}
+\caption{The electric field contour of planar space filler truss for the $z=x^2-y^2$ shape (displacement are scaled 20 times)}
+\label{fig:planar_z_eq_x2_y2_efield_contour}
+\end{figure} 
+
+
 
  
 \subsection{Tetrahedral Beam Like Truss}
@@ -209,7 +230,7 @@ Using simplex as a truss configuration we can arrange the truss elements to take
 The building block of the tetrahedral beam like truss is shown in figure \ref{fig:building_block_of_tetrahedral_truss} that contains 3 tetrahedral.
 \begin{figure} 
 \centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses//images_linear_tetrahedral/building_block_of_tetrahedral_truss.png}
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/building_block_of_tetrahedral_truss.png}
 \caption{The Building block of Tetrahedral beam like Truss}
 \label{fig:building_block_of_tetrahedral_truss}
 \end{figure} 
@@ -217,7 +238,7 @@ The beam like truss is formed by arranging these tetrahedral units in one direct
 An example of truss with 150 tetra hedral units is shown in \ref{fig:refrence_shap_100_tetra_unit_tetrahedral_unit}. 
 \begin{figure} 
 \centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses//images_linear_tetrahedral/refrence_shap_100_tetra_unit_tetrahedral_unit.png}
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/refrence_shap_100_tetra_unit_tetrahedral_unit.png}
 \caption{Tetrahedral beam like Truss with 150 Units that is Used as Reference Configuration}
 \label{fig:refrence_shap_100_tetra_unit_tetrahedral_unit}
 \end{figure} 
@@ -228,7 +249,7 @@ An example of bending deformation is considered for the truss system.
 
 \begin{figure} 
 \centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses//images_linear_tetrahedral/refrence_shap_100_tetra_unit_tetrahedral_unit_cross_section_view.png}
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/refrence_shap_100_tetra_unit_tetrahedral_unit_cross_section_view.png}
 \caption{Cross Section View of Tetrahedral beam like Truss (perspective view)}
 \label{fig:refrence_shap_100_tetra_unit_tetrahedral_unit_cross_section_view}
 \end{figure} 
@@ -258,7 +279,7 @@ The strain that is induced in this truss is taken from equation (\ref{stran_and_
 
 \begin{figure} 
 \centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses//images_linear_tetrahedral/tetra_hedral_arc_pi_shape.png}
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/tetra_hedral_arc_pi_shape.png}
 \caption{Arc shape produced in the tetrahedral beam like truss}
 \label{fig:tetra_hedral_arc_pi_shape}
 \end{figure}  
@@ -266,13 +287,13 @@ The strain that is induced in this truss is taken from equation (\ref{stran_and_
 
 \begin{figure} 
 \centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses//images_linear_tetrahedral/tetra_hedral_arc_2_pi_shape.png}
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/tetra_hedral_arc_2_pi_shape.png}
 \caption{Cyclic shape produced in the tetrahedral beam like truss}
 \label{fig:tetra_hedral_arc_2_pi_shape}
 \end{figure} 
 
 In order to get a shape closer to the actual bending of a beam we apply the normal strain in the thickness direction too.
-This will cause a strain field closer to the real beam made of continuus solid members.
+This will cause a strain field closer to the real beam made of continuous solid members.
 We modify the bending strain defined in equation (\ref{stran_and_radios_of_curvture_of_beam:eqn}) with the though thickness normal strain as follows:
 
 \begin{equation}
@@ -288,7 +309,7 @@ It is observed that if $\kappa_v=2.0$ there will be an arc forming in the beam l
 This arc is shown in figure \ref{fig:tetra_hedral_arc_2_pi_shape_with_pressure}.
 \begin{figure} 
 \centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses//images_linear_tetrahedral/tetra_hedral_arc_2_pi_shape_with_pressure.png}
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/tetra_hedral_arc_2_pi_shape_with_pressure.png}
 \caption{Shape produced in the tetrahedral beam like truss including the all normal strains}
 \label{fig:tetra_hedral_arc_2_pi_shape_with_pressure}
 \end{figure} 
@@ -478,9 +499,8 @@ Different frequency inputs are applied to the same material constitutive model p
 The corresponding strains response of the truss under different frequencies and amplitudes are shown in Figure \ref{fig:truss_linear_Frequency_Effect}. 
 It is apparent from the results that higher frequency of loading reduces time-dependent (hysteresis) effect. 
 This is due to the fact that the material does not have enough time to exhibit time-dependent effect. 
-% Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller.
 In higher frequency the response is very similar to the non rate dependent analysis. 
-
+% Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller.
 
 \begin{figure}
 \centering 

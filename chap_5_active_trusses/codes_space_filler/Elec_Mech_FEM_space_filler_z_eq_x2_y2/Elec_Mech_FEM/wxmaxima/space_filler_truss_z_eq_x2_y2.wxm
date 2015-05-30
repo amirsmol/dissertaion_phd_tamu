@@ -1,0 +1,74 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 15.04.0 ] */
+
+/* [wxMaxima: comment start ]
+This is for polarization switching
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+kill(all);
+dimen:3$
+
+I:matrix([1,0,0],[0,1,0],[0,0,1])$
+refrenc_config:[X[1],X[3],X[3]]$
+current_config:[x[1],x[3],x[3]]$
+
+
+F_deformation_gradient:I*0$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+deformation gradient
+
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+x[1]:X[1]$
+x[2]:X[2];
+x[3]:X[3]+X[1]*X[1]-X[2]*X[2];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+x[1]:X[1];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+for i : 1 thru 3 do
+for j : 1 thru 3 do
+F_deformation_gradient[i,j]:diff(x[i],X[j]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+the deformation gradient
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+F_deformation_gradient;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+the green deformation tensor C
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+C_gree:transpose(F_deformation_gradient).F_deformation_gradient;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Lagrange Green Strain Tensor
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+E:1/2*(C_gree-I);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+tex (2*E);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+fortran(E);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

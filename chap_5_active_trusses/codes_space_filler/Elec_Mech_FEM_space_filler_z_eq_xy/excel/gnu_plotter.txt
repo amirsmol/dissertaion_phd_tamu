@@ -1,0 +1,10 @@
+ set terminal postscript enhanced 
+ set output '| C:\texlive\2014\bin\win32\ps2pdf - electric_field_vs_displacement.pdf'
+ set title "electric field vs displacement " font ",20"
+ set ylabel "displacement {/mu m}"
+ set xlabel "electric field (E)"
+ set style data lines
+ set key left box 
+set datafile separator ","
+
+ plot "./excel/results_0000.csv" using 3:4 title "electric field vs displacement" 
