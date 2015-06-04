@@ -595,26 +595,19 @@ It can be seen that a complete folding is captured by taking the nonlinear kinem
 
 
 \section{Active Fiber Composites}
-Active Fiber Composite (AFC) is an actuation architecture that has been introduced to amplify the deflection cased by piezo-electric effect.
-The active part is due to PZT5A fibers. 
-PZT5A fibers are embedded in the Epoxy matrix and are aligned along the longitudinal direction.
+Active Fiber Composite (AFC) is an active material is designed to amplify the deflection due to piezo-electric effect.
+PZT5A fibers are embedded in the epoxy matrix and are aligned along the longitudinal direction.
 The electric field is applied to PZT5A fiber through the aluminum electrode fingers that are placed on the top and bottom of the fibers.
-Aluminum electrode fingers are aligned perpendicular to the longitudinal direction of fiber in the width direction of AFC patch.
-Electrodes that are placed on the top and bottom in the thickness direction of the AFC patch have the same electric potential.
+Aluminum electrode fingers are aligned perpendicular to the longitudinal axis of fiber in the width direction of AFC.
+Electrodes that are placed on the top and bottom surfaces of the AFC have the same electric potential.
 Therefore, the electric field on the central plane of the AFC is zero.
 Electrodes that are adjacent to each other in the longitudinal direction of the AFC have the opposite electric potentials.
-As a result, an electric field is formed in the longitudinal direction of fibers.
+As a result, an electric field is formed along the longitudinal direction of fibers.
 The electric field in the gap between electrodes is directly proportional to the valued of applied potential.
 The electric field in the gap between electrodes is inversely proportional to the gap distance between electrodes.
 An example of AFCs is shown in figure \ref{fig:afc_picture_from_lap}.
-Schematic for the placement of fibers and electrodes is shown in \ref{fig:schematic_afc_unit_cell} \cite{jemai2014mathematical}.
+A schematic of the placement of fibers and electrodes is shown in \ref{fig:schematic_afc_unit_cell} \cite{jemai2014mathematical}.
 
-\begin{figure} 
-\centering
-\includegraphics[width=3.0in]{./chap_4_structural_analyses/afc_unit_cell/schematic_afc_unit_cell.jpg}
-\caption{Schematic for placement of Fibers and electrodes in the Epoxy matrix \cite{jemai2014mathematical}}
-\label{fig:schematic_afc_unit_cell}
-\end{figure}
 
 \begin{figure} 
 \centering
@@ -623,22 +616,29 @@ Schematic for the placement of fibers and electrodes is shown in \ref{fig:schema
 \label{fig:afc_picture_from_lap}
 \end{figure}
 
+\begin{figure} 
+\centering
+\includegraphics[width=3.0in]{./chap_4_structural_analyses/afc_unit_cell/schematic_afc_unit_cell.jpg}
+\caption{Schematic for placement of Fibers and electrodes in the Epoxy matrix \cite{jemai2014mathematical}}
+\label{fig:schematic_afc_unit_cell}
+\end{figure}
+
 The configuration of AFC patch is symmetric with respect to its thickness direction.
 Moreover, there is a periodic pattern in the placement of fibers, electrodes and matrix in the longitudinal direction of AFC.
 Due to this symmetry and periodic configuration, a unit cell model for AFC is defined as a representative microstructure.
-This unit cell can present the overall electro-mechanical behavior of AFC.  
+This unit cell is used to determine the overall electro-mechanical behavior of AFC.  
  
 \subsection{Unit Cell of an Active Fiber Composite}
-The smallest possible unit cell of AFC is considered in order to simulate its overall behavior.
-This unit cell contains one quarter of the fiber in the space between two electrodes.
-This unit cell of AFC is shown in figure \ref{fig:geometry_unit_cell_afc}.
-It is a cubical domain with dimensions of $L_1 \times L_2 \times L_3 =140 \mu m \times 175 \mu m \times 750 \mu m$.
-A PZT5A fiber with the radius of $125 \mu m$ is embedded in Epoxy matrix as shown in figure \ref{fig:geometry_unit_cell_afc} (right).
-Two Aluminum electrodes can be seen in the unit cell under the fiber with thickness of $10 \mu m$. 
-Each Aluminum electrode finger is $250 \mu m$ long due to periodicity of the microstructure only half of each electrode is considered in the unit cell.
-There is $500 \mu m$ gap between two electrodes that is filled with Epoxy.
+The smallest possible unit cell of AFC is considered in order to determine its overall behavior.
+This unit cell contains one quarter of fiber in the space between two electrodes.
+As shown in figure \ref{fig:geometry_unit_cell_afc}.
+The unite cell has dimensions of $L_1 \times L_2 \times L_3 =140 \mu m \times 175 \mu m \times 750 \mu m$.
+A PZT5A fiber with the radius of $125 \mu m$ is embedded in epoxy matrix as shown in figure \ref{fig:geometry_unit_cell_afc} (right).
+Two aluminum electrodes can be seen in the unit cell under the fiber with thickness of $10 \mu m$. 
+Each aluminum electrode finger is $250 \mu m$ long and due to periodicity of the microstructure only half of each electrode is considered in the unit cell.
+There is $500 \mu m$ gap between two electrodes that is filled with epoxy.
 Moreover, there is $4 \mu m$ vertical threshold between the electrodes and PZT5A fiber that is filled with Epoxy.
-The electric potential applied to the Aluminum electrodes induces electric field inside the Epoxy and also inside the PZT5A fiber.
+The electric potential applied to the aluminum electrodes induces electric field inside the Epoxy and also inside the PZT5A fiber.
 
 \begin{figure} 
 \centering
@@ -704,19 +704,19 @@ The electric potential applied to the Aluminum electrodes induces electric field
 \label{fig:geometry_unit_cell_afc}
 \end{figure}
 
-The mechanical response of Epoxy is considered to be linear visco-elastic.
-The Epoxy is assumed to have very small electro-mechanical coupling that can be excluded from the analyses.
-The electric potential is transferred from the electrodes to fibers through the Epoxy.
-Therefore, the dielectric properties of Epoxy has significant effect on overall electro-mechanical properties of AFC \cite{atitallah2014parametric}. 
-The electric potential are applied to the two aluminum electrodes which, are shown in the unit cell in the figure \ref{fig:geometry_unit_cell_afc}.
+The mechanical response of epoxy is considered to be linear viscoelastic.
+The epoxy is has very small electro-mechanical coupling that can be neglected in the analyses.
+The electric potential is transferred from the electrodes to fibers through the epoxy.
+Therefore, the dielectric properties of epoxy has a significant effect on the overall electro-mechanical properties of AFC \cite{atitallah2014parametric}. 
+The electric potential are applied to the two aluminum electrodes, which are shown in the unit cell in Figure \ref{fig:geometry_unit_cell_afc}.
 The embedded aluminum electrodes have $10 \mu m$ thickness.
 It is noted that only half of each electrode is considered in this unit cell.
 The length of each electrode is $250 \mu m$.
-Two electrodes that are considered in the unit cell are charged with electric potential with an opposite sign.
-The response of Aluminum on the AFC is assumed to be linear a elastic.
+Two electrodes that are considered in the unit cell are charged with electric potentials with opposite signs.
+The response of aluminum on the AFC is assumed linear a elastic.
 
-The periodic and symmetric boundary conditions are applied to the unit cell in order to model the effective behavior of AFC. 
-The boundary conditions prescribe on the unit cell of AFC are given as follows:
+The periodic and symmetric boundary conditions are prescribed to the unit cell in order to model the effective behavior of AFC. 
+The boundary conditions prescribed on the unit cell of AFC are given as follows:
 
 \begin{equation}
 \begin{aligned} 
@@ -728,21 +728,16 @@ The boundary conditions prescribe on the unit cell of AFC are given as follows:
 where the geometry of the unit cell is defined in $x_1 \in [-L_1/2,L_1/2], x_2 \in [-L_2/2,L_2/2], x_3 \in [-L_3/2,L_3/2]$.
 
 
-The matrix, electrodes and fibers are glued together.
-It is assumed that the glue has the same mechanical and electrical properties as the Epoxy.
+The matrix, electrodes and fibers are bonded together with adhesions.
+It is assumed that the adhesive has the same mechanical and electrical properties as the epoxy.
 Only the piezoelectric fiber experiences electro-mechanical coupling due to the applied electric field.
 The strain induced inside the fiber causes deformations of the unit cell.
-The visco elastic properties of the Epoxy and the time
+The viscoelastic properties of the epoxy and the time
  dependent electro-mechanical response of piezo electric fiber can affect the overall deflection of the unit cell.
-The finite element analyses for nonlinear time-dependent electro-mechanical response are used to simulate and predict the behavior of AFC. 
+The finite element analyses for the nonlinear time-dependent electro-mechanical response are used to simulate and predict the behavior of AFC. 
 
 The electric potential is applied to the electrodes in the unit cell.
-The material properties that are taken for PZT5A fiber, Epoxy matrix and aluminum electrodes are presented in table \ref{table:materila_properties_afc}.
-% It is assumed that electro-mechanical response of PZT5A fiber is time dependent.
-% In addition, visco-elastic behavior of Epoxy matrix is considered in this analyses.
-% The Aluminum electrodes are considered elastic with no time dependent behavior.
-% The electric potential is uniform inside the metallic electrodes. The electric potential should pass through the matrix to reach the PZT5A fiber.
-% This makes the dielectric properties of matrix an important factor in the overall electro-mechanical property of AFC patch \cite{atitallah2014parametric}. 
+The material properties that are considered for PZT5A fiber, epoxy matrix and aluminum electrodes are presented in table \ref{table:materila_properties_afc}.
 The distribution of electric potential is shown in figure \ref{fig:electrip_potential_afc_pictur}.
 In this picture the positive and negative electric potentials applied to the unit cell are shown.
 
@@ -786,18 +781,18 @@ ${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\ \hline
 \end{figure} 
 
 \subsection{Validating The AFC Model with Experiment Data}
-The finite element analyses for AFC unit cell is validated with the existing experimental results.
+Finite element analyses for AFC unit cell are validated with the existing experimental results.
 The detailed experimental procedure is discussed in [On the temperature and time dependence of the electro-mechanical properties flexible active fiber composites].
 In order to calibrate the properties of PZT, line between two peaks of the hysteresis curve from experimental data is used to find the linear and time independent material properties.
-The material properties Epoxy and Aluminum are taken from \cite{atitallah2014parametric}.
+The material properties epoxy and aluminum are taken from \cite{atitallah2014parametric}.
 The Aluminum as considered elastic and its material property is taken from \cite{Aluminium_wikipedia}.
-Then, the width of hysteresis curve is used as a reference to choose the Proney series coefficient presented in table \ref{table:materila_properties_afc}.
+Then, the width of hysteresis curve is used to determine the time-dependent coefficient presented in table \ref{table:materila_properties_afc}.
  
-The comparison between experimental results and results from finite element analyses with linear time dependent electro-mechanical coupling for PZT is shown in figure \ref{fig:afc_result_electric_field_vs_strain}.
-The hysteresis response shown in the deflection of this unit cell is due to the time dependent response of the Epoxy matrix and also time dependent electro-mechanical coupling of piezo-electric fiber. 
-There is good comparison between the experiments and finite element analyses.
+The comparison between experimental data and the results from FE analyses with linear time dependent electro-mechanical coupling for PZT is shown in figure \ref{fig:afc_result_electric_field_vs_strain}.
+The hysteresis response shown in the deflection of this unit cell is due to the time dependent response of the epoxy matrix and also time dependent electro-mechanical coupling of piezo-electric fiber. 
+There is good comparison between the experiments and FE analyses.
 The distribution of displacement field in the unit cell is shown in figure \ref{afc_displacement_all:fig}.
-As it is expected the value of displacement in longitudinal (displacement Z) is significantly larger than the other two directions.
+As expected the value of displacement in the longitudinal (z-axis) direction is significantly larger than the other two directions.
 
 \begin{figure} 
 \centering
@@ -806,13 +801,14 @@ As it is expected the value of displacement in longitudinal (displacement Z) is 
 \label{afc_displacement_all:fig}
 \end{figure}
 
-At higher amplitudes of electric field AFC shows nonlinear and time dependent response due to nonlinear electromechanical coupling. 
-This effect is simulated using the QLV model that has been disuses in the previous chapters. 
-A polynomial for the nonlinear electric field is considered. The material parameters for this model are presented in Table \ref{table:non_linear_materila_properties_afc}.
-It can be seen that model is in good agreement with the experimental results.
-The deviation between the result from experiment and numerical results in higher amplitude of electric field could be due to effect of polarization switching in some parts of piezoelectric fiber.
+At higher amplitudes of electric field, AFC shows nonlinear and time dependent response due to nonlinear electromechanical coupling. 
+This effect is simulated using the QLV model that has been discussed in the previous chapters. 
+A polynomial for the nonlinear electric field is considered. 
+The material parameters for this model are presented in Table \ref{table:non_linear_materila_properties_afc}.
+It can be seen that model shows some deviation from experimental results.
+The deviation between the experimented and numerical results at higher amplitude of electric field could be due to effect of polarization switching in some parts of piezoelectric fiber.
 It is noted that in the AFC and distribution of electric potential inside the fiber is not uniform.
-In some part of fiber where the intensity of electric field is larger than the coercive field, there is a change in polarization of PZT.
+In some part of fiber where the intensity of electric field is larger than the coercive field, which could cause polarization switching.
 This effect will cause large deviation between the result from the current analyses for minor effect.
 
 
@@ -854,22 +850,21 @@ $\widehat{b}_{3333}$ & $1.5 \times 10^{-5}$ &  $ N/V^2 $\\ \hline
 It can be shown that at higher intensity of electric field the piezoelectric materials respond faster to the change in electric field.
 We use the same analogy with thermorheologically simple materials that have widely used for mechanical response of polymers \cite{haj2004numerical, tscharnuter2012nonlinear}.
 The time scale factor is defined as an exponential function with respect to the electric field intensity $|\textbf {E}|$.
-Then the 
+Then the reduced time is defined as:
 
 
 
 \begin{equation}
-	\Delta t _{scaled} = \frac{ \Delta t } { a_{ |\textbf {E}| } ) }
+	\phi(t) = \int_0^t \frac{ ds } { a_{( |\textbf {E}| } ) } 
 \label{equation:time_scaling}	
 \end{equation}
-
-where ${a(|\textbf {E}|)}$ is the time shift factor that is defined with respect to norm of electric field vector and a material constant.
+where ${a(|\textbf {E}|)}$ is the time shift factor that is defined in terms of then electric field vector:
  
 \begin{equation}
 a_{ |\textbf {E}| }=e^{-\gamma_{E} \times |\textbf {E}|}
 \label{equation:time_scaling_factor}	
 \end{equation}
- 
+where $\gamma$ is the material constant.
 \begin{figure} 
 \centering
 \includegraphics[trim = 0mm 0mm 0mm 0mm,width=5.0in]
@@ -879,18 +874,13 @@ a_{ |\textbf {E}| }=e^{-\gamma_{E} \times |\textbf {E}|}
 \end{figure}
 
 Figure \ref{fig:time_shift_afc_electric_field_vs_strains} shows the result of linear analyses, including the time shift concept for piezoelectric materials.
-The time shift material constant is taken as $\gamma_{E}=1.75 m/MV$ for this analyses.
+The time-dependent shift material constant is taken as $\gamma_{E}=1.75 m/MV$ for this analyses. Better prediction of the experimental data are observed.
 
 In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. 
-Different frequency inputs are applied to the same material constitutive model presented in this section. 
-
 The corresponding strains response of the model under different frequencies and amplitudes are shown in Figure \ref{fig:afc_Frequency_Effect}. 
-It is apparent from the results that higher frequency of loading reduces time-dependent (hysteresis) effect. 
+It is apparent from the results that higher frequency and also very low frequency of loading reduces time-dependent (hysteresis) effect. 
 This is due to the fact that the material does not have enough time to exhibit time-dependent effect. 
-Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller. 
-Even for small frequencies of applied electric field the response of AFC is faster in higher electric field. 
-This is due to inclusion of time shift in the model. 
-This is the main reason for the pointy shape of hysteresis curves in smaller frequencies. 
+Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller.
 
 \begin{figure}
 \centering
