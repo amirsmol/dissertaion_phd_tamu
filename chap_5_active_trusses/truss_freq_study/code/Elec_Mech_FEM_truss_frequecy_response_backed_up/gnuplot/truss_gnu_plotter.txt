@@ -1,0 +1,27 @@
+ set terminal postscript enhanced font ",25"
+ set title "Electric Stimuli vs Displacement at Frequency 0.1Hz"
+ set ylabel "Normalized displacement u_{middle}/ \L_{beam}"
+ set xlabel "Normalized electric field"
+ set style data lines
+ set key left box 
+ set datafile separator ","
+ set xrange [-1.2:1.2]
+
+
+set output '| ps2pdf - truss_nonlinear_freq_0p1.pdf'   
+plot "./gnuplot/gnuplot0001.gnu" using ($3*2):4 notitle
+
+set output '| ps2pdf - truss_nonlinear_freq_0p2.pdf'   
+plot "./gnuplot/gnuplot0002.gnu" using ($3*2):4 notitle
+
+set output '| ps2pdf - truss_nonlinear_freq_0p5.pdf'   
+plot "./gnuplot/gnuplot0003.gnu" using ($3*2):4 notitle
+
+set output '| ps2pdf - truss_nonlinear_freq_2p0.pdf'   
+plot "./gnuplot/gnuplot0004.gnu" using ($3*2):4 notitle
+
+set output '| ps2pdf - truss_nonlinear_freq_5p0.pdf'   
+plot "./gnuplot/gnuplot0005.gnu" using ($3*2):4 notitle
+
+set output '| ps2pdf - truss_nonlinear_freq_10p0.pdf'   
+plot "./gnuplot/gnuplot0006.gnu" using ($3*2):4 notitle

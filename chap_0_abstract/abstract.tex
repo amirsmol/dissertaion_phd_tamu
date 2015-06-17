@@ -21,14 +21,33 @@
 \setcounter{page}{2}
 
 \indent 
-This study presents nonlinear and time-dependent analyses of ferroelectric materials and structures.
-Phenomenological constitutive models are considered for simulating macroscopic responses of materials undergoing various histories of electro-mechanical inputs,
-such as, polarization switching under large electric fields and minor hysteretic loops under relatively low electric fields.  
-The nonlinearity is due to large electric field inputs.
-The constitutive models are implemented at each material (Gaussian) points within continuum finite elements. 
-Nonlinear finite element method is used for obtaining solutions to electro-mechanical boundary value problems (BVPs). 
-At the end, several examples of structural analyses are presented.
-These examples illustrate the nonlinear and time-dependent electro-mechanical responses of smart structures.
+
+This study presents nonlinear and time-dependent analyses of ferroelectric materials and structures. Phenomenological constitutive models are considered for simulating macroscopic responses of materials undergoing various histories of electro-mechanical inputs. When the electric field inputs are less than the coercive limit (minor loop simulations), there will be no polarization switching and a nonlinear time-dependent electro-mechanical constitutive model based on a single integral form is considered for the piezoelectric materials undergoing small deformation gradients and large electric field. The nonlinearity is accounted for by incorporating higher order terms of the electric field and the effect of loading history is incorporated through the time integrand. When the electric field inputs are above the coercive limit (major loop simulations), the electro-mechanical coupling constants are expressed as functions of a polarization state and it is assumed that in absence of the polarization, the material does not exhibit electro-mechanical coupling response. The polarization state consists of time-dependent reversible and irreversible parts, where the irreversible part is incorporated to account for polarization switching responses. This constitutive model is implemented at each material (Gaussian) point within continuum FEs. A quasi-linear viscoelastic (QLV) model is adopted in order to incorporate the time-dependent effect on the nonlinear electro-mechanical response of piezoelectric ceramics. The recursive integration technique is used to solve for the time-dependent constitutive model at each Gaussian point. Finite element method is then used for analyzing behaviors of several piezoelectric structures and structural components under various boundary conditions. Parametric studies are also conducted to examine the effect of loading rates and coupled electro-mechanical boundary conditions on the overall performance of smart structures. The developed FE model is also used for predicting the overall responses Active Fiber Composite (AFC). A unit cell of AFC, where different responses of the constituents (fiber, matrix, electrode finger, kapton layer) are incorporated, is considered and time dependent and nonlinear responses of AFC are determined. The overall responses of AFCs at different frequencies and electric field amplitude determined from the FE are compared with experiments. Reasonably good predictions are observed. Finally, FE analyses are performed to simulate shape changing in smart truss structures. An electro-active truss FE undergoing large deformations is formulated. Each truss member is modeled as an active element with nonlinear time-dependent electro-mechanical constitutive model. The desired shape is induced in the overall structure by applying electric field to each truss member. The truss FE model can handle both material and also geometric nonlinearities. 
+
+
+
+% This study presents analyses of nonlinear and time-dependent response of polarized piezoelectric materials and structures.
+% A nonlinear time-dependent electro-mechanical constitutive model based on a single integral form is considered for the piezoelectric materials undergoing small deformation gradients and large electric field.
+% The nonlinearity is accounted for by incorporating higher order terms of the electric field and the effect of loading history is incorporated through the time integrand. 
+% An incremental formulation based on a recursive-iterative method is used to obtain solutions for the nonlinear and time-dependent integral constitutive model. 
+% This constitutive model is implemented at each material (Gaussian) points within continuum finite elements. 
+% Experimental data on polarized piezoelectric ceramics, e.g. Lead Zirconate Titanate (PZT),
+%  available in literature are used to validate the nonlinear and time-dependent electro-mechanical constitutive model. 
+% In addition, the nonlinear electro-mechanical response of telescopic actuators
+% made of PZT are simulated using the presented time-dependent electro-mechanical model.
+% The calculated results are consistent with experimental data.
+
+
+% This paper presents a three-dimensional (3D) constitutive model for predicting nonlinear polarization and electro-mechanical strain responses of ferroelectric materials subject to various histories of electric fields and mechanical stresses. The electro-mechanical coupling constants are expressed as functions of a polarization state and it is assumed that in absence of the polarization, the material does not exhibit electro-mechanical coupling response. The polarization model due to an electric field input is additively decomposed into time-dependent reversible and irreversible parts. The model also incorporates the effect of compressive stresses on the polarization response. Thus, the constitutive model is capable of incorporating the effect of loading rates, mechanical stresses, and electric fields on the overall hysteretic electro-mechanical and polarization switching response of ferroelectric materials. The constitutive model is implemented in a continuum 3D finite element in order to perform rate-dependent electro-mechanical coupling analyses of smart structures. The experimental data on the polarization switching and hysteretic butterfly strain responses of lead zirconate titanate (PZT) reported by Fang and Li (1999) are used to validate the constitutive model. Parametric studies are also conducted to examine the effect of loading rates and coupled electro-mechanical boundary conditions on the overall performance of PZT. Finally, FE analyses are performed to simulate shape changing in smart composite structures.
+
+% here are my comments on the dissertation:
+% 1) Abstract should be revised. You need to elaborate the discussion on the nonlinear time-dependent model, e.g., you considered multiple integral model and QLV, also discussed how you incorporated the nonlinear responses. You can use parts of abstracts from the two published papers.
+
+
+
+
+% 2) I think you should remove section 4.2 (Large deformation analyses) since it does not flow with the rest of the document, and you did not do more detailed analyses on large deformations. I suggest you remove this part, and we can conduct more analyses on large deformations and publish a journal paper.
+% 3) Fonts on Figs. 4.16, 4.17, and 5.24 are too small. Please increase the fonts for the legends and axes, also fonts for the numerical values in the axes.
 
 
 \pagebreak{}

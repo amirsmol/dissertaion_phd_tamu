@@ -1,6 +1,6 @@
- set terminal postscript enhanced 
+ set terminal postscript enhanced font ",20"
  set output '| C:\texlive\2014\bin\win32\ps2pdf - electric_field_vs_strains_freq_0p2.pdf'
- set title "Strain-Electric Field Response of AFC Under Frequency 0.2Hz" font ",20"
+ set title "Strain-Electric Field Response of AFC Under Frequency 5.0Hz"
  set xlabel "electric field (MV/m)"
  set ylabel "strain {%}"
  set datafile separator ","

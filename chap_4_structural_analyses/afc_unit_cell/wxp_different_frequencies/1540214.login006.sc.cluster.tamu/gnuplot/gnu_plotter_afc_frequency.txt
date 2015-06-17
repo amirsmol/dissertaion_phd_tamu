@@ -1,0 +1,39 @@
+set terminal postscript enhanced font ',20'
+ #set output '| C:\texlive\2014\bin\win32\ps2pdf - electric_field_vs_strains_for_different_frequencies.pdf'
+ set title "Strain-Electric Field Response of AFC for different frequencies" 
+ set xlabel "electric field (MV/m)"
+ set ylabel "strain {%}"
+ set style data points
+ set key left box 
+ set datafile separator ","
+  set output '| ps2pdf - electric_field_vs_strains_for_different_frequencies_all.pdf'
+  plot "./gnuplot/afc0001.gnu" using 3:4 title "Finite Element Model 0.2Hz" with line,\
+      "./gnuplot/afc0002.gnu" using 3:4 title "Finite Element Model 1.0Hz" with line,\
+	  "./gnuplot/afc0003.gnu" using 3:4 title "Finite Element Model 5.0Hz" with line,\
+      "./gnuplot/xp_electric_field_frequencey_frequency_0p_02.csv" using 1:2 every 15 title "Experiment 0.2Hz"  with points,\
+      "./gnuplot/xp_electric_field_frequencey_frequency_1p_0.csv"  using 1:2 every 15 title "Experiment 1.0Hz"  with points,\
+      "./gnuplot/xp_electric_field_frequencey_frequency_5p_0.csv"  using 1:2 every 15 title "Experiment 5.0Hz"  with points 
+ 
+ 
+  set output '| ps2pdf - electric_field_vs_strains_for_different_frequencies_xp.pdf'
+  plot "./gnuplot/xp_electric_field_frequencey_frequency_0p_02.csv" using 1:2 every 15 title "Experiment 0.2Hz"  with points,\
+      "./gnuplot/xp_electric_field_frequencey_frequency_1p_0.csv"  using 1:2 every 15 title "Experiment 1.0Hz"  with points,\
+      "./gnuplot/xp_electric_field_frequencey_frequency_5p_0.csv"  using 1:2 every 15 title "Experiment 5.0Hz"  with points  
+ 
+ set output '| ps2pdf - electric_field_vs_strains_for_different_frequencies_model.pdf'
+  plot "./gnuplot/afc0001.gnu" using 3:4 title "Finite Element Model 0.2Hz" with line,\
+      "./gnuplot/afc0002.gnu" using 3:4 title "Finite Element Model 1.0Hz" with line,\
+	  "./gnuplot/afc0003.gnu" using 3:4 title "Finite Element Model 5.0Hz" with line\
+ 
+ set output '| ps2pdf - electric_field_vs_strains_for_different_frequencies_0p_2.pdf'  
+ plot "./gnuplot/afc0001.gnu" using 3:4 title "Finite Element Model 0.2Hz" with line,\
+      "./gnuplot/xp_electric_field_frequencey_frequency_0p_02.csv" using 1:2 every 15 title "Experiment 0.2Hz"  with points
+ 
+ set output '| ps2pdf - electric_field_vs_strains_for_different_frequencies_1p_0.pdf'  
+ plot "./gnuplot/afc0002.gnu" using 3:4 title "Finite Element Model 1.0Hz" with line,\
+      "./gnuplot/xp_electric_field_frequencey_frequency_1p_0.csv" using 1:2 every 15 title "Experiment 1.0Hz"  with points
+
+ set output '| ps2pdf - electric_field_vs_strains_for_different_frequencies_5p_0.pdf'  
+ plot "./gnuplot/afc0003.gnu" using 3:4 title "Finite Element Model 5.0Hz" with line,\
+      "./gnuplot/xp_electric_field_frequencey_frequency_5p_0.csv" using 1:2 every 15 title "Experiment 5.0Hz"  with points
+

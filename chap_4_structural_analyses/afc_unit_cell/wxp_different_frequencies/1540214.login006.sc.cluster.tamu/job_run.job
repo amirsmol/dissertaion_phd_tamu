@@ -1,0 +1,32 @@
+ #PBS -l nodes=1:ppn=8,walltime=00:40:00,mem=8gb
+ #PBS -N 00_different_frequencis_proney_series
+ #PBS -S /bin/bash
+ #PBS -j oe
+
+module load gnuplot
+
+mkdir          $SCRATCH/$PBS_JOBID ;
+cd             $SCRATCH/$PBS_JOBID ; 
+
+cp -r $PBS_O_WORKDIR/*.* .
+cp -r $PBS_O_WORKDIR/* .
+
+
+OMP_NUM_THREADS=8
+
+make all_intel -j8
+
+
+gnuplot ./gnuplot/gnu_plotter.txt
+
+sleep 3m
+
+
+
+mkdir                               $PBS_O_WORKDIR/../$PBS_JOBID ;
+cp -r ./*.pdf                       $PBS_O_WORKDIR/../$PBS_JOBID ;
+cp -r ./src/materialbehavior.f90    $PBS_O_WORKDIR/../$PBS_JOBID ;
+
+
+echo "*** ACTIVATED NODES: $PBS_NODEFILE ***\n" 
+echo "*** OMP_NUM_THREADS:" $OMP_NUM_THREADS

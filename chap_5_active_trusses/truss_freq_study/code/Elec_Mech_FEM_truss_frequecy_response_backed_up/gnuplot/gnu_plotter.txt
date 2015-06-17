@@ -1,0 +1,13 @@
+ set terminal postscript enhanced 
+ set output "electric_field_vs_strain_in_afc.eps"
+ set title "Strain-Electric Field Response of AFC" font ",20"
+   set xlabel "electric field (MV/m)"
+   set ylabel "strain {%}"
+ set style data points
+ set key left box 
+ set datafile separator ","
+   
+ plot "xp_gnu_afc_hysteresis_0_7_mvm.csv" using 1:2 title "Experiment Large Electric Field" , \
+      "afc0002.gnu" using 3:4 title "Model Large Electric Field" with line, \
+      "xp_gnu_afc_hysteresis_0_1_mvm.csv" using 1:2 title "Experiment Small Electric Field" , \
+      "afc0001.gnu" using 3:4 title "Model Small Electric Field" with line

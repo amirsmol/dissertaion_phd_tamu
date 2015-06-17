@@ -529,82 +529,73 @@ When the rate of loading is relatively fast (or slow) with regards to the charac
 \\
 
 
-\section{Large Deformation Analyses}
-In this section, large deformation analyses of slender beams is discussed.
-We use the bimorph beam geometry that was discussed in the previous example for large deformation analyses.
-The geometry of this beam is introduced in figure \ref{fig:bimorph_PVDF_beam_geometry}.
-In order to validate the result from finite element model, the closed form formulation for simple case of folding of a biomorph beam is considered.
+% \section{Large Deformation Analyses}
+% In this section, large deformation analyses of slender beams is discussed.
+% We use the bimorph beam geometry that was discussed in the previous example for large deformation analyses.
+% The geometry of this beam is introduced in figure \ref{fig:bimorph_PVDF_beam_geometry}.
+% In order to validate the result from finite element model, the closed form formulation for simple case of folding of a biomorph beam is considered.
 
-The Green St. Venant strain induced in the material due to deformations is a quadratic function of the displacement gradient \cite{Lai2009}.
-If the deformation is large then the nonlinear term of the strain cannot be disregarded.
-The quadratic function for the strain displacement relationship is defined as:
+% The Green St. Venant strain induced in the material due to deformations is a quadratic function of the displacement gradient \cite{Lai2009}.
+% If the deformation is large then the nonlinear term of the strain cannot be disregarded.
+% The quadratic function for the strain displacement relationship is defined as:
 
-\begin{equation}
-\varepsilon_{ij}=\frac{u_{i,j}+u_{j,i}}{2}+\sum_{m=1}^{3} \frac{u_{m,i}u_{m,j}}{2}
-\label{EQN:large_displacement_strain}
-\end{equation}
+% \begin{equation}
+% \varepsilon_{ij}=\frac{u_{i,j}+u_{j,i}}{2}+\sum_{m=1}^{3} \frac{u_{m,i}u_{m,j}}{2}
+% \label{EQN:large_displacement_strain}
+% \end{equation}
 
-Equation (\ref{EQN:large_displacement_strain}) is the more general form of infinitesimal strain theory that is represented in equation (\ref{EQN:Linear_Electric_Field}).
-The model is already developed based on nonlinear formulation for multi-functional material.
-Therefore, only the terms for strain should be modified in order to capture large deformation.
+% Equation (\ref{EQN:large_displacement_strain}) is the more general form of infinitesimal strain theory that is represented in equation (\ref{EQN:Linear_Electric_Field}).
+% The model is already developed based on nonlinear formulation for multi-functional material.
+% Therefore, only the terms for strain should be modified in order to capture large deformation.
 
-It is possible to present analytical solutions for folding of beams \cite{Muliana2014}.
-The bimorph beam that is considered for large deformation is only under bending due to electric field.
-Therefore, the stretch in the beam is neglected.
-The strain is assumed linear in stress and the linear constitutive equations presented in equations (\ref{stress_1D_const_eqn_beam:EQN}) and (\ref{resultant_strain_beam:EQN}) are considered for the analyses. 
-The internal bending moment of the beam due to the mechanical strain can be presented as \cite{Muliana2014}:
+% It is possible to present analytical solutions for folding of beams \cite{Muliana2014}.
+% The bimorph beam that is considered for large deformation is only under bending due to electric field.
+% Therefore, the stretch in the beam is neglected.
+% The strain is assumed linear in stress and the linear constitutive equations presented in equations (\ref{stress_1D_const_eqn_beam:EQN}) and (\ref{resultant_strain_beam:EQN}) are considered for the analyses. 
+% The internal bending moment of the beam due to the mechanical strain can be presented as \cite{Muliana2014}:
 
-\begin{equation}
-M^m_{11}=E_{1} I_{11} \acute{\phi}
-\label{EQN:internal_bending_moment_beam}
-\end{equation}
-where 
-$E_{1}$ is the Young modulus and it is same as $C_p$,
-$I_{11}$ is the second moment of area that is $h_p^3/12$ in the case of bimorph geometry shown in figure \ref{fig:bimorph_PVDF_beam_geometry},
-$\acute{\phi}$ is the curvature of the beam can be presented as $\acute{\phi}=1/r$ where $r$ is the radius of folded shape of beam.      
-In case of a complete folding of the beam, the radius of curvature for beam will be $r=\frac{L}{2\pi}$, where $L$ is the length of beam.
+% \begin{equation}
+% M^m_{11}=E_{1} I_{11} \acute{\phi}
+% \label{EQN:internal_bending_moment_beam}
+% \end{equation}
+% where 
+% $E_{1}$ is the Young modulus and it is same as $C_p$,
+% $I_{11}$ is the second moment of area that is $h_p^3/12$ in the case of bimorph geometry shown in figure \ref{fig:bimorph_PVDF_beam_geometry},
+% $\acute{\phi}$ is the curvature of the beam can be presented as $\acute{\phi}=1/r$ where $r$ is the radius of folded shape of beam.      
+% In case of a complete folding of the beam, the radius of curvature for beam will be $r=\frac{L}{2\pi}$, where $L$ is the length of beam.
 
-The electrical bending moment of beam due to electric field using equations \ref{stress_1D_const_eqn_beam:EQN} and \ref{resultant_strain_beam:EQN} can be presented as:
-\begin{equation}
-M^e_{11}=\frac{e_p  h_p  V}{2}
-\label{EQN:electric_bending_moment_beam}
-\end{equation}
-There is no other external force or moment is acting on the beam. 
-Then, the equilibrium equation in the beam can be satisfied at each point on the neutral axis, thus $M^m_{11}=M^e_{11}$.
+% The electrical bending moment of beam due to electric field using equations \ref{stress_1D_const_eqn_beam:EQN} and \ref{resultant_strain_beam:EQN} can be presented as:
+% \begin{equation}
+% M^e_{11}=\frac{e_p  h_p  V}{2}
+% \label{EQN:electric_bending_moment_beam}
+% \end{equation}
+% There is no other external force or moment is acting on the beam. 
+% Then, the equilibrium equation in the beam can be satisfied at each point on the neutral axis, thus $M^m_{11}=M^e_{11}$.
  
-Considering the mechanical and electrical properties for the PVDF beam the electric potential needed to completely fold the PVDF bimorph beam will be 
-\begin{equation}
-V_{fold}=\frac{h_p^2 \pi C_p}{3 e_p L}
-\label{EQN:electric_potential_to_fold}
-\end{equation}
-Using the electro-mechanical material properties and geometries of bimorph beam that were discussed before the electric potential for folding the beam is $V_{fold}=455kV$.
-This electric potential is applied to the central electrode of the biomorph beam in the finite element analyses.
-The result from this analyses is shown in figure \ref{fig:pvdf_beam_folding}.
-It can be seen that a complete folding is captured by taking the nonlinear kinematics into account as it is expected from the analytical solution presented.
-% This validates the nonlinear geometric analyses of developed multi-functional finite element model.
-% It is noted for the sake of consistency with the other simulation reported in the literature only the transverse electro-mechanical coupling is considered in this simulation.
-% In the real situation the complete folding of bimorph beam will happen with much lower electric potential due to normal electro-mechanical coupling and incompressibility of polymer that are disregarded in this analyses. 
-\\  
+% Considering the mechanical and electrical properties for the PVDF beam the electric potential needed to completely fold the PVDF bimorph beam will be 
+% \begin{equation}
+% V_{fold}=\frac{h_p^2 \pi C_p}{3 e_p L}
+% \label{EQN:electric_potential_to_fold}
+% \end{equation}
+% Using the electro-mechanical material properties and geometries of bimorph beam that were discussed before the electric potential for folding the beam is $V_{fold}=455kV$.
+% This electric potential is applied to the central electrode of the biomorph beam in the finite element analyses.
+% The result from this analyses is shown in figure \ref{fig:pvdf_beam_folding}.
+% It can be seen that a complete folding is captured by taking the nonlinear kinematics into account as it is expected from the analytical solution presented.
+% % This validates the nonlinear geometric analyses of developed multi-functional finite element model.
+% % It is noted for the sake of consistency with the other simulation reported in the literature only the transverse electro-mechanical coupling is considered in this simulation.
+% % In the real situation the complete folding of bimorph beam will happen with much lower electric potential due to normal electro-mechanical coupling and incompressibility of polymer that are disregarded in this analyses. 
+% \\  
  
-\begin{figure}
-\centering
-\includegraphics[trim = 00mm 0mm 00mm 0mm,clip=true,width=7.0in]{./chap_4_structural_analyses/pvdf_folding_beam/folding_pvdf_beam.png}
-\caption{Folding of bimorph PVDF beam under very high electric potential}
-\label{fig:pvdf_beam_folding} 
-\end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[trim = 00mm 0mm 00mm 0mm,clip=true,width=7.0in]{./chap_4_structural_analyses/pvdf_folding_beam/folding_pvdf_beam.png}
+% \caption{Folding of bimorph PVDF beam under very high electric potential}
+% \label{fig:pvdf_beam_folding} 
+% \end{figure}
 
 
 \section{Active Fiber Composites}
-Active Fiber Composite (AFC) is an active material that is designed to amplify the deflection due to piezo-electric effect in AFCs PZT5A fibers are embedded in the epoxy matrix and are aligned along the longitudinal direction.
-The electric field is applied to PZT5A fiber through the aluminum electrode fingers that are placed on the top and bottom of the fibers.
-Aluminum electrode fingers are aligned perpendicular to the longitudinal axis of fiber in the width direction of AFCs.
-Electrodes that are placed on the top and bottom surfaces of the AFC have the same electric potential.
-Therefore, the electric field on the central plane of the AFC is zero.
-Electrodes that are adjacent to each other in the longitudinal direction of the AFC have the opposite electric potentials.
-As a result, an electric field is formed along the longitudinal direction of fibers.
-The electric field in the gap between electrodes is directly proportional to the valued of applied potential.
-The electric field in the gap between electrodes is inversely proportional to the gap distance between electrodes.
-An example of AFCs is shown in figure \ref{fig:afc_picture_from_lap}.
+Active Fiber Composite (AFC) is an active material that is designed to amplify the deflection due to piezo-electric effect. In AFCs PZT5A fibers are embedded in the epoxy matrix and are aligned along the longitudinal direction. The electric field is applied to PZT5A fiber through the aluminum electrode fingers that are placed on the top and bottom of the fibers. Aluminum electrode fingers are aligned perpendicular to the longitudinal axis of fiber in the width direction of AFCs. Electrodes that are placed on the top and bottom surfaces of the AFC have the same electric potential. Therefore, the electric field on the central plane of the AFC is zero. Electrodes that are adjacent to each other in the longitudinal direction of the AFC have the opposite electric potentials. As a result, an electric field is formed along the longitudinal direction of fibers and the electric field is not uniformly distributed along the fibers. The electric field in the gap between electrodes is directly proportional to the value of applied potential and inversely proportional to the distance between electrodes. An example of AFCs is shown in figure \ref{fig:afc_picture_from_lap}.
 A schematic of the placement of fibers and electrodes is shown in figure \ref{fig:schematic_afc_unit_cell} \cite{jemai2014mathematical}.
 
 
@@ -630,7 +621,7 @@ This unit cell is used to determine the overall electro-mechanical behavior of A
 \subsection{Unit Cell of an Active Fiber Composite}
 The smallest possible unit cell of AFC is considered in order to determine its overall behavior.
 This unit cell contains one quarter of fiber in the space between two electrodes as shown in figure \ref{fig:geometry_unit_cell_afc}.
-The unite cell has dimensions of $L_1 \times L_2 \times L_3 =140 \mu m \times 175 \mu m \times 750 \mu m$.
+The unit cell has dimensions of $L_1 \times L_2 \times L_3 =140 \mu m \times 175 \mu m \times 750 \mu m$.
 A PZT5A fiber with the radius of $125 \mu m$ is embedded in epoxy matrix as shown in figure \ref{fig:geometry_unit_cell_afc} (right).
 Two aluminum electrodes are seen in the unit cell under the fiber with thickness of $10 \mu m$. 
 Each aluminum electrode finger is $250 \mu m$ long and due to periodicity of the microstructure only half of each electrode is considered in the unit cell.
@@ -638,9 +629,9 @@ There is $500 \mu m$ gap between two electrodes that is filled with epoxy.
 Moreover, there is $4 \mu m$ vertical threshold between the electrodes and PZT5A fiber that is filled with epoxy.
 The electric potential applied to the aluminum electrodes induces electric field inside the epoxy and also inside the PZT5A fiber.
 
-\begin{figure} 
+\begin{figure}
 \centering
-\begin{tikzpicture} 
+\begin{tikzpicture}  
 
 \draw (0,0) rectangle (7.50,1.75) ; 
 
@@ -697,6 +688,10 @@ The electric potential applied to the aluminum electrodes induces electric field
 %% The radial dimension
 \draw [<-] (10.883,0.8698) -- (10.0,1.75)  node [sloped,midway,below]{\tiny 125};
 
+
+\draw[latex-latex, thin, draw=gray] [->](0,3)--(1,3) node [right] {$X_3$}; %
+\draw[latex-latex, thin, draw=gray] [->](0,3)--(0,4) node [above] {$X_2$}; % 
+ 
 \end{tikzpicture}
 \caption{Geometry of Unit Cell (dimensions are in $\mu m$)}
 \label{fig:geometry_unit_cell_afc}
@@ -723,10 +718,10 @@ The boundary conditions prescribed on the unit cell of AFC are given as follows:
 & x_2=-\frac{L_3}{2}  ,& u_2=0 &\, , \frac{\partial \phi}{\partial x_3}=0        &\, ; \ x_3= \frac{L_3}{2}  ,& u_3=\bar{u_3} &\, , \frac{\partial \phi}{\partial x_3}=0    \\
 \end{aligned}
 \end{equation}
-where the geometry of the unit cell is defined in $x_1 \in [-L_1/2,L_1/2], x_2 \in [-L_2/2,L_2/2], x_3 \in [-L_3/2,L_3/2]$.
+where the geometry of the unit cell shown in Fig. \ref{fig:geometry_unit_cell_afc} is defined in $x_1 \in [-L_1/2,L_1/2], x_2 \in [-L_2/2,L_2/2], x_3 \in [-L_3/2,L_3/2]$.
  
 
-The matrix, electrodes and fibers are bonded together with adhesions.
+The matrix, electrodes and fibers are bonded together with adhesive. 
 It is assumed that the adhesive has the same mechanical and electrical properties as the epoxy.
 Only the piezoelectric fiber experiences electro-mechanical coupling due to the applied electric field.
 The strain induced inside the fiber causes deformations of the unit cell.
@@ -781,9 +776,9 @@ ${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\ \hline
 
 \subsection{Validating The AFC Model with Experiment Data}
 Finite element analyses for AFC unit cell are validated with the existing experimental results.
-The detailed experimental procedure is discussed in [On the temperature and time dependence of the electro-mechanical properties flexible active fiber composites].
+The detailed experimental procedure is discussed in \cite{atillah2014}.
 In order to calibrate the properties of PZT, line between two peaks of the hysteresis curve from experimental data is used to find the linear and time independent material properties.
-The material properties epoxy and aluminum are taken from \cite{atitallah2014parametric}.
+The material properties for the epoxy and aluminum are taken from  \cite{atitallah2014parametric}.
 Aluminum is considered elastic and its material property is taken from \cite{Aluminium_wikipedia}.
 Then, the width of hysteresis curve is used to determine the time-dependent coefficient presented in table \ref{table:materila_properties_afc}.
  
@@ -791,14 +786,9 @@ The comparison between experimental data and the results from FE analyses with l
 The hysteresis response shown in the deflection of this unit cell is due to the time dependent response of the epoxy matrix and also time dependent electro-mechanical coupling of piezo-electric fiber. 
 There is good comparison between the experiments and FE analyses.
 The distribution of displacement field in the unit cell is shown in figure \ref{afc_displacement_all:fig}.
-As expected the value of displacement in the longitudinal (z-axis) direction is significantly larger than the other two directions.
+As expected the value of displacement in the longitudinal ($X_3$-axis) direction is significantly larger than the other two directions.
 
-% \begin{figure} 
-% \centering
-% \includegraphics[trim = 0mm 100mm 0mm 0mm,width=6.0in]{./chap_4_structural_analyses/afc_unit_cell/afc_displacement_all.pdf}
-% \caption{Displacement field distribution in unite cell of AFC in mm}
-% \label{afc_displacement_all:fig}
-% \end{figure}
+
 
 \begin{figure}
 \centering
@@ -889,28 +879,88 @@ Rests of the material properties are same as table  \ref{table:non_linear_materi
 Except that for linear time dependent response of PZT5A $\widehat{b}_{3333}=0$ and ${}^{1}K_{ijk}^{e}=-0.6$ are taken.
 Better predictions of the experimental data are observed.
 
-In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. 
-The corresponding strains response of the model under different frequencies and amplitudes are shown in figure \ref{fig:afc_Frequency_Effect}. 
-It is apparent from the results that higher frequency and also very low frequency of loading reduces time-dependent (hysteresis) effect. 
-This is due to the fact that the material does not have enough time to exhibit time-dependent effect. 
-Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller.
+% In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. 
+% The corresponding strains response of the model under different frequencies and amplitudes are shown in figure \ref{fig:afc_Frequency_Effect}. 
+% It is apparent from the results that higher frequency and also very low frequency of loading reduces time-dependent (hysteresis) effect. 
+% This is due to the fact that the material does not have enough time to exhibit time-dependent effect. 
+% Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller.
 
-\begin{figure}
+
+In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. The corresponding strains response of the model under different frequencies and amplitudes are shown in figure \ref{fig:afc_Frequency_Effect}. It is apparent from the results that higher frequency and also very low frequency of loading reduces time-dependent (hysteresis) effect. This is because the process time (or duration of loading) in case of lower frequency loading is much longer than the characteristic creep/relaxation time in the material, while for high frequency loading, the process time is much faster than the characteristic time of the materials. In such situation, the effect of time associated with the creep/relaxation behavior is less significant. 
+
+\begin{figure} 
 \centering
 \subcaptionbox{Frequency 0.1 Hz}
-{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p1}}
+{\includegraphics[width=2.9in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p1}}
 \subcaptionbox{Frequency 0.2 Hz}
-{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p2}}
+{\includegraphics[width=2.9in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p2}}
 \subcaptionbox{Frequency 0.5 Hz}
-{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p5}}
+{\includegraphics[width=2.9in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_0p5}}
 \subcaptionbox{Frequency 2.0 Hz}
-{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_2p0}}
+{\includegraphics[width=2.9in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_2p0}}
 \subcaptionbox{Frequency 5.0 Hz}
-{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_5p0}}
+{\includegraphics[width=2.9in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_5p0}}
 \subcaptionbox{Frequency 10.0 Hz}
-{\includegraphics[width=2.5in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_10p0}}
+{\includegraphics[width=2.9in]{./chap_4_structural_analyses/afc_unit_cell/frequency_effect/electric_field_vs_strains_freq_10p0}}
 \caption{Effect of frequency of applied electric field on strain response of AFC}
 \label{fig:afc_Frequency_Effect}
 \end{figure}
+
+% Figure \ref{afc_freq_xp_model:fig} shows Mechanical response of AFC model to different frequencies of applied electric field, compared with experiment  [2].
+% Four Proney terms are used for electromechanical coupling coefficients of PZT fiber to capture response of model in different frequencies.
+% The mechanical and electrical properties of afc model is shown in table \ref{table:afc_freq_xp_model:fig}.
+
+
+
+
+
+Finally, responses of AFC at different frequencies are compared with available experimental data from Ben Attitalah \cite{atillah2014}. Figure \ref{afc_freq_xp_model:fig} shows the electro-mechanical responses of AFC at frequencies 0.2, 1, and 5 Hz under  applied electric field 0.6MV/m, compared with experiment \cite{atillah2014}. Four Prony terms are used for electromechanical coupling coefficients of PZT fiber to capture response of model at different frequencies. 
+The mechanical and electrical properties of the constituents of AFC are shown in Table \ref{table:afc_freq_xp_model:fig}. Reasonable response predictions are shown for the three frequencies considered. 
+
+
+
+\begin{figure} 
+\centering
+\subcaptionbox{0.2Hz}
+{\includegraphics[width=3in]{./chap_4_structural_analyses/afc_unit_cell/wxp_different_frequencies/electric_field_vs_strains_for_different_frequencies_0p_2.pdf}}
+\subcaptionbox{1.0Hz}
+{\includegraphics[width=3in]{./chap_4_structural_analyses/afc_unit_cell/wxp_different_frequencies/electric_field_vs_strains_for_different_frequencies_1p_0.pdf}}
+\subcaptionbox{5.0Hz}
+{\includegraphics[trim = 0.5in 0in 0in 0in, clip, width=3in]{./chap_4_structural_analyses/afc_unit_cell/wxp_different_frequencies/electric_field_vs_strains_for_different_frequencies_5p_0.pdf}}
+\caption{Mechanical response of AFC model to different frequencies of applied electric field, compared with experiment \cite{atillah2014}}
+\label{afc_freq_xp_model:fig}
+\end{figure}
+
+
+\begin{table}
+\caption{Material Properties of AFC with four Prony series}
+\centering
+\begin{tabular}{|l|c|c|c|r|}
+\hline
+               & PZT5A & Epoxy & Aluminum & \\ \hline 
+Young's Modulus&60.06 & 1.5     & 69       &$GPa$    \\ \hline
+Poisson's Ratio&$0.3$ & 0.35    & 0.33 &\\ \hline 
+$e_{113}$      &-12.7764 &         &      &$C/m^2$\\ \hline
+$e_{311}$      &10.3935&         &      &$C/m^2$\\ \hline
+$e_{333}$      &-24.5388  &         &      &$C/m^2$\\ \hline
+$\kappa_{11}=\kappa_{22}$ &  $ 4  $ & $8.854  $ & &  pF/m \\ \hline
+$\kappa_{33}$ & $2  $              & $8.854  $ & &  pF/m \\ \hline
+${}^{0}K_{ijk}^{e}$&1.0& & &  \\ \hline
+${}^{1}K_{ijk}^{e}$&-0.13& & & \\ \hline
+${}^{2}K_{ijk}^{e}$&-0.30& & & \\ \hline
+${}^{3}K_{ijk}^{e}$&-0.10& & & \\ \hline
+${}^{4}K_{ijk}^{e}$&-0.26& & & \\ \hline
+${}^{0}\lambda_{ijk}^{e}$&0& & & s \\ \hline
+${}^{1}\lambda_{ijk}^{e}$&0.2& & & s \\ \hline 
+${}^{1}\lambda_{ijk}^{e}$&1.0& & & s \\ \hline 
+${}^{1}\lambda_{ijk}^{e}$&10& & & s \\ \hline 
+${}^{1}\lambda_{ijk}^{e}$&60& & & s \\ \hline 
+${}^{0}K_{ijkl}^{c}$& &1.0 & &  \\ \hline
+${}^{1}K_{ijkl}^{c}$& &0.1 & & \\ \hline
+${}^{0}\lambda_{ijkl}^{c}$& &0&  & s\\ \hline
+${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\ \hline 
+\end{tabular}
+\label{table:afc_freq_xp_model:fig}
+\end{table} 
  
 \clearpage

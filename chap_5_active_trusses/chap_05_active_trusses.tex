@@ -5,6 +5,7 @@ Simulations of shape changing in active truss structures are discussed in this c
 \\
 
 \section{Deformed Shapes}  
+\label{section:chap_05_1_deformed_shape_of_truss}
 Consider a 3D continuum object in a reference configuration $X_i$.
 This continuum object changes its shape from the reference $X_i$ configuration to current configuration $x_i$.
 In the case of Lagrangian description, the current configuration is defined as a function of reference configuration:
@@ -24,17 +25,14 @@ The Green-St. Venant strain is given as:
 E_{KL}=\frac{1}{2}\left( \frac{\partial x_j}{\partial X_K}\frac{\partial x_j}{\partial X_L}-\delta_{KL}\right)
 \label{lagrange_green_strain}
 \end{equation}
-In order to induce the desired strain in each truss member associated with the shape change, an electric field is prescribed to the truss member. The deformation in each truss member is considered only along the longitudinal axis of each truss. Thus, the constitutive relation for each truss along its longitudinal axis is: 
+In order to induce the desired strain in each truss member associated with the shape change, an electric field is prescribed to the truss member. The deformation in each truss member is considered only along the longitudinal axis of each truss. Thus, strain transformation from the global coordinate to the local orientation of each truss member is needed in order to determine amount of strain in the longitudinal axis of each truss. Discussion on the strain transformation is presented below. Once the amount of longitudinal strain for each member has been determined, the constitutive relation is used in order to calculate the magnitude and direction of external stimuli that should be prescribed: 
 \begin{equation}
 E_{11}=f_1(S_{11})+f_2(E_3)
 \label{one_constitutive_equation}
 \end{equation}
 where $E_{11}$ is the axial strain along the longitudinal axis of each truss member, $f_1(S_{11})$ is the strain due to the mechanical stress along the longitudinal axis of the truss $S_{11}$ and $f_2$ is the strain due to the electric field input, prescribed through the thickness of the truss, $E_3$.
 In order to achieve desired shapes in the truss system, either stress or electric field, or both stress and electric field can be prescribed.
-The longitudinal starin in each truss member is related to global strain of the by a transformation $Q_{ij}=N^{truss}_i N^{truss}_j$. 
-This transformation is used to find the applied electric field in each member later in this chapter.
-The constitutive relation for the truss is discussed later in this chapter.
-
+\\
 \section{Nonlinear Truss Finite Element}
 Truss systems consist of relatively slender members connected by pin joints.
 The pin joints allow the members to rotate with respect to each other.
@@ -48,12 +46,18 @@ The vector that connects these two joints in the reference configuration is defi
 and the base vector in the longitudinal direction of each truss member that connects these two joints is: 
 \begin{equation}
 \mathbf {N^{12}=V^{12}/ \|V^{12}\| }
+\label{base_vector_definition}
 \end{equation}
+The base vector in the longitudinal direction of each truss member $\mathbf {N^{12}}$ is used to define a transformation matrix between local and global coordinates.
+The longitudinal strain in each truss member is related to the global strain of the truss system by a transformation $ \mathbf {Q}=\mathbf {N^{12}} \otimes \mathbf{N^{12} }$. 
+This transformation is used to determine the magnitude of strain along the longitudinal axis of the truss.
+The constitutive relation for the truss is discussed later in this chapter.
+
 The displacement in the truss systems is defined in terms of a displacement of each node with respect to the reference configuration: 
 \begin{equation}
 u^{P_1}_i=x^{P_1}_i-X^{P_1}_i ; u^{P_2}_i=x^{P_2}_i-X^{P_2}_i ;  
 \end{equation}
-If linear test functions are used for the finite element approximation, the displacement at each point on the truss can be interpolated as a linear function. The master shape function of the isoparametric element $\zeta \in [-1,1]$ is introduced as:
+If linear test functions are used for the finite element approximation, the displacement at each point on the truss can be interpolated as a linear function. The same shape function is used to interpolate the geometry of the truss. The master shape function of the isoparametric element $\zeta \in [-1,1]$ is introduced as:
 \begin{equation}
 \begin{aligned}
 & \psi^1=0.5(1+\zeta); \psi^1_{,\zeta}= 0.5 \\
@@ -100,7 +104,7 @@ The change in the length of each member will cause change of shape of each singl
 As an example, consider a planar domain that is in the form of a plate structure.
 The domain is defined as follows:
 
-\begin{equation}
+\begin{equation} 
 \begin{aligned}
 X_1 \in & [-L_1/2,L_1/2] \\
 X_2 \in & [-L_2/2,L_2/2] \\
@@ -113,19 +117,7 @@ Let us first consider $[L_1,L_2,h]=[1,1,0.1]$ unit is in meter, and fill the dom
 The planar truss is shown in figure \ref{fig:planar_truss_ref_config}.  
 If the truss system is intended to have a shape as is shown in figure \ref{fig:xy_plane_desired_shape} the mapping between the reference and current configurations for $X_3=X_1 X_2$ surface is defined as follows.
 
-\begin{figure} 
-\centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses/images_space_filler/planar_truss_ref_config.png}
-\caption{Planar Truss in Reference Configuration}
-\label{fig:planar_truss_ref_config}
-\end{figure}
 
-\begin{figure} 
-\centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses/images_space_filler/xy_plane_desired_shape.jpg}
-\caption{The desired current configuration for the planar truss}
-\label{fig:xy_plane_desired_shape}
-\end{figure}
 
 \begin{equation}
 \begin{aligned}
@@ -161,20 +153,50 @@ X_{2}^2&X_{1}\,X_{2}&X_{2}\cr X_{1}\,X_{2}&X_{1}^2&X_{1}\cr X_{2}&X_{1}&0\cr
  \end{bmatrix}
 \label{green_deformation_tensor_doubly_curved_mapping:eqn}
 \end{equation} 
-  
+The transformation from the above-calculated strain to the local strains along the longitudinal axes for all members in the truss system is done by $\mathbf E^{truss}=\mathbf E \cdot \mathbf {Q}$. The transformation matrix is obtained from the base vector of each truss and is discussed in the previous section.
+
 \begin{figure} 
 \centering
-\includegraphics[width=5.0in]{./chap_5_active_trusses/images_space_filler/planar_truss_deformed_config.png}
-\caption{The deformed configuration for the planar truss}
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_space_filler/planar_truss_ref_config.png}
+\caption{Planar Truss in Reference Configuration}
+\label{fig:planar_truss_ref_config}
+\end{figure}
+
+\begin{figure} 
+\centering
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_space_filler/xy_plane_desired_shape.jpg}
+\caption{The desired current configuration for the planar truss}
+\label{fig:xy_plane_desired_shape}
+\end{figure}
+
+\begin{figure} 
+\centering
+\includegraphics[width=4.5in]{./chap_5_active_trusses/images_space_filler/planar_truss_deformed_config_shape.png}
+\caption{Shape changing in the planar truss} 
 \label{fig:planar_truss_deformed_config}
 \end{figure}
 
-It is shown in figure \ref{fig:planar_truss_deformed_config} that the application of electric stimuli to each truss member can induce desired shape. The space filler truss that has been discussed in the previous chapter can offer good flexibility for planar and even 3D shapes. 
 
-Another shape that is considered for the planar truss is the saddle point surface.
-The shape $X_3=X_1^2-X_2^2$ is induced in the planar truss with the same procedure that is already described.
-If we assume that truss member are made of electro active materials with overall electromechanical coupling coefficient as $d_{311}^0=340pm/V$ the corresponding required electric field contour for each truss will be as in figure \ref{fig:planar_z_eq_x2_y2_efield_contour}.
-The strain induced in each truss for this truss configuration in shown in figure \ref{fig:planar_z_eq_x2_y2_strain_contour}.
+\begin{figure} 
+\centering
+\includegraphics[width=5.0in]{./chap_5_active_trusses/images_space_filler/planar_truss_deformed_efield_z_eq_xy.png}
+\caption{The deformed configuration for the planar truss under electric field} 
+\label{fig:planar_truss_deformed_config_efield}
+\end{figure}
+
+In order to induce the shape changes shown in Fig. \ref{fig:xy_plane_desired_shape}, electric field is prescribed to each truss members. To determine the amount of strains along the longitudinal axes of the truss members, the strain tensor given in Eq. (\ref{green_deformation_tensor_doubly_curved_mapping:eqn}) is transformed to the local orientation for the truss members following the strain transformation in Section \ref{section:chap_05_1_deformed_shape_of_truss}. Figure \ref{fig:planar_truss_deformed_config} shows the deformed shape of the planar truss due to applications of electric field, and the amount of electric field prescribed in shown in Fig. \ref{fig:planar_truss_deformed_config_efield}. Linear electro-mechanical constitutive relation is considered and the following piezoelectric constant is used $d_{311}^0 = 340pm∕V$. It is seen that the amount of electric field required to activate the truss is high, which might be beyond the tolerance of the materials. The main reason is due to the use of linear electro-mechanical relation for the piezoelectric materials. It will be shown later, when a nonlinear constitutive relation is considered, shape changes in the truss systems can be achieved with reasonable values of electric field input, which is within the operating condition of piezoelectric ceramics. 
+
+It is shown in figure \ref{fig:planar_truss_deformed_config_efield} that the application of electric stimuli to each truss member can induce desired shape. The space filler truss that has been discussed in the previous chapter can offer good flexibility for planar shapes. 
+
+Another shape that is considered for the planar truss is the saddle point surface. The shape $X_3=X_1^2-X_2^2$ is induced in the planar truss with the same procedure that is already described. 
+
+
+
+The strain induced in each truss for this truss configuration in shown in figure \ref{fig:planar_z_eq_x2_y2_strain_contour}.  If we assume that truss member are made of electro active materials with overall electromechanical coupling coefficient as $d_{311}^0=340pm/V$. the corresponding required electric field contour for each truss will be as in figure \ref{fig:planar_z_eq_x2_y2_efield_contour}. 
+
+% If we assume that truss member are made of electro active materials with overall electromechanical coupling coefficient as $d_{311}^0=340pm/V$. 
+% The corresponding required electric field contour for each truss will be as in figure \ref{fig:planar_z_eq_x2_y2_efield_contour}.
+% The strain induced in each truss for this truss configuration in shown in figure \ref{fig:planar_z_eq_x2_y2_strain_contour}.
 
 \begin{figure} 
 \centering
@@ -190,19 +212,24 @@ The strain induced in each truss for this truss configuration in shown in figure
 \label{fig:planar_z_eq_x2_y2_efield_contour}
 \end{figure} 
 
-
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
  
 \subsection{Tetrahedral Beam Like Truss}
-Using a tetrahedral shape as a building block for truss configurations it is possible to form the longitudinal truss elements to take a beam like form. The building block of the tetrahedral beam like truss is shown in figure \ref{fig:building_block_of_tetrahedral_truss} that contains 3 tetrahedral.
+
+Using a tetrahedral shape as a building block for truss configurations it is possible to form the longitudinal truss elements to take a beam like form. The building block of the tetrahedral beam like truss is shown in figure \ref{fig:building_block_of_tetrahedral_truss} that contains 3 tetrahedral. 
+
+
+
+The beam like truss is formed by arranging these tetrahedral units in one direction. An example of truss with 150 tetrahedral units is shown in figure \ref{fig:refrence_shap_100_tetra_unit_tetrahedral_unit}. 
+
+
 \begin{figure} 
 \centering
 \includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/building_block_of_tetrahedral_truss.png}
 \caption{The building block of tetrahedral beam like truss}
 \label{fig:building_block_of_tetrahedral_truss}
 \end{figure} 
-The beam like truss is formed by arranging these tetrahedral units in one direction.
-An example of truss with 150 tetrahedral units is shown in figure \ref{fig:refrence_shap_100_tetra_unit_tetrahedral_unit}. 
+
 \begin{figure} 
 \centering
 \includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/refrence_shap_100_tetra_unit_tetrahedral_unit.png}
@@ -210,11 +237,10 @@ An example of truss with 150 tetrahedral units is shown in figure \ref{fig:refre
 \label{fig:refrence_shap_100_tetra_unit_tetrahedral_unit}
 \end{figure} 
 
-It can be seen form the cross section view of the beam in figure \ref{fig:refrence_shap_100_tetra_unit_tetrahedral_unit_cross_section_view} that none of the truss members crosses the center line.   
-Therefore, this configuration behaves like a hollow beam. 
-Several examples of bending deformations are considered for the truss system.
-The bending can be induced by creating normal strain in the axial direction of the truss members along the longitudinal axis of the beam.
-In the simple bending case the radius of curvature of the beam $r_{curvature}$ is defined:
+
+
+It can be seen form the cross section view of the beam in figure \ref{fig:refrence_shap_100_tetra_unit_tetrahedral_unit_cross_section_view} that none of the truss members crosses the center line. Therefore, this configuration behaves like a hollow beam. Several examples of bending deformations are considered for the truss system. The bending can be induced by creating normal strain in the axial direction of the truss members along the longitudinal axis of the beam. In the simple bending case and disregarding the thought thickness shear of the beam, along the axis normal strain of the beam is defined with respect to the radius of curvature of the beam $r_{curvature}$:
+
 \begin{equation}
 \begin{aligned}
 r_{curvature}&=\frac{ L_{beam} }{2 \theta}\\
@@ -222,6 +248,8 @@ E_{11}&=X_3/r_{curvature}
 \end{aligned}
 \label{stran_and_radios_of_curvture_of_beam:eqn}
 \end{equation}
+
+where $X_3$ is the direction normal to the longitudinal axis of the beam like truss and $X_1$ is defined along longitudinal axis of the beam like truss. The remaining strain components are taken as zero.
 
 \begin{figure} 
 \centering
@@ -235,12 +263,8 @@ $\theta$ is the curvature angle (for full circle it is $2\pi$) and
 $ L_{beam}$ is the length of the beam made of tetrahedral units.
 The strain $E_{11}=X_3/r_{curvature}$ causes lateral deformation in the $X_3$ direction with positive curvature.
 
-We try to produce the shape of an arc with a curvature angle $\pi$.
-The result is shown is figure \ref{fig:tetra_hedral_arc_pi_shape}.
-As can be seen the shape is quite different from the real arc.
-The reason of the difference between the produced shape and desired shape is due to disregarding the normal strain in the thickness direction of beam that is produced in bending of a beam.
-Increasing the curvature in the tetrahedral beam like truss will cause a sinusoidal like shape in the truss.
-The strain that is induced in this truss is taken from equation (\ref{stran_and_radios_of_curvture_of_beam:eqn}) with $\theta=2 \pi$.
+
+We try to produce the shape of an arc with a curvature angle $\pi$. The result is shown is figure \ref{fig:tetra_hedral_arc_pi_shape}. As can be seen the shape is quite different from the real arc. The reason of the difference between the produced shape and desired shape is due to disregarding the normal strain in the thickness direction of beam that is produced in bending of a beam. Increasing the curvature in the tetrahedral beam like truss will cause a sinusoidal like shape in the truss. The strain that is induced in this truss is taken from equation (\ref{stran_and_radios_of_curvture_of_beam:eqn}) with $\theta=2 \pi$.
 
 \begin{figure} 
 \centering
@@ -257,9 +281,8 @@ The strain that is induced in this truss is taken from equation (\ref{stran_and_
 \label{fig:tetra_hedral_arc_2_pi_shape}
 \end{figure} 
 
-In order to get a shape closer to the actual bending of a beam we then apply the normal strain in the thickness direction.
-This will cause a strain of the field closer to the strain beam made of continuous solid members.
-We modify the bending strain defined in equation (\ref{stran_and_radios_of_curvture_of_beam:eqn}) with the through thickness normal strain as follows:
+
+In order to get a shape closer to the actual bending of a beam we then apply the normal strain in the thickness direction. This will cause a strain of the field closer to the strain beam made of continuous solid members. We modify the bending strain defined in equation (\ref{stran_and_radios_of_curvture_of_beam:eqn}) with the through thickness normal strain as follows: 
 
 \begin{equation}
 \begin{aligned}
@@ -269,9 +292,10 @@ E_{33}&=-X_3/(2r_{curvature})+\kappa_v
 \end{aligned}
 \label{strain_with_dilation:eqn}
 \end{equation}
-where $\kappa_v$ is the dilation that is added to mimic the effect of change in volume in the beam.
-It is observed that if $\kappa_v=2.0$ there will be an arc forming in the beam like truss.
-This arc is shown in figure \ref{fig:tetra_hedral_arc_2_pi_shape_with_pressure}.
+
+
+where $\kappa_v$  is the dilation that is added to mimic the effect of change in volume in the beam. The remaining strain components are taken as zero. It is observed that if $\kappa_v=2.0$ there will be an arc forming in the beam like truss. This arc is shown in figure  \ref{fig:tetra_hedral_arc_2_pi_shape_with_pressure}. 
+
 \begin{figure} 
 \centering
 \includegraphics[width=5.0in]{./chap_5_active_trusses/images_linear_tetrahedral/tetra_hedral_arc_2_pi_shape_with_pressure.png}
@@ -279,8 +303,7 @@ This arc is shown in figure \ref{fig:tetra_hedral_arc_2_pi_shape_with_pressure}.
 \label{fig:tetra_hedral_arc_2_pi_shape_with_pressure}
 \end{figure} 
 
-In the last example we will try to apply a shape in the beam in the way that it passes four specific points.
-Consider bending of a tetrahedral beam like truss in the way that it passes through three points as follows:
+In the last example we will try to apply a shape in the beam in the way that it passes four specific points. Consider bending of a tetrahedral beam like truss in the way that it passes through three points as follows: 
 \begin{equation}
 \begin{aligned}
 \underline X ^1&=(0,0,0) \\
@@ -291,7 +314,7 @@ Consider bending of a tetrahedral beam like truss in the way that it passes thro
 \label{three_points:eqn}
 \end{equation}
 
-In this case it can be found that the following strain should be applied:
+In this case it can be found that the following strain should be applied, the remaining strain components are taken as zero: 
 
 \begin{equation}
 E_{11}=X_3 \left(
@@ -322,7 +345,7 @@ E_{11}^{truss} &=E_3 d_{311}
 \label{electric_field_in_each_truss:eqn}
 \end{equation}
 where 
-$N^{truss}$ is the vector in the direction of each truss element and 
+$N^{truss}_{i}$ are the componenst of the base vector in the longitudinal direction of each truss member $\mathbf {N^{12}}$ that is defined in equation (\ref{base_vector_definition}).
 $E_3$ is the electric field that should be applied to each truss element to induce the deformation.
 When a nonlinear electro-mechanical constitutive equation is considered, the strain in the longitudinal axis of each truss is a nonlinear equation.
 The relationship between the strain and electric field can also be taken as time dependent to include hystersis response of piezoelectric materials.
@@ -358,7 +381,7 @@ The stimulus is applied to each truss member with the frequency of 1Hz.
 \label{fig:linear_static_stimuli_vs_displacement}
 \end{figure} 
 
-The nonlinear relationship between the deflection and input stimuli that is shown in figure \ref {fig:linear_static_stimuli_vs_displacement} is mainly due to geometric nonlinearity.
+The nonlinear relationship between the deflection and input stimuli that is shown in figure \ref{fig:linear_static_stimuli_vs_displacement} is mainly due to geometric nonlinearity.
 
 In case the time dependent electro-mechanical response, a cyclic electric field input with frequency 1Hz is prescribed.
 The time kernel function with 
@@ -393,7 +416,7 @@ The hysteresis curve shown in figure \ref{fig:linear_tetrahedral_time_dependent_
 \label{fig:linear_tetrahedral_time_dependent_efield_vs_displacement_nonlinear}
 \end{figure} 
 
-In figure \ref{fig:linear_tetrahedral_time_dependent_efield_vs_displacement_nonlinear_snapshot} the configuration of the truss in four different values of electric stimuli is shown.
+In figure \ref{fig:linear_tetrahedral_time_dependent_efield_vs_displacement_nonlinear_snapshot} the configurations of the truss corresponding to four different values of electric stimuli are shown. 
 
 
 \begin{figure}
@@ -454,29 +477,24 @@ This will also change the shape of hysteresis curve as shown in figure  \ref{fig
 \label{fig:limiting_strain_linear_tetrahedral_time_dependent_efield_vs_displacement_nonlinear}
 \end{figure} 
 
-In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. 
-Different frequency inputs are applied to the same material constitutive model presented in this section. 
+In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. Different frequency inputs are applied to the same material constitutive model presented in this section. The corresponding strains response of the truss under different frequencies and amplitudes are shown in figure \ref{fig:truss_linear_Frequency_Effect}. It is apparent from the results that higher frequency of loading reduces time-dependent (hysteresis) effect. This is due to the fact that the material does not have enough time to exhibit time-dependent effect. In higher frequency the response is very similar to the instantaneous responses. 
 
-The corresponding strains response of the truss under different frequencies and amplitudes are shown in figure \ref{fig:truss_linear_Frequency_Effect}. 
-It is apparent from the results that higher frequency of loading reduces time-dependent (hysteresis) effect. 
-This is due to the fact that the material does not have enough time to exhibit time-dependent effect. 
-This is due to the fact that the material does not have enough time to exhibit time-dependent effect. In higher frequency the response is very similar to the instantaneous responses.  
 % Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller.
 
 \begin{figure}
 \centering 
-\subcaptionbox{Frequency 0.1 Hz}
-{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p1.pdf}}
+\subcaptionbox{Frequency 0.1 Hz} 
+{\includegraphics[width=2.9in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p1.pdf}}
 \subcaptionbox{Frequency 0.2 Hz}
-{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p2.pdf}}
+{\includegraphics[width=2.9in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p2.pdf}}
 \subcaptionbox{Frequency 0.5 Hz}
-{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p5.pdf}}
+{\includegraphics[width=2.9in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_0p5.pdf}}
 \subcaptionbox{Frequency 2.0 Hz}
-{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_2p0.pdf}}
+{\includegraphics[width=2.9in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_2p0.pdf}}
 \subcaptionbox{Frequency 5.0 Hz}
-{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_5p0.pdf}}
+{\includegraphics[width=2.9in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_5p0.pdf}}
 \subcaptionbox{Frequency 10.0 Hz}
-{\includegraphics[width=2.5in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_10p0.pdf}}
+{\includegraphics[width=2.9in]{./chap_5_active_trusses/truss_freq_study/truss_nonlinear_freq_10p0.pdf}}
 \caption{Effect of frequency of applied electric field on strain response of tetrahedral truss}
 \label{fig:truss_linear_Frequency_Effect}
 \end{figure}
