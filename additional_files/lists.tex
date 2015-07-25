@@ -45,6 +45,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \phantomsection
+
+\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+\addtocontents{lof}{\protect\noaddvspace}
+
 \addcontentsline{toc}{chapter}{LIST OF FIGURES}  
 
 \renewcommand{\cftloftitlefont}{\center\normalfont\MakeUppercase}
@@ -60,17 +64,16 @@
 
 
 \begin{center}
-\begin{singlespace}
+% \begin{singlespace}
 %% These values make the lof table entries appear double spaced between.
-\setlength{\cftbeforechapskip}{0.4cm}
-\setlength{\cftbeforesecskip}{0.30cm}
-\setlength{\cftbeforesubsecskip}{0.30cm}
-\setlength{\cftbeforefigskip}{0.4cm}
-\setlength{\cftbeforetabskip}{0.4cm} 
+% \setlength{\cftbeforesecskip}{0.30cm}
+% \setlength{\cftbeforesubsecskip}{0.30cm}
+% \setlength{\cftbeforefigskip}{0.4cm}
+% \setlength{\cftbeforetabskip}{0.4cm}
 
 \listoffigures
 
-\end{singlespace}
+% \end{singlespace}
 \end{center}
 
 \pagebreak{}
@@ -83,6 +86,9 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{LIST OF TABLES}  
 
+\newcommand*{\noadddvspace}{\renewcommand*{\addvspace}[1]{}}
+\addtocontents{lot}{\protect\noadddvspace}
+
 \renewcommand{\cftlottitlefont}{\center\normalfont\MakeUppercase}
 
 \setlength{\cftbeforelottitleskip}{-12pt} %% Positions the LOT title vertically to match the chapter titles
@@ -94,18 +100,18 @@
 \\[4em]\mbox{}\hspace{4pt}TABLE\hfill{\normalfont Page}\vskip\baselineskip}
 
 \begin{center}
-\begin{singlespace}
+% \begin{singlespace}
 
 %% These values make the lot table entries appear double spaced between.
-\setlength{\cftbeforechapskip}{0.4cm}
-\setlength{\cftbeforesecskip}{0.30cm}
-\setlength{\cftbeforesubsecskip}{0.30cm}
-\setlength{\cftbeforefigskip}{0.4cm}
-\setlength{\cftbeforetabskip}{0.4cm}
+% \setlength{\cftbeforechapskip}{0.4cm}
+% \setlength{\cftbeforesecskip}{0.30cm}
+% \setlength{\cftbeforesubsecskip}{0.30cm}
+% \setlength{\cftbeforefigskip}{0.4cm}
+% \setlength{\cftbeforetabskip}{0.4cm}
 
 \listoftables 
 
-\end{singlespace}
+% \end{singlespace}
 \end{center}
 \endgroup
 \pagebreak{}  % Need this for the pagenumbering to be correct. 

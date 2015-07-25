@@ -14,7 +14,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{\uppercase{STRUCTURAL ANALYSES}}  
 \label{section:structural_analyses}
-
 This chapter presents analyses of electro-active structures under several loading histories.
 The constitutive equations that were introduced in the previous chapters are used for the active materials.
 Two types of smart structures are studied, which are smart multi-layered beams and active fiber composites.
@@ -36,8 +35,9 @@ Several parametric studies are also conducted in order to study the time-depende
 
 \begin{figure}
 \centering
-\includegraphics[trim = 0mm 70mm 10mm 60mm,
-clip,width=7.0in]{./chap_4_structural_analyses/pdf_beam/PVDF_beam_geometry.pdf}
+\includegraphics[width=6.0in]{./chap_4_structural_analyses/pdf_beam/PVDF_beam_geometry.pdf}
+
+
 \caption{Substrated bimorph beam geometry}
 \label{fig:PVDF_beam_geometry}
 \end{figure}
@@ -77,7 +77,7 @@ $e_{311}$ is the piezoelectric constant, and $\kappa_{33}^\varepsilon$ is the di
 The above constitutive model is used for the static response of piezoelectric material.
 This study deals with time dependent response of active composite beams with nonlinear electro-mechanical behavior.
 The following constitutive relations for the time-dependent-electro-elastic deformation of solids
- (see chapter \ref{section:chap_02_constitutive_model_for_polarization_switching}) is used for the piezoelectric composite beams shown in figure \ref{fig:PVDF_beam_geometry} :
+ (see chapter \ref{section:minor_loop_constitutive_model_for_polarized_piezo_electric}) is used for the piezoelectric composite beams shown in figure \ref{fig:PVDF_beam_geometry}:
 
 \begin{equation}
 \begin{aligned}
@@ -99,7 +99,7 @@ K^{\kappa}(t-s) \frac{\partial D_{3}}{\partial E_{3}}(E_3(s))  \frac{\partial {E
 \end{equation}
 This is a one dimensional version of the 3D constitutive equation that is suitable for beam analyses.
 $K^{\kappa}(t), K^e(t), K^C(t)$ are the normalized time dependent kernels.
-The time kernels in this constitutive equation can be expressed in terms of Prony series as discussed in chapter \ref{section:chap_02_constitutive_model_for_polarization_switching}. 
+The time kernels in this constitutive equation can be expressed in terms of Prony series as discussed in chapter \ref{section:minor_loop_constitutive_model_for_polarized_piezo_electric}. 
 A beam is defined as a structural element that is predominantly under bending. 
 Three beam theories are considered which are the classical Euler-Bernoulli beam theory, Timoshenko beam theory, and higher order beam theory.
 The Euler-Bernoulli beam theory is followed, in which the deformation due to the transverse shear is ignored.
@@ -149,7 +149,7 @@ The displacement field of the theory is defined based on three unknown as in the
 \label{higher_order_beam:EQN}
 \end{equation}
 
-By applying stress free conditions on the top and bottom surface of the beam value of $\alpha$ is found to be  $-4/3h^2$ \cite{Wang2000}.
+By applying stress free conditions on the top and bottom surface of the beam value of $\alpha$ is found to be  $-4/(3h^2)$ \cite{Wang2000}.
 Here $\phi_2(x_1,t)$ is defined as the slope of the normal line measured from the neutral axis.
 It can be seen that the normal line in the beam is not straight anymore and it is defined as a cubic function.
 The non zero strain component for the displacement defined in the beam equations (\ref{eluer_beam:EQN}-\ref{higher_order_beam:EQN}) are:
@@ -326,13 +326,10 @@ u_3(x_3,t) =\mathcal{L}^{-1} \left[ \bar{u}_3(x_3,a) \right]
 \\
 \begin{figure}
 \centering
-\includegraphics[trim = 0mm 60mm 10mm 60mm,
-clip=true,width=7.0in]{./chap_4_structural_analyses/pdf_beam/bimorph_PVDF_beam_geometry.pdf}
+\includegraphics[width=6.0in]{./chap_4_structural_analyses/pdf_beam/bimorph_PVDF_beam_geometry.pdf}
 \caption{Bimorph PVDF beam geometry and placement of electrodes}
 \label{fig:bimorph_PVDF_beam_geometry}
 \end{figure}
-
-
 
 \subsection{Numerical Validation}
 This section compares the result from the analytical solutions to the finite element analyses.
@@ -360,29 +357,29 @@ thus the traction and displacement continuity conditions are imposed at the inte
 The beam has a length $L$ of $100mm$, width of $5mm$ and the thickness of the beam is $1mm$.
 The middle layer is under 0.5 V.
 This results in $1000 V/m$ electric field to each PVDF layer.
-The result from the current model is compared with the experiment and also other computational methods, which are presented in Table \ref{table:PVDF_bimorph_numerical_result_static}.
+The result from the current model is compared with the experiment and also other computational methods, which are presented in table \ref{table:PVDF_bimorph_numerical_result_static}.
 Good comparisons are observed among the results.
 
 \begin{table}
-\caption{Numerical Result from Present Model for Deflection of PVDF Bimorph}
+\caption{Numerical result from present model for deflection of PVDF bimorph}
 \centering
 \begin{tabular}{|l|c|r|} \hline
-Method  &   &  Tip deflection $\times 10^{-7} m$ \\ \hline
+Method  & Method detail &  Tip deflection $\times 10^{-7} m$ \\ \hline
 Experiment \cite{tzou1991distributed} &  & 3.15 \\ \hline
 Analytical solution & $w(x)=345 x^2$ & 3.45\\ \hline
 Plate FEM \cite{franco2000modelling} &  & 3.45 \\ \hline
 Beam Finite Difference & 41 nodes & 3.4 \\  \hline
-2D FEM present model  & C2D9 elements in 10x4y mesh &3.15 \\  \hline
-3D FEM ABAQUS model  & C3D8E elements in 162x10y4z mesh & 2.99\\ \hline
-3D FEM ABAQUS model  & C3D20QE elements in 10x1y4z mesh & 3.4414\\ \hline
-3D FEM present model  & C3D20 elements in 5x2y2z mesh & 3.455 \\ \hline
+2D FEM present & C2D9 in 10x4y &3.15 \\  \hline
+3D FEM ABAQUS & C3D8E in 162x10y4z & 2.99\\ \hline
+3D FEM ABAQUS & C3D20QE in 10x1y4z & 3.4414\\ \hline
+3D FEM present & C3D20 in 5x2y2z & 3.455 \\ \hline
 \end{tabular}
-\label{table:PVDF_bimorph_numerical_result_static}
+\label{table:PVDF_bimorph_numerical_result_static} 
 \end{table}
 
 \begin{figure}
 \centering
-\includegraphics[trim = 00mm 0mm 00mm 0mm, clip=true,width=7.0in]{./chap_4_structural_analyses/pdf_beam/PVDF_beam_geometry_epot_distribution.png}
+\includegraphics[width=6.0in]{./chap_4_structural_analyses/pdf_beam/PVDF_beam_geometry_epot_distribution.png}
 \caption{Bimorph PVDF beam electric potential distribution}
 \label{fig:PVDF_beam_geometry_epot_distribution}
 \end{figure}
@@ -397,8 +394,7 @@ The electro-mechanical coupling effect is considered to be linear, $\frac{\parti
 
 \begin{figure}
 \centering 
-\includegraphics[trim = 0mm 20mm 0mm 20mm,
-clip=true,width=7.0in]{./chap_4_structural_analyses/pdf_beam/result_tip_deflection_of_bimorph_beam.pdf}
+\includegraphics[width=6.0in]{./chap_4_structural_analyses/pdf_beam/result_tip_deflection_of_bimorph_beam.pdf}
 \caption{Tip deflection of bimorph beam, comparing Laplace solution with numerical recursive method}
 \label{fig:result_tip_deflection_of_bimorph_beam}
 \end{figure}
@@ -424,7 +420,7 @@ For the present case study with the material properties for PVDF and the kernel 
 \end{aligned}
 \label{EQN:PVDF_beam_closed_form_solution_functions}
 \end{equation}
-where the constants for this equation are presented in Table \ref{table:PVDF_bimorph_time_dependent_solution_coefficients}.
+where the constants for this equation are presented in table \ref{table:PVDF_bimorph_time_dependent_solution_coefficients}.
 The analytical solution is compared with the numerical solution from the recursive finite element analyses.
 A 3D quadratic element with 20 nodes is used for finite element.
 It is noted that quadratic elements shown to be more accurate in dealing with bending.
@@ -488,7 +484,7 @@ The cubic approximation of the electro-mechanical coupling is close enough to th
 
 \subsection{Effect of Frequency on the Hysteresis Responses of Active Beams}
 The effect of different histories of electric potential inputs is also analyzed.
-Consider a bimorph beam consisting of two layers of polarized piezoelectric ceramics and an elastic layer, as shown in figure (\ref{fig:PVDF_beam_geometry}). % TK .
+Consider a bimorph beam consisting of two layers of polarized piezoelectric ceramics and an elastic layer, as shown in figure \ref{fig:PVDF_beam_geometry}. % TK .
 In order to produce a bending deflection in the beam, the two piezoelectric layers should undergo opposite tensile and compressive strains.
 The beam is fixed at one end and the other end is left free;
  the top and bottom surfaces are under a traction free condition.
@@ -497,14 +493,13 @@ The beam is fixed at one end and the other end is left free;
 
 \begin{figure}
 \centering
-\includegraphics[trim = 0mm 20mm 00mm 40mm,
-clip=true,width=6.0in]{./chap_4_structural_analyses/pdf_beam/result_tip_deflection_of_bimorph_beam_frequencies.pdf}
+\includegraphics[width=6.0in]{./chap_4_structural_analyses/pdf_beam/result_tip_deflection_of_bimorph_beam_frequencies.pdf}
 \caption{Tip deflection of bimorph beam, comparing observing effect of frequency of applied electric field}
 \label{fig:result_tip_deflection_of_bimorph_beam_frequency}
 \end{figure}
 
 
-A bimorph beam without an elastic layer placed in between the piezoelectric layers is studied as it is shown in (\ref{fig:bimorph_PVDF_beam_geometry}).
+A bimorph beam without an elastic layer placed in between the piezoelectric layers is studied as it is shown in figure \ref{fig:bimorph_PVDF_beam_geometry}.
 It is assumed that the beam is relatively slender so that it is sensible to adopt Euler-Bernoulli beam theory in finding the corresponding displacement of the bimorph beam.
 Since a uniform voltage is prescribed on the top and bottom surfaces of the beam, the problem reduces to a pure bending problem.
 The beam has a length of 100mm, width of 1mm and the thickness of each piezoelectric layer is 1mm.
@@ -598,26 +593,17 @@ When the rate of loading is relatively fast (or slow) with regards to the charac
 Active Fiber Composite (AFC) is an active material that is designed to amplify the deflection due to piezo-electric effect. In AFCs PZT5A fibers are embedded in the epoxy matrix and are aligned along the longitudinal direction. The electric field is applied to PZT5A fiber through the aluminum electrode fingers that are placed on the top and bottom of the fibers. Aluminum electrode fingers are aligned perpendicular to the longitudinal axis of fiber in the width direction of AFCs. Electrodes that are placed on the top and bottom surfaces of the AFC have the same electric potential. Therefore, the electric field on the central plane of the AFC is zero. Electrodes that are adjacent to each other in the longitudinal direction of the AFC have the opposite electric potentials. As a result, an electric field is formed along the longitudinal direction of fibers and the electric field is not uniformly distributed along the fibers. The electric field in the gap between electrodes is directly proportional to the value of applied potential and inversely proportional to the distance between electrodes. An example of AFCs is shown in figure \ref{fig:afc_picture_from_lap}.
 A schematic of the placement of fibers and electrodes is shown in figure \ref{fig:schematic_afc_unit_cell} \cite{jemai2014mathematical}.
 
-
 \begin{figure} 
 \centering
 \includegraphics[width=6.0in]{./chap_4_structural_analyses/afc_unit_cell/afc_picture_from_lap.png}
-\caption{Active Fiber Composite and applying electric potential}
+\caption{Active fiber composite and applying electric potential}
 \label{fig:afc_picture_from_lap}
 \end{figure}
-
-\begin{figure} 
-\centering
-\includegraphics[width=3.0in]{./chap_4_structural_analyses/afc_unit_cell/schematic_afc_unit_cell.jpg}
-\caption{Schematic for placement of Fibers and electrodes in the epoxy matrix \cite{jemai2014mathematical}}
-\label{fig:schematic_afc_unit_cell}
-\end{figure}
-
 The configuration of AFC patch is symmetric with respect to its thickness direction.
 Moreover, there is a periodic pattern in the placement of fibers, electrodes and matrix in the longitudinal direction of AFC.
 Due to this symmetry and periodic configuration, a unit cell model for AFC is defined as a representative microstructure.
 This unit cell is used to determine the overall electro-mechanical behavior of AFC.  
- 
+
 \subsection{Unit Cell of an Active Fiber Composite}
 The smallest possible unit cell of AFC is considered in order to determine its overall behavior.
 This unit cell contains one quarter of fiber in the space between two electrodes as shown in figure \ref{fig:geometry_unit_cell_afc}.
@@ -628,7 +614,13 @@ Each aluminum electrode finger is $250 \mu m$ long and due to periodicity of the
 There is $500 \mu m$ gap between two electrodes that is filled with epoxy.
 Moreover, there is $4 \mu m$ vertical threshold between the electrodes and PZT5A fiber that is filled with epoxy.
 The electric potential applied to the aluminum electrodes induces electric field inside the epoxy and also inside the PZT5A fiber.
-
+\begin{figure} 
+\centering
+\includegraphics[width=3.0in]{./chap_4_structural_analyses/afc_unit_cell/schematic_afc_unit_cell.jpg}
+\caption{Schematic for placement of fibers and electrodes in the epoxy matrix* \cite{jemai2014mathematical}  }
+\label{fig:schematic_afc_unit_cell}
+\end{figure}
+\blfootnote{*Reprinted with permission from "Mathematical modeling of an active-fiber composite energy harvester with interdigitated electrodes" by Jemai, A., Najar, F., Chafra, M., Ounaies, Z., (2014). \textit{Shock and Vibration}, 94, 1-9,  Copyright 2014 Hindawi Publishing Corporation}
 \begin{figure}
 \centering
 \begin{tikzpicture}  
@@ -693,7 +685,7 @@ The electric potential applied to the aluminum electrodes induces electric field
 \draw[latex-latex, thin, draw=gray] [->](0,3)--(0,4) node [above] {$X_2$}; % 
  
 \end{tikzpicture}
-\caption{Geometry of Unit Cell (dimensions are in $\mu m$)}
+\caption{Geometry of AFC unit cell (dimensions are in $\mu m$)}
 \label{fig:geometry_unit_cell_afc}
 \end{figure}
 
@@ -718,7 +710,7 @@ The boundary conditions prescribed on the unit cell of AFC are given as follows:
 & x_2=-\frac{L_3}{2}  ,& u_2=0 &\, , \frac{\partial \phi}{\partial x_3}=0        &\, ; \ x_3= \frac{L_3}{2}  ,& u_3=\bar{u_3} &\, , \frac{\partial \phi}{\partial x_3}=0    \\
 \end{aligned}
 \end{equation}
-where the geometry of the unit cell shown in Fig. \ref{fig:geometry_unit_cell_afc} is defined in $x_1 \in [-L_1/2,L_1/2], x_2 \in [-L_2/2,L_2/2], x_3 \in [-L_3/2,L_3/2]$.
+where the geometry of the unit cell shown in figure \ref{fig:geometry_unit_cell_afc} is defined in $x_1 \in [-L_1/2,L_1/2], x_2 \in [-L_2/2,L_2/2], x_3 \in [-L_3/2,L_3/2]$.
  
 
 The matrix, electrodes and fibers are bonded together with adhesive. 
@@ -735,7 +727,7 @@ The distribution of electric potential is shown in figure \ref{fig:electrip_pote
 In this picture the positive and negative electric potentials applied to the unit cell are shown.
 
 \begin{table}
-\caption{Material Properties of AFC}
+\caption{Material properties of AFC}
 \centering
 \begin{tabular}{|l|c|c|c|r|}
 \hline
@@ -778,8 +770,8 @@ ${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\ \hline
 Finite element analyses for AFC unit cell are validated with the existing experimental results.
 The detailed experimental procedure is discussed in \cite{atillah2014}.
 In order to calibrate the properties of PZT, line between two peaks of the hysteresis curve from experimental data is used to find the linear and time independent material properties.
-The material properties for the epoxy and aluminum are taken from  \cite{atitallah2014parametric}.
-Aluminum is considered elastic and its material property is taken from \cite{Aluminium_wikipedia}.
+The material properties for the epoxy and aluminum are taken from \cite{atitallah2014parametric}.
+Aluminum is considered elastic.
 Then, the width of hysteresis curve is used to determine the time-dependent coefficient presented in table \ref{table:materila_properties_afc}.
  
 The comparison between experimental data and the results from FE analyses with linear time dependent electro-mechanical coupling for PZT is shown in figure \ref{fig:afc_result_electric_field_vs_strain}.
@@ -805,7 +797,7 @@ As expected the value of displacement in the longitudinal ($X_3$-axis) direction
 At higher amplitudes of electric field, AFC shows nonlinear and time dependent response due to nonlinear electromechanical coupling. 
 This effect is simulated using the QLV model that has been discussed in the previous chapters. 
 A polynomial for the nonlinear electric field is considered. 
-The material parameters for this model are presented in Table \ref{table:non_linear_materila_properties_afc}.
+The material parameters for this model are presented in table \ref{table:non_linear_materila_properties_afc}.
 It can be seen that model shows some deviation from experimental results.
 The deviation between the experimented and numerical results at higher amplitude of electric field could be due to effect of polarization switching in some parts of piezoelectric fiber.
 It is noted that in the AFC and distribution of electric potential inside the fiber is not uniform.
@@ -814,7 +806,7 @@ This effect will cause large deviation between the result from the current analy
 
 
 \begin{table}
-\caption{Nonlinear Material Properties of AFC}
+\caption{Nonlinear material properties of AFC}
 \centering
 \begin{tabular}{|l|c|c|c|r|}
 \hline
@@ -847,7 +839,7 @@ $\widehat{b}_{3333}$ & $1.5 \times 10^{-5}$ &  $ N/V^2 $\\ \hline
 \label{fig:non_linear_electric_field_vs_polarization}
 \end{figure}
 
-\subsection{The effect of scale time on electro mechanical response of AFC}
+\subsection{The Effect of Scale Time on Electro Mechanical Response of AFC}
 It can be shown that at higher intensity of electric field the piezoelectric materials respond faster to the change in electric field.
 We use the same analogy with thermorheologically simple materials that have widely used for mechanical response of polymers \cite{haj2004numerical, tscharnuter2012nonlinear}.
 The time scale factor is defined as an exponential function with respect to the electric field intensity $|\textbf {E}|$.
@@ -914,8 +906,8 @@ In order to examine the rate (frequency) dependent response, parametric studies 
 
 
 
-Finally, responses of AFC at different frequencies are compared with available experimental data from Ben Attitalah \cite{atillah2014}. Figure \ref{afc_freq_xp_model:fig} shows the electro-mechanical responses of AFC at frequencies 0.2, 1, and 5 Hz under  applied electric field 0.6MV/m, compared with experiment \cite{atillah2014}. Four Prony terms are used for electromechanical coupling coefficients of PZT fiber to capture response of model at different frequencies. 
-The mechanical and electrical properties of the constituents of AFC are shown in Table \ref{table:afc_freq_xp_model:fig}. Reasonable response predictions are shown for the three frequencies considered. 
+Finally, responses of AFC at different frequencies are compared with available experimental data from Ben Atitallah \cite{atillah2014}. Figure \ref{afc_freq_xp_model:fig} shows the electro-mechanical responses of AFC at frequencies 0.2, 1, and 5 Hz under  applied electric field 0.6MV/m, compared with experiment \cite{atillah2014}. Four Prony terms are used for electromechanical coupling coefficients of PZT fiber to capture response of model at different frequencies. 
+The mechanical and electrical properties of the constituents of AFC are shown in table \ref{table:afc_freq_xp_model:fig}. Reasonable response predictions are shown for the three frequencies considered. 
 
 
 
@@ -933,7 +925,7 @@ The mechanical and electrical properties of the constituents of AFC are shown in
 
 
 \begin{table}
-\caption{Material Properties of AFC with four Prony series}
+\caption{Material properties of AFC with four Prony series}
 \centering
 \begin{tabular}{|l|c|c|c|r|}
 \hline
@@ -962,5 +954,3 @@ ${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\ \hline
 \end{tabular}
 \label{table:afc_freq_xp_model:fig}
 \end{table} 
- 
-\clearpage

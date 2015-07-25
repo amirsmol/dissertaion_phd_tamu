@@ -5,33 +5,49 @@
 %  TAMU LaTeX User's Group, see http://www.howdy.me/.
 %s
 %  Author: Wendy Lynn Turner          
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \documentclass[12pt]{report}               
-\usepackage[letterpaper]{geometry}      
+\usepackage[letterpaper]{geometry}       
 \geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.4in,rmargin=1.15in}
 \usepackage[doublespacing]{setspace} 
 \usepackage{tocloft}      
-\usepackage[rm, tiny,center, compact]{titlesec}   
+\usepackage[rm, tiny,center, compact]{titlesec}    
 \usepackage{indentfirst} 	
-\usepackage{etoolbox}  
-\usepackage{tocvsec2}     
+\usepackage{etoolbox}    
+\usepackage{tocvsec2}       
 \usepackage[titletoc]{appendix}   
 \usepackage{appendix} 
-\usepackage{tamuconfig} 
-\usepackage{graphicx}
+\usepackage{tamuconfig}  
+\usepackage{graphicx}  
 \usepackage{subcaption} 
 \usepackage{rotating}
-\usepackage{amsmath} 
+\usepackage{amsmath}  
+\allowdisplaybreaks
 \usepackage{mathtools}  
 \usepackage{bbold} 
-\usepackage{etex}
+\usepackage{etex} 
 \reserveinserts{18} 
 \usepackage{morefloats}
 \usepackage{tikz}
 \usepackage{subfiles}
- 
- 
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{lipsum}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+
+
+
+% \long\def\symbolfootnote[#1]#2 {\begingroup%
+% \def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+
 % Added to fix issues with pdf searching in some versions of LaTeX
 %\usepackage[T1]{fontenc}\usepackage{lmodern}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -55,10 +71,11 @@
 % \ifnum\value{section}>0\addtocontents{toc}{\vskip-6pt}\fi
 % }
 % \preto\subsection{%
-% \ifnum\value{subsection}=0\addtocontents{toc}{\vskip-6pt}\fi
+% \ifnum\value{subsection}=0\addtocontents{toc}{\vskip-6pt}\fi 
 % \ifnum\value{subsection}>0\addtocontents{toc}{\vskip-6pt}\fi
 % } 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
 
 \begin{document}   
  
@@ -101,7 +118,7 @@
 \bibliographystyle{plain} 
 \bibliography{./additional_files/references} 
 % \include{appendices} 
-
-
 \end{document}
+
+
 

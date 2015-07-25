@@ -116,17 +116,16 @@
 
 
 
-\preto\figure{%  Removes the extra space added before new chapters
-  \ifnum\value{figure}=0\addtocontents{lof}{\vskip-10pt}\fi
-}
-\preto\table{%  Removes the extra space added before new chapters
-  \ifnum\value{table}=0\addtocontents{lot}{\vskip-10pt}\fi
-}
-
- \preto\section{%  Removes the extra space added before new chapters
-  \ifnum\value{section}=0\addtocontents{toc}{\vskip+10pt}\fi
- }
-
+%%\preto\figure{%  Removes the extra space added before new chapters
+%%  \ifnum\value{figure}=0\addtocontents{lof}{\vskip-10pt}\fi
+%%}
+%%\preto\table{%  Removes the extra space added before new chapters
+%%  \ifnum\value{table}=0\addtocontents{lot}{\vskip-10pt}\fi
+%%}
+%%
+%% \preto\section{%  Removes the extra space added before new chapters
+%%  \ifnum\value{section}=0\addtocontents{toc}{\vskip+10pt}\fi
+%% }
 \renewcommand{\cftloftitlefont}{\hfill\normalsize\rm\uppercase}
 \renewcommand{\cftchappagefont}{\normalsize\rm}  % Makes the chapter page numbers the default size and font.
 \renewcommand{\cftchapfont}{\normalsize\rm}

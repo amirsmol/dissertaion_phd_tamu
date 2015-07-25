@@ -13,8 +13,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                           SECTION II 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{\uppercase{minor loop constitutive model}}  
+% \chapter{\uppercase {minor loop constitutive mode*}}\footnotetext{*Part of this chapter is reprinted with permission from Sohrabi, M. A.,Muliana, A. H. (2015). Nonlinear and time dependent behaviors of piezoelectric materials and structures. International Journal of Mechanical Sciences, 94, 1-9.}
+% 
+\raggedbottom 
+\chapter{\uppercase {minor loop constitutive mode*}}
+\blfootnote{*Part of this chapter is reprinted with permission from "Nonlinear and time dependent behaviors of piezoelectric materials and structures" by Sohrabi, A., Muliana, A., (2015). \textit{International Journal of Mechanical Sciences}, 94, 1-9,  Copyright 2015 Elsevier Ltd.}
+% \chapter[\uppercase {Our cluster value theorems*}]{\uppercase {Our cluster value theorems*}\footnotetext{*Part of this chapter is reprinted with permission from W.~B.~Johnson, S.~Ortega Castillo, \emph{The cluster value problem in spaces of continuous functions}, to appear in Proc.~Amer.~Math.~Soc.}}
+% \chapter{\uppercase{minor loop constitutive model}}  
 \label{section:minor_loop_constitutive_model_for_polarized_piezo_electric}
 This chapter discusses a time-dependent constitutive model for polarized piezoelectric materials with an intention to capture minor hysteretic response.
 The model is suitable for piezoelectric ceramics, which experience small deformation gradient, and can sustain large electric fields. 
@@ -180,7 +185,6 @@ The second- and third-order electric permeability constants are measured at zero
 \end{aligned}
 \label{EQN:Non_relation_with_constants_2} 
 \end{equation}
-
  
 In analogy to the time-dependent deformation of viscoelastic materials, the nonlinear electro-elastic model developed by Tiersten \cite{tiersten1993electroelastic} is extended to include time-dependent material parameters. 
 There have been several integral models developed to describe nonlinear viscoelastic behavior:
@@ -197,7 +201,7 @@ For a nonlinear viscoelastic material,
  Green and Rivlin \cite{green1959mechanics} formed a sum of multiple integrals of the polynomial functions to incorporate history of input variables in predicting output at current time.
  This study considers two integral approaches in modelling nonlinear time-dependent electro-nechabical response of piezo electric,
   namely multiple integral and single integral based on quasi linear viscoelastic representations.
- 
+
 \section{Multiple Time Integral Method} 
 The constitutive equations (\ref{EQN:Non_Linear_Constitutive_Relation}) and
 (\ref{EQN:Non_Linear_Constitutive_Relation_strain_bases}) is expressed in terms of polynomial functions of independent field variables.
@@ -255,8 +259,15 @@ R(t)&=\int_{s=0^{-}}^{t} \psi_1(t-s)\frac{dI(s)}{ds}ds \\
 \end{equation}
 where $R(t)$ is the corresponding output at current time \textit{t}, \textit{I(s)} is the input history prescribed at $0\leq s \leq t$, $\psi_1(t)$ and $\psi_2(t,t)$ are the two kernel functions.
 When the kernels are assumed to increase with time, 
-Figure \ref{fig:2.1.Time_dependent_kernel_functions} illustrates the linear and second order kernel functions of time 
+figure \ref{fig:2.1.Time_dependent_kernel_functions} illustrates the linear and second order kernel functions of time 
 (see Findley et al. \cite{Findley1976} for a detailed explanation). 
+
+\begin{figure}
+\centering
+\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/Time_dependent_kernel_functions.png}
+\caption{The comparison between viscoelastic and elastic materials as host structure.}
+\label{fig:2.1.Time_dependent_kernel_functions}
+\end{figure}
 It is also assumed that the material response is unaltered by an arbitrary shift of the time scale, so that
  the following functions can be used for the two kernels in equation (\ref{EQN:double_integral_sample})
 
@@ -289,6 +300,13 @@ The characterization of material parameters becomes even more complicated for th
 It is also necessary that  $\psi_3(t,t,t-s_1)=\psi_3(t-s_1,t,t)= \psi_3(t,t-s_1,t)$.
 Detailed description of this method and its implementation for numerrical method is discussed in Sohrabi and Muliana \cite{Sohrabi2011}.
 
+% \begin{figure}
+% \centering
+% \includegraphics[width=5.0in]
+% {./chap_3_minor_loop/figures/fig_3_9_the_butterfly-like_shape_of_the_electro-mechanical_coupling_response.pdf}
+% \caption{The butterfly-like shape of the electro-mechanical coupling response}
+% \label{fig_3_9_the_butterfly_like_shape_of_the_electro_mechanical_coupling_response}
+% \end{figure}
 
 \section{Time Integration Method for Multiple Integral Form}
 A numerical algorithm for determining time-dependent response from the multiple integral moduli is presented here. 
@@ -301,7 +319,6 @@ R^t \equiv R[I^s,t]=R[I^0,t]+\int_{0^+}^{t} \frac{\partial R}{\partial I}[I^s,t-
 ; (t \geq 0)
 \label{2_15_eqn_Singel_integral}
 \end{equation}
-
 where
 \begin{equation}
 R[I^0,t]=R_0(I^0)+R_1 R(I^0) \left(1-exp \left[-\frac{t}{\tau_1} \right] \right)
@@ -315,7 +332,7 @@ and
 \end{equation}
 Here a superscript is used to denote the time-dependent variables. 
 A recursive method is used for solving the above integral form. 
-Substituting Eqs. (\ref{2_16_eqn_Singel_integral}) and (\ref{2_17_eqn_Singel_integral}) into equation (\ref{2_15_eqn_Singel_integral}) yields:
+Substituting equations (\ref{2_16_eqn_Singel_integral}) and (\ref{2_17_eqn_Singel_integral}) into equation (\ref{2_15_eqn_Singel_integral}) yields:
 \begin{equation}
 R^t=R_0(I^t)+R_1(I^t)-R_1(I^0) exp \left[-\frac{t}{\tau_1} \right]-q^t
 \label{2_18_history_eqn_Singel_integral}
@@ -422,6 +439,15 @@ strain and electric field axes. The contribution of each order of the kernel fun
 on the material parameters. For example the material parameters in equation (\ref{3_5_EQN:coefficients}) yield to more
 pronounced contribution of the first order kernel function; while the contributions of the
 second and third order kernel functions are comparable.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.0in]
+{./chap_3_minor_loop/figures/figure_3_8_the_effect_of_the_higher_order_terms_on_the_hysteretic_response.pdf}
+\caption{The effect of the higher order terms on the hysteretic response (f=0.1 Hz)}
+\label{figure_3_8_the_effect_of_the_higher_order_terms_on_the_hysteretic_response}
+\end{figure}
+
 Intuitively, the corresponding strain response of a piezoelectric ceramics when an electric
 field is applied in the poling direction (positive electric field) need not be the same as when
 an electric field is applied opposite to the poling direction (negative electric field), especially
@@ -443,7 +469,7 @@ first and second order kernel functions on the strain response are comparable:
 \label{3_5_EQN:coefficients_}
 \end{equation}
 
-Figure \ref{figure_3_8_the_effect_of_the_higher_order_terms_on_the_hysteretic_response} illustrates the corresponding strain response from the multiple integral model
+Figure \ref{fig_3_9_the_butterfly_like_shape_of_the_electro_mechanical_coupling_response} illustrates the corresponding strain response from the multiple integral model
 having the first and second kernel functions. The response shows an un-symmetric
 butterfly-like shape. The un-symmetric butterfly-like strain-electric field response is
 expected for polarized ferroelectric materials undergoing high amplitude of sinusoidal
@@ -453,8 +479,15 @@ switching under a negative electric field.
 
 
 
-\section{Quasi Linear Viscoelastic (QLV) Model} 
+\begin{figure}
+\centering
+\includegraphics[width=5.0in]
+{./chap_3_minor_loop/figures/fig_3_9_the_butterfly-like_shape_of_the_electro-mechanical_coupling_response.pdf}
+\caption{The butterfly-like shape of the electro-mechanical coupling response}
+\label{fig_3_9_the_butterfly_like_shape_of_the_electro_mechanical_coupling_response}
+\end{figure}
 
+\section{Quasi Linear Viscoelastic (QLV) Model \cite{sohrabi2015nonlinear}} 
 In an analogy to a time-dependent deformation of visco-elastic materials \cite{Wineman2000}, 
 a single integral representation for formulating time dependent electro-mechanical constitutive equations is also considered.
 The time dependent electromechanical model is:  
@@ -535,11 +568,8 @@ Recursive integration technique has been shown to be very effective in solving t
 In this study, a numerical method based on the recursive approach is adopted for solving the nonlinear time-dependent electro-mechanical coupling response.
 This numerical technique will be integrated into FE analyses that is explained in following sections.
 
-
-Using the time dependent constitutive equations that were presented in equation (\ref{EQN:NormalizedConstitutiveRelation}) and the time kernel function that is expressed as series of exponential functions (equation (\ref{EQN:LrgKProny})) with $ {}^{I}\lambda_{ijkl}=0$, $ {}^{I}\lambda_{ijk}^{e}=0$, and $ {}^{I}\lambda_{ki}^{\kappa}=0$, 
+Using the time dependent constitutive equations that were presented in equation (\ref{EQN:NormalizedConstitutiveRelation}) and the time kernel function that is expressed as series of exponential functions as equation (\ref{EQN:LrgKProny}) with $ {}^{I}\lambda_{ijkl}=0$, $ {}^{I}\lambda_{ijk}^{e}=0$, and $ {}^{I}\lambda_{ki}^{\kappa}=0$, 
 the expanded constitutive equations are written as:
-
-
 \begin{equation}
 \begin{aligned} 
 \sigma_{ij}(t)=
@@ -557,7 +587,12 @@ the expanded constitutive equations are written as:
 \sum_{I=1}^{NP}
 {}^{I}K_{ijk}^{e}
 exp(-{}^{I}\lambda_{ijk}^{e}[t-s]) \frac{\partial \sigma_{ij}}{\partial E_{k}} (E_{k} (s)) \dot{E}_{k} (s)ds
-\\
+\end{aligned}
+\label{EQN:RecursiveProny_stress}
+\end{equation}
+
+\begin{equation}
+\begin{aligned} 
 D_k(t)=
 &\sum_{i,j=1}^{3}
 {}^{0}K_{ijk}^{e}\frac{\partial
@@ -574,10 +609,10 @@ D_{k}}{\partial \varepsilon_{ij}} (\varepsilon_{ij}(t)) \varepsilon_{ij}(t)+
 \sum_{I=0}^{NP}
 {}^{I}K_{ki}^{\kappa}exp(-{}^{I}\lambda_{ki}^{\kappa}[t-s]) \frac{\partial D_{k}}{\partial E_{i}} (E_{i} (s)) \dot{E}_{i} (s)ds
 \end{aligned}
-\label{EQN:RecursiveProny}
+\label{EQN:RecursiveProny_elect_disp}
 \end{equation}
 
-Equations (\ref{EQN:RecursiveProny}) are rewritten with the definition of history variables as follows:
+Equations (\ref{EQN:RecursiveProny_stress}, \ref{EQN:RecursiveProny_stress}) are rewritten with the definition of history variables as follows:
 
 \begin{equation}
 \begin{aligned}
@@ -638,11 +673,9 @@ exp(-{}^{I}\lambda_{ki}^{\kappa}[t-s]) \frac{\partial D_{k}}{\partial E_{i}} (E_
 \end{aligned}
 \label{EQN:History_Discritizing}
 \end{equation}
-
 The above equations only need to be integrated within a time increment $\Delta t$. 
 An approximate form of the time derivatives of field variables is taken as: $\dot{\varepsilon}_{kl} \approx \frac{\Delta \varepsilon_{kl}}{\Delta t}$ and $\dot{E}_{k}\approx \frac{\Delta E_k}{\Delta t}$. 
 Upon solving the integrals in equation (\ref{EQN:History_Discritizing}) the history variables are:
-
 \begin{equation}
 \begin{aligned}
 {}^{I}q_{ijkl}^{\sigma_C}(t)=&
@@ -653,6 +686,11 @@ exp(-{}^{I}\lambda_{ijkl}^{C}[\Delta t]){}^{I}q_{ijkl}^{\sigma_C}(t-\Delta t)+ \
  exp(-{}^{I}\lambda_{ijk}^{e}[\Delta t]) {}^{I}q_{ijk}^{\sigma_e}(t-\Delta t)+ \\
 & \frac{{}^{I}K_{ijk}^{e}}{2} \Big( exp(-{}^{I}\lambda_{ijk}^{e}[\Delta t]) \frac{\partial \sigma_{ij}}{\partial E_{k}}(E_{k} (t-\Delta t )) \Delta E_{k} (t-\Delta t ) + \\
 & \frac{\partial \sigma_{ij}}{\partial E_{k}} (E_{k} (t)) \Delta E_{k} (t) \Big)\\
+\end{aligned}
+\label{EQN:History_Discritizing_Breaking_Integral_1_2}
+\end{equation}
+\begin{equation}
+\begin{aligned}
 {}^{I}q_{ijk}^{D_e}(t)=&
 exp(-{}^{I}\lambda_{ijk}^{e}[\Delta t]){}^{I}q_{k}^{D_e}(t-\Delta t)+\\
 & \frac{{}^{I}K_{ijk}^{e}}{2} \Big(exp(-{}^{I}\lambda_{ijk}^{e}[\Delta t]) \frac{\partial D_{k}}{\partial \varepsilon_{ij}}( \varepsilon_{ij}(t-\Delta t)) \Delta \varepsilon_{ij}(t-\Delta t) + \\
@@ -662,10 +700,10 @@ exp(-{}^{I}\lambda_{ki}^{\kappa}[\Delta t]){}^{I}q_{k}^{D_{\kappa}}(t-\Delta t)+
 & \frac{{}^{I} K_{ki}^{\kappa}}{2} \Big( exp(-{}^{I}\lambda_{ki}^{\kappa}[\Delta t]) \frac{\partial D_{k}}{\partial E_{i}}( E_{i} (t-\Delta t)) \Delta E_{i} (t-\Delta t) + \\ 
 & \frac{\partial D_{k}}{\partial E_{i}}( E_{i} (t)) \Delta E_{i} (t)\Big)
 \end{aligned}
-\label{EQN:History_Discritizing_Breaking_Integral}
+\label{EQN:History_Discritizing_Breaking_Integral_3_4}
 \end{equation}
 
-Equations (\ref{EQN:History_Introduction}) and (\ref{EQN:History_Discritizing_Breaking_Integral}) give an approximate solutions of nonlinear-time-dependent constitutive equations. 
+Equations (\ref{EQN:History_Introduction}) and (\ref{EQN:History_Discritizing_Breaking_Integral_1_2}, \ref{EQN:History_Discritizing_Breaking_Integral_3_4}) give an approximate solutions of nonlinear-time-dependent constitutive equations. 
 In the above equations the strain and electric field at each time increment are the independent variables that will be determined from structural analyses.
 
 \section{Finite Element Implementation of QLV Model}
@@ -697,7 +735,7 @@ The same shape functions are used for the displacement and electric potential fi
 To solve the nonlinear equation, the analyses start with trial linearized relations, followed by an iteration at each time increment 
 in order to minimize error from linearizing the nonlinear equations.
 At each time increment and at each material point, the constitutive relations in equation (\ref{EQN:NormalizedConstitutiveRelation}) are implemented. 
-The incremental solution method given in equations (\ref{EQN:History_Introduction})-(\ref{EQN:History_Discritizing_Breaking_Integral}) is used.
+The incremental solution method given in equations (\ref{EQN:History_Introduction})-(\ref{EQN:History_Discritizing_Breaking_Integral_1_2}, \ref{EQN:History_Discritizing_Breaking_Integral_3_4}) is used.
 The finite element analysis based on variational principle is considered for solving the equilibrium equations and determining the field variables.
 The virtual work for the  electro-mechanically coupled system is \cite{Benjeddou2000,tiersten1993electroelastic}:
 \begin{equation} 
@@ -810,8 +848,21 @@ In case a linear and time independent model is considered for the piezoelectric 
 The material constant $d_{311}$, is taken to be $340 pm/V$ in order to match the strain at $500 V/mm$. 
 In order to compare the piezoelectric constant $d_{311}$ of G-1195 PZT with other testing data under small electric field (linear range), the $d_{311}$ value of $180 pm/V$ \cite{low1995modeling} is alo plotted in figure \ref{fig:Crawley_xp_TimeinDepenLin}.
 
+\begin{figure} 
+\centering 
+\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/crawley_linear_time_independent.pdf}
+\caption{Linear time independent model compared with experimental strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz in \cite{Crawley1990}.}
+\label{fig:Crawley_xp_TimeinDepenLin}
+\end{figure}
  
-We use the model in equation (\ref{EQN:RecursiveProny}) \cite{tscharnuter2012nonlinear} to include the effect of loading history. 
+\begin{figure} 
+\centering
+\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/crawley_linear_time_dependent-eps-converted-to.pdf}
+\caption{Linear and history dependent model compared with experimental strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz in \cite{Crawley1990}.}
+\label{fig:Crawley_xp_His_dependent_Lin}
+\end{figure}
+
+We use the model in equation (\ref{EQN:RecursiveProny_stress}, \ref{EQN:RecursiveProny_stress}) \cite{tscharnuter2012nonlinear} to include the effect of loading history. 
 The time kernel function with $K(t)=1.0-0.6 exp(-t/1.2)$ in considered within the integral representation for the strain $\varepsilon_{11}(t)=\int_0^t
 K(t-s)\frac{\partial \varepsilon_{11}}{\partial E_3}\frac{\partial
 E_3(s)}{\partial s} ds$ with $\frac{\partial \varepsilon_{11}}{\partial
@@ -821,10 +872,24 @@ As it is suggested in the literature \cite{anderson1989piezoceramic,Crawley1990}
 In this analysis we include the quadratic function of electric field. 
 Following the same procedure as \cite{tscharnuter2012nonlinear} we define a nonlinear response function $\varepsilon_{11}(E_3)=-d_{311}^0 E_3-d_{311}^1 |E_3| E_3$.
 Here we take $d_{311}^0=340pm/V$ and\footnote{$f$ here stands for femto i.e. $10^{-15}$ } $d_{311}^1=0.71 fm^2/V^2 $ the result from this calibration is shown in figure \ref{fig:TimeDepenNonLinCrawley}. It is seen that the hysteresis strain and electric field curves under several amplitude of electric field at frequency 0.1 Hz determined from the model are in good correlation with experimental data.
-As discussed previously, it is possible to consider only odd terms in the H.O.T. of the nonlinear constitutive relation.
+As discussed previously, it is possible to consider only odd terms in the higher order terms of the nonlinear constitutive relation.
 Another nonlinear model incorporating first and third order terms is considered, e.g. $\varepsilon_{11}(E_3)=-d_{311}^0 E_3-d_{311}^2 E_3^3$ with $d_{311}^0=340pm/V$ and $d_{311}^2=0.55 z m/V$ \footnote{$z$ here stands for Zepto i.e. $10^{-21}$ } using the time dependent parameter discussed above ($K(t)=1.0-0.6 exp(-t/1.2)$), 
 the nonlinear and time dependent model can capture the hystersis response under different amplitude of electric fields, as shown in figure \ref{fig:TimeDepenNonLinCrawleyThirdordermodel}. 
+\begin{figure}
+\centering
+\includegraphics[width=5.0in]
+{./chap_3_minor_loop/figures/crawley_non_linear_time_dependent-eps-converted-to.pdf}
+\caption{Nonlinear time dependent strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz compared with experiment \cite{Crawley1990}.}
+\label{fig:TimeDepenNonLinCrawley}
+\end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=5.0in]
+{./chap_3_minor_loop/figures/crawley_non_linear_time_independent_third_order.pdf}
+\caption{Nonlinear time dependent strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz for third order model compared with experiment \cite{Crawley1990}.}
+\label{fig:TimeDepenNonLinCrawleyThirdordermodel}
+\end{figure}
  
 In order to examine the rate (frequency) dependent response, parametric studies are presented by applying electric fields at various frequencies. 
 Different frequency inputs are applied to the same material constitutive model presented in this section. The electric field amplitude input is chosen to be $750 V/mm$.
@@ -833,10 +898,16 @@ It is apparent from the results that higher frequency of loading reduces time-de
 This is due to the fact that the material does not have enough time to exhibit time-dependent effect. 
 Fast loading reduces the creep-like or relaxation-like behavior and the area inside the hysteresis curve becomes smaller.  
 
+\begin{figure}
+\centering
+\includegraphics[width=5.0in]
+{./chap_3_minor_loop/figures/crawley_non_linear_time_dependent_frequency_effect-eps-converted-to.pdf}
+\caption{Effect of frequency of applied electric field ($E_3$) on strain ($\varepsilon_{11}$) response.}
+\label{fig:Frequency_Effect}
+\end{figure}
 
 
 \subsection{Structural Analyses}
-
 Piezoelectric telescopic actuators are used to amplify displacements by utilizing the piezoelectric coupling effect. 
 Using the 3D continuum elements discussed in section \ref{Chapter:Finite_element}, 
 time-dependent nonlinear electro-mechanical coupling response of telescopic actuators is studied. Detailed discussion of manufacturing of the piezoelectric actuators and experimental tests are given by Alexander et. al. \cite{Alexander,Alexander2003,Alexander2001}. 
@@ -846,31 +917,40 @@ The first actuator to be considered for simulation is PZT-568 that is formed by 
 The geometry of the actuator is shown in figure \ref{fig:Geometry_PZT-586}. 
 In order to activate it and obtain the overall axial deflection, each wall was
 subjected to electric field in the radial direction.
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0in]{./chap_3_minor_loop/figures/PZT_586_Geometry-eps-converted-to.pdf}
+\caption{Geometry of PZT-586 telescopic actuator (dimensions are in mm)}
+\label{fig:Geometry_PZT-586}
+\end{figure}
+
 The alternating electric potential with amplitude of 300[V] and -300[V] with frequency of 0.1Hz is applied. 
 The way that the electric potential is distributed in the actuator is illustrated in figure \ref{fig:PZT-586_response}. 
+
+\begin{figure}
+\centering
+\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/telescopic_actuator_pztl_586_elec_pot_deflection_uy-eps-converted-to.pdf}
+\caption{Electric potential and deflection contour of PZT-586 telescopic actuator}
+\label{fig:PZT-586_response}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/result_pzt_586.pdf}
+\caption{Tip deflection of PZT-586, comparing FEM model with experiment}
+\label{fig:PZT_586_XP_Calib}
+\end{figure}
+
 The displacement due to this applied electric field is obtained from the FE simulation. 
 The corresponding displacement contour at applied electric fields are shown in figure \ref{fig:PZT-586_response}. 
 The comparison between the time-dependent hysteresis response from current simulation and experiment are shown in figure \ref{fig:PZT_586_XP_Calib}. 
 The nonlinear hysteresis response is captured effectively by taking the electro-mechanical coupling coefficients to be a nonlinear function of applied electric field. 
 The material data are calibrated to fit the experimental data presented in \cite{Alexander,Alexander2003}. 
-The rest of electro-mechanical properties are taken to be same as PZT and presented in Table \ref{table:MatPZT-PZT-586}. 
+The rest of electro-mechanical properties are taken to be same as PZT and presented in table \ref{table:MatPZT_PZT_586}. 
 The nonlinear coefficients are defined with respect to the applied electric field in the radial direction.
-
-Another actuator, MSI-53, is considered in order to examine performance of FE model. 
-The geometry of this actuator is shown in figure \ref{fig:MSI_53_Geometry}. 
-The distribution of electric potential in the actuator is shown in figure \ref{fig:MSI_53_XP_contour}. 
-The material properties of MSI-53 that are used for the FE analysis are given in Table \ref{table:MatPZT-MSI-53}. 
-It is noted that frequency of applied electric field is taken to be 0.1Hz. 
-The nonlinear coefficients are defined with respect to the applied electric field in the radial direction.
-The distribution of the axial displacement and electric field distribution for this actuator is shown in figure \ref{fig:MSI_53_XP_results}. 
-The tip deflection response of this actuator is simulated using the presented electro-mechanical model and it is compared with experimental result shown in figure \ref{fig:MSI_53_XP_results}. 
-There is a good agreement between experiment and the model. 
-The nonlinear coefficient have a very small effect on the result, which could be due to a small amplitude of the electric field applied.
-
-\newpage 
- 
 \begin{table}
-\caption{Material Properties of PZT-586 Actuator on its peak\cite{Alexander}}
+\caption{Material properties of PZT-586 actuator \cite{Alexander}}
 \centering
 \begin{tabular}{|l|c|r|}
 \hline 
@@ -890,11 +970,15 @@ ${}^{1}K_{ijk}^{e}$&-0.4&\\ \hline
 ${}^{0}\lambda_{ijk}^{e}$&0&\\ \hline
 ${}^{1}\lambda_{ijk}^{e}$&0.5&\\ \hline 
 \end{tabular}
-\label{table:MatPZT-PZT-586}
+\label{table:MatPZT_PZT_586}
 \end{table}
-
+Another actuator, MSI-53, is considered in order to examine performance of FE model. 
+The geometry of this actuator is shown in figure \ref{fig:MSI_53_Geometry}. 
+The distribution of electric potential in the actuator is shown in figure \ref{fig:MSI_53_XP_contour}. 
+The material properties of MSI-53 that are used for the FE analysis are given in table \ref{table:MatPZT_MSI_53}. 
+It is noted that frequency of applied electric field is taken to be 0.1Hz. 
 \begin{table}
-\caption{Material Properties of MSI-53 Actuator \cite{Alexander}}
+\caption{Material properties of MSI-53 actuator \cite{Alexander}}
 \centering
 \begin{tabular}{|l|c|r|}
 \hline 
@@ -914,94 +998,13 @@ ${}^{1}K_{ijk}^{e}$&-0.4&\\ \hline
 ${}^{0}\lambda_{ijk}^{e}$&0&\\ \hline
 ${}^{1}\lambda_{ijk}^{e}$&0.5&\\ \hline 
 \end{tabular}
-\label{table:MatPZT-MSI-53} 
+\label{table:MatPZT_MSI_53} 
 \end{table}
-
-\begin{figure}
-\centering
-\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/Time_dependent_kernel_functions.png}
-\caption{The comparison between viscoelastic and elastic materials as host structure.}
-\label{fig:2.1.Time_dependent_kernel_functions}
-\end{figure}
- 
-
-\begin{figure} 
-\centering 
-\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/crawley_linear_time_independent.pdf}
-\caption{Linear time independent model compared with experimental strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz in \cite{Crawley1990}.}
-\label{fig:Crawley_xp_TimeinDepenLin}
-\end{figure}
- 
-\begin{figure} 
-\centering
-\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/crawley_linear_time_dependent-eps-converted-to.pdf}
-\caption{Linear and history dependent model compared with experimental strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz in \cite{Crawley1990}.}
-\label{fig:Crawley_xp_His_dependent_Lin}
-\end{figure}
-  
-\begin{figure}
-\centering
-\includegraphics[width=5.0in]
-{./chap_3_minor_loop/figures/crawley_non_linear_time_dependent-eps-converted-to.pdf}
-\caption{Nonlinear time dependent strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz compared with experiment\cite{Crawley1990}.}
-\label{fig:TimeDepenNonLinCrawley}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=5.0in]
-{./chap_3_minor_loop/figures/crawley_non_linear_time_independent_third_order.pdf}
-\caption{Nonlinear time dependent strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz for third order model compared with experiment\cite{Crawley1990}.}
-\label{fig:TimeDepenNonLinCrawleyThirdordermodel}
-\end{figure}
-
-
-\begin{figure}
-\centering
-\includegraphics[width=5.0in]
-{./chap_3_minor_loop/figures/crawley_non_linear_time_dependent_frequency_effect-eps-converted-to.pdf}
-\caption{Effect of frequency of applied electric field ($E_3$) on strain ($\varepsilon_{11}$) response.}
-\label{fig:Frequency_Effect}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=5.0in]
-{./chap_3_minor_loop/figures/figure_3_8_the_effect_of_the_higher_order_terms_on_the_hysteretic_response.pdf}
-\caption{The effect of the higher order terms on the hysteretic response (f=0.1 Hz)}
-\label{figure_3_8_the_effect_of_the_higher_order_terms_on_the_hysteretic_response}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=5.0in]
-{./chap_3_minor_loop/figures/fig_3_9_the_butterfly-like_shape_of_the_electro-mechanical_coupling_response.pdf}
-\caption{The butterfly-like shape of the electro-mechanical coupling response}
-\label{fig_3_9_the_butterfly-like_shape_of_the_electro-mechanical_coupling_response}
-\end{figure}
-
-
-\begin{figure}
-\centering
-\includegraphics[width=1.0in]{./chap_3_minor_loop/figures/PZT_586_Geometry-eps-converted-to.pdf}
-\caption{Geometry of PZT-586 Telescopic Actuator (dimensions are in mm)}
-\label{fig:Geometry_PZT-586}
-\end{figure}
-
-
-\begin{figure}
-\centering
-\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/telescopic_actuator_pztl_586_elec_pot_deflection_uy-eps-converted-to.pdf}
-\caption{Electric potential and deflection contour of PZT-586 Telescopic Actuator}
-\label{fig:PZT-586_response}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=5.0in]{./chap_3_minor_loop/figures/result_pzt_586.pdf}
-\caption{Tip deflection of PZT-586 comparing FEM with experiment}
-\label{fig:PZT_586_XP_Calib}
-\end{figure}
+The nonlinear coefficients are defined with respect to the applied electric field in the radial direction.
+The distribution of the axial displacement and electric field distribution for this actuator is shown in figure \ref{fig:MSI_53_XP_results}. 
+The tip deflection response of this actuator is simulated using the presented electro-mechanical model and it is compared with experimental result shown in figure \ref{fig:MSI_53_XP_results}. 
+There is a good agreement between experiment and the model. 
+The nonlinear coefficient have a very small effect on the result, which could be due to a small amplitude of the electric field applied.
 
 \begin{figure}
 \centering
@@ -1014,7 +1017,7 @@ ${}^{1}\lambda_{ijk}^{e}$&0.5&\\ \hline
 \begin{figure}
 \centering
 \includegraphics[width=5.0in]{./chap_3_minor_loop/figures/telescopic_actuator_msi_53_elec_pot_deflection_uy-eps-converted-to.pdf}
-\caption{Geometry of MSI-53}   
+\caption{Electric potential and deflection contour of MSI-53 Telescopic Actuator}   
 \label{fig:MSI_53_XP_contour}  
 \end{figure}
  
@@ -1025,3 +1028,4 @@ ${}^{1}\lambda_{ijk}^{e}$&0.5&\\ \hline
 \caption{Tip deflection of MSI-53 comparing FEM model with experiment}
 \label{fig:MSI_53_XP_results}
 \end{figure}
+
