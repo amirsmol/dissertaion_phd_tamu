@@ -1,8 +1,6 @@
-
 \chapter{\uppercase{Active Trusses}}  
 \label{section:chap_05_active_trusses} 
 Simulations of shape changing in active truss structures are discussed in this chapter. Finite element analyses of 3D truss system are presented and both material and geometric nonlinearities are considered in the analyses. Two truss systems with cubical and tetrahedral arrangements of trusses as building blocks are considered in order to generate planar truss and longitudinal (beam like) truss systems, respectively. Shape changing in these truss systems is controlled by an actuation of each truss component using a piezoelectric actuation.
-\\
 
 \section{Deformed Shapes}  
 \label{section:chap_05_1_deformed_shape_of_truss}
@@ -32,7 +30,6 @@ E_{11}=f_1(S_{11})+f_2(E_3)
 \end{equation}
 where $E_{11}$ is the axial strain along the longitudinal axis of each truss member, $f_1(S_{11})$ is the strain due to the mechanical stress along the longitudinal axis of the truss $S_{11}$ and $f_2$ is the strain due to the electric field input, prescribed through the thickness of the truss, $E_3$.
 In order to achieve desired shapes in the truss system, either stress or electric field, or both stress and electric field can be prescribed.
-\\
 \section{Nonlinear Truss Finite Element}
 Truss systems consist of relatively slender members connected by pin joints.
 The pin joints allow the members to rotate with respect to each other.
@@ -86,12 +83,10 @@ F_{ij}=\delta_{ij}+ \frac{\partial u_i}{\partial X_j};
 \end{equation}
 
 \subsection{Space Filler Truss Configuration}
-The first example that is considered is a planar truss.
-The truss is formed by the cubical element as a building block. 
-A single element that forms the truss system is shown in figure \ref{fig:cuber_space_filler_truss}.
-The element consists of 12 side truss members and 4 diagonal members.
-The deformation of the members can be controlled by the electric field or other stimuli.
-The change in the length of each member will cause change of shape of each single cubical element and consequently change in shape of the structure that is made of these members.
+The first example considered is a planar truss. 
+The truss is formed by cubical elements. Figure \ref{fig:cuber_space_filler_truss} provides an example for one of these elements. 
+Each of the elements consists of 12 side and 4 diagonal truss members. Deformation of the members can be controlled by various stimuli, including electric fields. 
+Changes in the length of each member will cause change of shape of each single cubical element and consequently change in shape of the structure that is made of these members.
 
 \begin{figure} 
 \centering
@@ -207,12 +202,8 @@ The strain induced in each truss for this truss configuration in shown in figure
 \label{fig:planar_z_eq_x2_y2_efield_contour}
 \end{figure} 
 
-% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
- 
 \subsection{Tetrahedral Beam Like Truss}
-
 Using a tetrahedral shape as a building block for truss configurations it is possible to form the longitudinal truss elements to take a beam like form. The building block of the tetrahedral beam like truss is shown in figure \ref{fig:building_block_of_tetrahedral_truss} that contains 3 tetrahedral. 
-
 
 
 The beam like truss is formed by arranging these tetrahedral units in one direction. An example of truss with 150 tetrahedral units is shown in figure \ref{fig:refrence_shap_100_tetra_unit_tetrahedral_unit}. 
@@ -249,7 +240,7 @@ $\theta$ is the curvature angle (for full circle it is $2\pi$) and
 $ L_{beam}$ is the length of the beam made of tetrahedral units.
 The strain $E_{11}=X_3/r_{curvature}$ causes lateral deformation in the $X_3$ direction with positive curvature.
 
-We try to produce the shape of an arc with a curvature angle $\pi$. The result is shown is figure \ref{fig:tetra_hedral_arc_pi_shape}. As can be seen the shape is quite different from the real arc. The reason of the difference between the produced shape and desired shape is due to disregarding the normal strain in the thickness direction of beam that is produced in bending of a beam. Increasing the curvature in the tetrahedral beam like truss will cause a sinusoidal like shape in the truss. The strain that is induced in this truss is taken from equation (\ref{stran_and_radios_of_curvture_of_beam:eqn}) with $\theta=2 \pi$.
+We try to produce the shape of an arc with a curvature angle $\pi$. The result is shown is figure \ref{fig:tetra_hedral_arc_pi_shape}. As can be seen the shape is quite different from the real arc. The reason of the difference between the produced shape and desired shape is due to disregarding the normal strain in the thickness direction of beam that is produced in bending of a beam. Increasing the curvature in the tetrahedral beam like truss will cause a sinusoidal like shape in the truss as it is shown in figure \ref{fig:tetra_hedral_arc_2_pi_shape}. The strain that is induced in this truss is taken from equation (\ref{stran_and_radios_of_curvture_of_beam:eqn}) with $\theta=2 \pi$.
 
 \begin{figure} 
 \centering
@@ -307,6 +298,7 @@ E_{11}=X_3 \left(
 \label{three_points_strain:eqn}
 \end{equation}
 
+The desired shape and the final shape of the linear truss the case that it passes through three specific points as are shown in figure \ref{fig:tetra_hedral_three_point}.
 
 \begin{figure}
 \centering

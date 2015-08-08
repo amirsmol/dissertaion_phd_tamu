@@ -1,21 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  New template code for TAMU Theses and Dissertations starting Fall 2012.  
-%  For more info about this template or the 
-%  TAMU LaTeX User's Group, see http://www.howdy.me/.
-%
-%  Author: Wendy Lynn Turner 
-%	 Version 1.0 
-%  Last updated 8/5/2012 
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                           SECTION II 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \chapter{\uppercase {minor loop constitutive mode*}}\footnotetext{*Part of this chapter is reprinted with permission from Sohrabi, M. A.,Muliana, A. H. (2015). Nonlinear and time dependent behaviors of piezoelectric materials and structures. International Journal of Mechanical Sciences, 94, 1-9.}
-% 
-\raggedbottom 
+% \raggedbottom 
 \chapter{\uppercase {minor loop constitutive mode*}}
 \blfootnote{*Part of this chapter is reprinted with permission from "Nonlinear and time dependent behaviors of piezoelectric materials and structures" by Sohrabi, A., Muliana, A., (2015). \textit{International Journal of Mechanical Sciences}, 94, 1-9,  Copyright 2015 Elsevier Ltd.}
 % \chapter[\uppercase {Our cluster value theorems*}]{\uppercase {Our cluster value theorems*}\footnotetext{*Part of this chapter is reprinted with permission from W.~B.~Johnson, S.~Ortega Castillo, \emph{The cluster value problem in spaces of continuous functions}, to appear in Proc.~Amer.~Math.~Soc.}}
@@ -61,6 +44,7 @@ Equation  (\ref{EQN:Gibbs_Free_Energy}) can be further expanded to include fourt
 In such case, additional material paramaters are required.
 It is also possible to consider only the odd or even terms of electric field in order to capture response of the material.
 Using equations  (\ref{EQN:Gibbs_Free_Energy}) and (\ref{EQN:Derivation_from_gibbs}) the stress and electric displacement for piezoelectric materials undergoing small strain and large electric field are written as:
+\\
  
 \begin{equation}
 \begin{aligned}
@@ -265,7 +249,7 @@ figure \ref{fig:2.1.Time_dependent_kernel_functions} illustrates the linear and 
 \begin{figure}
 \centering
 \includegraphics[width=5.0in]{./chap_3_minor_loop/figures/Time_dependent_kernel_functions.png}
-\caption{The comparison between viscoelastic and elastic materials as host structure.}
+\caption{The comparison between viscoelastic and elastic materials as host structure}
 \label{fig:2.1.Time_dependent_kernel_functions}
 \end{figure}
 It is also assumed that the material response is unaltered by an arbitrary shift of the time scale, so that
@@ -344,10 +328,12 @@ q^t=\int_{0^+}^{t} \frac{\partial R_1 (I^s) }{\partial I} exp \left[-\frac{t-s}{
 \end{equation}
 is the history variable, which can be approximated as: 
 \begin{equation}
-q^t \approx  exp \left[-\frac{-\Delta t}{\tau_1} \right] q^{t-\Delta t}+ 
+\begin{aligned}
+&q^t \approx  exp \left[-\frac{-\Delta t}{\tau_1} \right] q^{t-\Delta t}+ 
 \Big[\frac{\partial R_1 (I^t) } {\partial I} \frac{d I}{d s} \mid_t
-+exp \left[ \frac{-\Delta t}{\tau_1} \right]  
-\frac{\partial R_1 (I^{t-\Delta t}) } {\partial I} \frac{d I}{d s} \mid_{t-\Delta t} \Big] \frac{\Delta t}{2}
++exp \left[ \frac{-\Delta t}{\tau_1} \right] \\  
+&\frac{\partial R_1 (I^{t-\Delta t}) } {\partial I} \frac{d I}{d s} \mid_{t-\Delta t} \Big] \frac{\Delta t}{2}
+\end{aligned}
 \label{2_20_EQN:single_integral_history_variables}
 \end{equation}
 The superscript $t-\Delta t$ denotes the previous time history. 
@@ -358,8 +344,8 @@ The linear kernel is approximated as:
 
 \begin{equation}
 \begin{aligned}
-& \int_{s=0^{-}}^{t}  \psi_1(t-s) \frac{dI(s)}{d}ds \approx \\
-& \left[ A_0+A_1 \right] I_t -A_1 I(0^+) exp \left[- \frac{t}{\tau_1} \right] -q^t_1\\
+& \int_{s=0^{-}}^{t}  \psi_1(t-s) \frac{dI(s)}{d}ds \approx 
+\left[ A_0+A_1 \right] I_t -A_1 I(0^+) exp \left[- \frac{t}{\tau_1} \right] -q^t_1\\
 & q^t_1 \approx exp \left[- \frac{\Delta t}{\tau_1} \right] q^{t-\Delta t}_1 +A_1 \frac{\Delta t}{2} 
 \left[ \frac{dI}{ds} \mid_t + exp \left[ - \frac{\Delta t}{\tau_1} \right]  \frac{dI}{ds} \mid_{t-\Delta t} \right]  \\
 & t \geq 0 
@@ -476,8 +462,6 @@ expected for polarized ferroelectric materials undergoing high amplitude of sinu
 electric field input. The nonlinear response due to the positive electric field is caused by
 different microstructural changes than the microstructural changes due to polarization
 switching under a negative electric field. 
-
-
 
 \begin{figure}
 \centering
@@ -851,14 +835,14 @@ In order to compare the piezoelectric constant $d_{311}$ of G-1195 PZT with othe
 \begin{figure} 
 \centering 
 \includegraphics[width=5.0in]{./chap_3_minor_loop/figures/crawley_linear_time_independent.pdf}
-\caption{Linear time independent model compared with experimental strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz in \cite{Crawley1990}.}
+\caption{Linear time independent model compared with experimental strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz in \cite{Crawley1990}}
 \label{fig:Crawley_xp_TimeinDepenLin}
 \end{figure}
  
 \begin{figure} 
 \centering
 \includegraphics[width=5.0in]{./chap_3_minor_loop/figures/crawley_linear_time_dependent-eps-converted-to.pdf}
-\caption{Linear and history dependent model compared with experimental strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz in \cite{Crawley1990}.}
+\caption{Linear and history dependent model compared with experimental strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz in \cite{Crawley1990}}
 \label{fig:Crawley_xp_His_dependent_Lin}
 \end{figure}
 
@@ -887,7 +871,7 @@ the nonlinear and time dependent model can capture the hystersis response under 
 \centering
 \includegraphics[width=5.0in]
 {./chap_3_minor_loop/figures/crawley_non_linear_time_independent_third_order.pdf}
-\caption{Nonlinear time dependent strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz for third order model compared with experiment \cite{Crawley1990}.}
+\caption{Nonlinear time dependent strain ($\varepsilon_{11}$) response under electric field ($E_3$) with frequency 0.1 Hz for third order model compared with experiment \cite{Crawley1990}}
 \label{fig:TimeDepenNonLinCrawleyThirdordermodel}
 \end{figure}
  
@@ -902,10 +886,9 @@ Fast loading reduces the creep-like or relaxation-like behavior and the area ins
 \centering
 \includegraphics[width=5.0in]
 {./chap_3_minor_loop/figures/crawley_non_linear_time_dependent_frequency_effect-eps-converted-to.pdf}
-\caption{Effect of frequency of applied electric field ($E_3$) on strain ($\varepsilon_{11}$) response.}
+\caption{Effect of frequency of applied electric field ($E_3$) on strain ($\varepsilon_{11}$) response}
 \label{fig:Frequency_Effect}
 \end{figure}
-
 
 \subsection{Structural Analyses}
 Piezoelectric telescopic actuators are used to amplify displacements by utilizing the piezoelectric coupling effect. 
@@ -952,22 +935,21 @@ The nonlinear coefficients are defined with respect to the applied electric fiel
 \begin{table}
 \caption{Material properties of PZT-586 actuator \cite{Alexander}}
 \centering
-\begin{tabular}{|l|c|r|}
-\hline 
+\begin{tabular}{c c c} \hline
 Young's Modulus&62& $GPa$\\ \hline
-Poisson's Ratio&0.3& \\ \hline 
-$e_{212}$ &-32.51&$C/m^2$\\ \hline
-$e_{122}$ &13.77&$C/m^2$\\ \hline
-$e_{111}$ & -16.92&$C/m^2$\\ \hline
-$\kappa_{11}=\kappa_{22}$ & 4 &pF/m\\ \hline
-$\kappa_{33}$ & 2 &pF/m\\ \hline
-$\widehat{b}_{1122}$ & $3.35 \times 10^{-5}$ &  $ N/V^2 $\\ \hline
-$\widehat{b}_{1111} $ & $-3.35 \times 10^{-5}$ &$ N/V^2 $\\ \hline
-$\kappa_{11}=\kappa_{22}$ & 4 &pF/m\\ \hline
-$\kappa_{33}$ & 2 &pF/m\\ \hline
-${}^{0}K_{ijk}^{e}$&1.0&\\ \hline
-${}^{1}K_{ijk}^{e}$&-0.4&\\ \hline
-${}^{0}\lambda_{ijk}^{e}$&0&\\ \hline
+Poisson's Ratio&0.3& \\  
+$e_{212}$ &-32.51&$C/m^2$\\ 
+$e_{122}$ &13.77&$C/m^2$\\ 
+$e_{111}$ & -16.92&$C/m^2$\\ 
+$\kappa_{11}=\kappa_{22}$ & 4 &pF/m\\ 
+$\kappa_{33}$ & 2 &pF/m\\ 
+$\widehat{b}_{1122}$ & $3.35 \times 10^{-5}$ &  $ N/V^2 $\\ 
+$\widehat{b}_{1111} $ & $-3.35 \times 10^{-5}$ &$ N/V^2 $\\ 
+$\kappa_{11}=\kappa_{22}$ & 4 &pF/m\\ 
+$\kappa_{33}$ & 2 &pF/m\\ 
+${}^{0}K_{ijk}^{e}$&1.0&\\ 
+${}^{1}K_{ijk}^{e}$&-0.4&\\ 
+${}^{0}\lambda_{ijk}^{e}$&0&\\ 
 ${}^{1}\lambda_{ijk}^{e}$&0.5&\\ \hline 
 \end{tabular}
 \label{table:MatPZT_PZT_586}
@@ -980,22 +962,21 @@ It is noted that frequency of applied electric field is taken to be 0.1Hz.
 \begin{table}
 \caption{Material properties of MSI-53 actuator \cite{Alexander}}
 \centering
-\begin{tabular}{|l|c|r|}
-\hline 
+\begin{tabular}{ c c c } \hline
 Young's Modulus&60.06&$GPa$\\ \hline
-Poisson's Ratio&$0.3$&\\ \hline 
-$e_{111}$ &-20.92&$C/m^2$\\ \hline
-$e_{122}$ &17.06&$C/m^2$\\ \hline
-$e_{212}$ &-45.74&$C/m^2$\\ \hline
-$\kappa_{11}=\kappa_{22}$ & 4 & pF/m\\ \hline
-$\kappa_{33}$ & 2 & pF/m \\ \hline
-$\widehat{b}_{1122} $ & $3.35 \times 10^{-5}$ &  $N/V^2$ \\ \hline
-$\widehat{b}_{1111} $ & $-3.35 \times 10^{-5}$ & $N/V^2$ \\ \hline
-$\kappa_{11}=\kappa_{22}$ & 4 & pF/m \\ \hline
-$\kappa_{33}$ & 2 & pF/m \\ \hline
-${}^{0}K_{ijk}^{e}$&1.0&\\ \hline
-${}^{1}K_{ijk}^{e}$&-0.4&\\ \hline
-${}^{0}\lambda_{ijk}^{e}$&0&\\ \hline
+Poisson's Ratio&$0.3$&\\ 
+$e_{111}$ &-20.92&$C/m^2$\\
+$e_{122}$ &17.06&$C/m^2$\\
+$e_{212}$ &-45.74&$C/m^2$\\
+$\kappa_{11}=\kappa_{22}$ & 4 & pF/m\\
+$\kappa_{33}$ & 2 & pF/m \\
+$\widehat{b}_{1122} $ & $3.35 \times 10^{-5}$ &  $N/V^2$ \\
+$\widehat{b}_{1111} $ & $-3.35 \times 10^{-5}$ & $N/V^2$ \\
+$\kappa_{11}=\kappa_{22}$ & 4 & pF/m \\
+$\kappa_{33}$ & 2 & pF/m \\
+${}^{0}K_{ijk}^{e}$&1.0&\\
+${}^{1}K_{ijk}^{e}$&-0.4&\\
+${}^{0}\lambda_{ijk}^{e}$&0&\\
 ${}^{1}\lambda_{ijk}^{e}$&0.5&\\ \hline 
 \end{tabular}
 \label{table:MatPZT_MSI_53} 

@@ -32,16 +32,16 @@ As bulk piezoelectric ceramics comprise of polycrystalline structures,
 Therefore, net (macroscopic) polarization is considered zero and the materials do not show macroscopic electro-mechanical coupling response. 
 Applying an electric field in certain direction would align the poling directions of the crystallites towards the electric field direction so that the net polarization of the materials is measurable,
  as illustrated in figure \ref{fig:Majorhysteresisloops}a, where $x_3$ is the direction of the electric field applied. 
+Increasing the electric field would increase the measured polarization untill it
+reaches the saturated value and upon removal of the electric field, there exist a remanent polarization\footnote{The ability of materials to undergo spontaneous polarization and retain its polarized state after removal of electric field is called ferroelectricity. The materials with ferroelectric behavior are called ferroelectric materials.}. The net poling axis of the piezoelectric materials can be reversed by applying an electric field in the opposite direction to the current polarization. When the net polarization in the materials is non-zero the materials have electro-mechanical coupling responses,
+ as shown by the corresponding nonzero strain in figure \ref{fig:Majorhysteresisloops}b, which shows a strain response with respect to the applied electric field.
+
 \begin{figure}
 \centering
 \includegraphics[width=6in]{./chap_2_pol_sw/figures/majorloop_polarization_switching.pdf}
 \caption{Major hysteresis loops in a piezoelectric sample: a) polarization response and b) corresponding strain response}
 \label{fig:Majorhysteresisloops}
 \end{figure} 
-Increasing the electric field would increase the measured polarization untill it
-reaches the saturated value and upon removal of the electric field, there exist a remanent polarization\footnote{The ability of materials to undergo spontaneous polarization and retain its polarized state after removal of electric field is called ferroelectricity. The materials with ferroelectric behavior are called ferroelectric materials.}. The net poling axis of the piezoelectric materials can be reversed by applying an electric field in the opposite direction to the current polarization. When the net polarization in the materials is non-zero the materials have electro-mechanical coupling responses,
- as shown by the corresponding nonzero strain in figure \ref{fig:Majorhysteresisloops}b, which shows a strain response with respect to the applied electric field.
-
 
 For practical application purposes, the materials need to be polarized/poled in order to have an electro-mechanical coupling. 
 This is done by applying a relatively large electric field, greater than the coercive electric field ($E_c$) of the material,
@@ -50,15 +50,16 @@ This is done by applying a relatively large electric field, greater than the coe
    then the temperature is decreased to room temperature prior to removing the electric field which results in a remanent polarization. 
 At this stage, the polarized material would have piezoelectric effects, as shown by the minor loops in figure \ref{fig:Manorhysteresisloops}. 
 By applying an electric field, the polarized material would undergo mechanical deformations or experience stresses and when a mechanical load is applied the polarized material would generate electric charge or voltage difference. 
+Typically, electric fields and/or mechanical stresses should be applied to the piezoelectric materials with their magnitude less than the coercive limit so that they will not cause depolarization of the materials. 
+Applying large electric field or compressive stress in the poling direction to the polarized materials would cause depolarization and  consequently loss of the electro-mechanical coupling properties. 
+The stress and electric field threshold that causes depolarization are called coercive stress and coercive electric field, respectively \cite{Sohrabi201344}.
+
 \begin{figure}
 \centering
 \includegraphics[width=6in]{./chap_2_pol_sw/figures/minorloop_polarization_switching.pdf}
 \caption{Minor hysteresis loops in a polarized piezoelectric sample: a) polarization response and b) corresponding strain response}
 \label{fig:Manorhysteresisloops}
 \end{figure} 
-Typically, electric fields and/or mechanical stresses should be applied to the piezoelectric materials with their magnitude less than the coercive limit so that they will not cause depolarization of the materials. 
-Applying large electric field or compressive stress in the poling direction to the polarized materials would cause depolarization and  consequently loss of the electro-mechanical coupling properties. 
-The stress and electric field threshold that causes depolarization are called coercive stress and coercive electric field, respectively \cite{Sohrabi201344}.
 
 Polarization behaviors in the materials due to application of cyclic electric fields show hysteretic responses (see figure \ref{fig:Majorhysteresisloops} and figure \ref{fig:Manorhysteresisloops}). 
 These responses also depend on the frequencies of the electric field inputs, ambient temperatures, and existence of mechanical loading. 
@@ -182,15 +183,15 @@ Experimental studies show that the coercive electric field of ferroelectric mate
  while little is known about the effect of tensile stress on the polarization response of ferroelectric ceramics. 
  This is due to the fact that ceramics is brittle and has a relatively low ultimate strength under tension. 
  It then is necessary to have the coercive electric field varies with the compressive stresses and we further assume that the coercive electric field remains unaltered with the tensile stress:
+
 \begin{equation}
-\begin{aligned}
-{E_c} = \left\{ {\begin{array}{*{20}{c}}
-{{E_c}\left( {E_c^o,\sigma _{33}^t} \right),{\rm{  }}\sigma _{33}^t < 0.0}\\
-{E_c^o,{\rm{                   }}\sigma _{33}^t \ge 0.0}
-\end{array}} \right.
-\end{aligned}
+    E_c=\begin{cases}
+               E_c \left( E_c^o , \sigma _{33}^{t } \right)  & \sigma _{33}^{t } < 0.0 \\
+               E_c^o                                                 & \sigma _{33}^{t } \ge 0.0 
+\end{cases}
 \label{EQN:Effect_of_tensile_stress}
-\end{equation}  
+\end{equation}
+ 
 where $E^0_c$ is the coercive electric field in absence of the mechanical stresses.
 The existence of compressive stresses also influences the polarization response of ferroelectric materials. 
 When a compressive stress higher than the coercive stress $\sigma_c$ is applied to the polarized ferroelectric ceramics,
@@ -361,21 +362,19 @@ Finally, the stresses and electric displacements at current time are:
 The polarization state $P^t_3$ is a function of the coercive electric field that depends on the current compressive stress $\sigma^t_{33}$. 
 In the displacement based FE, the current value of stresses need to be determined from the strain and electric field inputs. 
 In this study, during the incremental solution at the material level, the coercive electric field at current time is obtained as:
-\begin{equation}  
-{E_c} = \left\{ {\begin{array}{*{20}{c}}
-{{E_c}\left( {E_c^o,\sigma _{33}^{t - \Delta t}} \right),{\rm{  }}\sigma _{33}^{t - \Delta t} < 0.0}\\
-{E_c^o,{\rm{                   }}\sigma _{33}^{t - \Delta t} \ge 0.0}
-\end{array}} \right.
+
+
+
+\begin{equation}
+    E_c=\begin{cases}
+               E_c \left( E_c^o , \sigma _{33}^{t - \Delta t} \right)  & \sigma _{33}^{t - \Delta t} < 0.0 \\
+               E_c^o                                                 & \sigma _{33}^{t - \Delta t} \ge 0.0 
+\end{cases}
 \label{EQN:coercive_field}
 \end{equation}
+
 Thus, the calculated consistent tangent stiffness, piezoelectric constant, and dielectric constants in equation (\ref{EQN:stress_and_electric_displacement}) depend on the current electric field $E^t_3$ and stress from the previous time increment $\sigma^{t+\Delta t}_{33}$. 
 Instead of performing an iteration at the material level, the correction due to a linearized stress is performed through an iteration scheme at the structural level.
-
-
-
-
-
-
 
 \subsection{Solution at the Structural Level}
 The governing equations for the electro-mechanical deformation under a quasi-static loading and small-deformation gradients are formed at the structural level by imposing the energy balance equations, which in absences of the body forces and body charges are:
@@ -505,7 +504,7 @@ This might be due to the accumulated strain from the first cycle loading.
 \begin{tabular}{l c c c c c c r}
 \hline 
 $E_c^o$ & $\kappa_0$ & $\kappa_1$ & $\tau_1$ & $\lambda$ & $ n $ & $\mu$&  $\omega$ \\ \hline
-$MV/m$ & $pF/m$ & $pF/m$ &  $sec$ & $\mu F/m$ & $\mu F/m $& $\mu F/m $\\ \hline 
+$MV/m$ & $pF/m$ & $pF/m$ &  $sec$ & $\mu F/m$ & $\mu F/m $& $\mu F/m $\\ 
 0.67\footnote{from Fang and Li \cite{raey}}&70&225&1&0.35&3&1.6&4\\ \hline
 \end{tabular}
 \label{table:MatPZT_51}
@@ -532,7 +531,7 @@ The nonlinear electro-mechanical coupling model is capable of simulating the hys
 \begin{tabular}{l c c c c r}
 \hline 
 $d^r_{333}$ & $d^r_{311}$& $\kappa^r_{11}$&$\kappa^r_{33}$ & $P_r$& $C_1$ \\  \hline
-$(\times 10^{-12} m/V)$ & & $(\times 10^{-9} F/m)$ &  & $C/m^2$& $C/m^2$ \\ \hline
+$(\times 10^{-12} m/V)$ & & $(\times 10^{-9} F/m)$ &  & $C/m^2$& $C/m^2$ \\ 
 $1520$ \footnote{ from Fang and Li \cite{raey}} & 570 & 38 & 42 & 0.194 & 0.19 \\  \hline
 \end{tabular}
 \label{table:MatPZT_51_Electro_mechanical_coupling}
@@ -546,6 +545,8 @@ Figures \ref{hysteresis_polarization_responses_under_constant_compressive_stress
 \caption{Hysteresis polarization responses under constant compressive stresses}
 \label{hysteresis_polarization_responses_under_constant_compressive_stresses}
 \end{figure}
+\\
+
 \begin{figure}
 \centering 
 \includegraphics[width=6.0in]{./chap_2_pol_sw/figures/butterfly_strain_responses_under_constant_compressive_stresses.pdf} 
@@ -579,7 +580,7 @@ In order to incorporate the effect of polarization switching due to high compres
 \begin{table}
 \caption{Material parameters above the coercive stress limit}
 \centering
-\begin{tabular}{l c c c c r}
+\begin{tabular}{c c c c c c}
 \hline
 $\sigma_c (MPa)$ & $C_2$ & $\lambda (\times 10 ^6 F/m)$ & $n$ & $ \mu (\times 10^{-6} F/m) $ & $\omega$ \\ \hline
 $25$ & $0.3$ & $0.4$ & $3.0$ & $1.1$ & $4$ \\ \hline
@@ -607,10 +608,7 @@ In this study an attempt is made to recalibrate the parameters corresponding to 
 Table \ref{table4:Material_parameters_above_the_coercive_stress_limit} presents the calibrated material parameters above the coercive stress limit. 
 \newpage
 
-
-
 \subsection{Structural Analyses}
-
 The PZT-51 is now used to induce deformations in a fiber reinforced laminated composite plate. 
 Consider a composite plate (host structure) of 100x50x1 $mm^3$, shown in figure \ref{fig:ActiveComposBeam}, with four PZT patches. 
 Each PZT patch has a dimension of 10x10x1 $mm^3$. 
@@ -669,15 +667,15 @@ This delay is caused by viscoelastic response of the host structure.
 \begin{table}
 \caption{Proney series for viscoelastic host structure}
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{c c}
 \hline
 $J_n$&$\lambda_n$\\ \hline
-6&2.10E-05\\ \hline
-1&2.16E-05\\ \hline
-0.1&1.18E-05\\ \hline
-0.01&1.59E-05\\ \hline
-0.001&2.16E-05\\ \hline
-0.0001&2.01E-05\\ \hline
+6&2.10E-05\\ 
+1&2.16E-05\\ 
+0.1&1.18E-05\\ 
+0.01&1.59E-05\\ 
+0.001&2.16E-05\\ 
+0.0001&2.01E-05\\ 
 1.00E-05&6.60E-05\\ \hline
 \end{tabular}
 \label{table:Proney_Host}

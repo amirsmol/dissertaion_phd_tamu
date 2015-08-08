@@ -30,14 +30,10 @@ Analytical and numerical solutions of the time-dependent electro-mechanical coup
 The Laplace transform method is used to obtain the analytical solutions while finite element method is considered for the numerical solutions.
 The results from the analytical solutions are compared with the experimental data and finite element solutions.
 Several parametric studies are also conducted in order to study the time-dependent electro-mechanical behavior of the composites.
-\\
-
 
 \begin{figure}
 \centering
 \includegraphics[width=6.0in]{./chap_4_structural_analyses/pdf_beam/PVDF_beam_geometry.pdf}
-
-
 \caption{Substrated bimorph beam geometry}
 \label{fig:PVDF_beam_geometry}
 \end{figure}
@@ -191,7 +187,6 @@ The equilibrium equations for the beam bending are:
 where
 $f(x_1,t)$ and $q(x_1,t)$  are  the
 distributed axial and transverse loads respectively.
-\\
 
 \subsection{Responses of 3-Layered Active Beam Under Constant Electric Field}
 \label{section:piezo_beam_static_elastic_solution}
@@ -323,7 +318,7 @@ The inverse of the Laplace transform gives the function in time domain:
 u_3(x_3,t) =\mathcal{L}^{-1} \left[ \bar{u}_3(x_3,a) \right]
 \label{eqn:inverse_laplace_of_transverse_displace_ment}
 \end{equation}
-\\
+
 \begin{figure}
 \centering
 \includegraphics[width=6.0in]{./chap_4_structural_analyses/pdf_beam/bimorph_PVDF_beam_geometry.pdf}
@@ -361,17 +356,17 @@ The result from the current model is compared with the experiment and also other
 Good comparisons are observed among the results.
 
 \begin{table}
+\raggedright
 \caption{Numerical result from present model for deflection of PVDF bimorph}
-\centering
-\begin{tabular}{|l|c|r|} \hline
-Method  & Method detail &  Tip deflection $\times 10^{-7} m$ \\ \hline
-Experiment \cite{tzou1991distributed} &  & 3.15 \\ \hline
-Analytical solution & $w(x)=345 x^2$ & 3.45\\ \hline
-Plate FEM \cite{franco2000modelling} &  & 3.45 \\ \hline
-Beam Finite Difference & 41 nodes & 3.4 \\  \hline
-2D FEM present & C2D9 in 10x4y &3.15 \\  \hline
-3D FEM ABAQUS & C3D8E in 162x10y4z & 2.99\\ \hline
-3D FEM ABAQUS & C3D20QE in 10x1y4z & 3.4414\\ \hline
+\begin{tabular}{ccc} \hline
+Method  & Detail &  Tip deflection $\times 10^{-7} m$ \\ \hline
+Experiment \cite{tzou1991distributed} &  & 3.15 \\ 
+Analytical solution & $w(x)=345 x^2$ & 3.45\\ 
+Plate FEM \cite{franco2000modelling} &  & 3.45 \\ 
+Beam Finite Difference & 41 nodes & 3.4 \\  
+2D FEM present & C2D9 in 10x4y &3.15 \\  
+3D FEM ABAQUS & C3D8E in 162x10y4z & 2.99\\ 
+3D FEM ABAQUS & C3D20QE in 10x1y4z & 3.4414\\ 
 3D FEM present & C3D20 in 5x2y2z & 3.455 \\ \hline
 \end{tabular}
 \label{table:PVDF_bimorph_numerical_result_static} 
@@ -432,10 +427,10 @@ This validates the recursive integration algorithm for the linear time-dependent
 \begin{table}
 \caption{Coefficients for close form time dependent solution of PVDF beam}
 \centering
-\begin{tabular}{|l|c|c|c|r|} \hline
+\begin{tabular}{ccccc} \hline
 n & $A_n$ & $B_n$ & $\lambda_{A_n}$& $\lambda_{B_n}$\\ \hline
-0 & $-4.462664015\times 10^{19}$ & $8.333333335\times 10^{17}$ & -1.0 & 0.0\\ \hline
-1 & $5.678974503\times 10^{20}$ & $1.326291193\times 10^9$ & 1.0 & 1.0\\ \hline
+0 & $-4.462664015\times 10^{19}$ & $8.333333335\times 10^{17}$ & -1.0 & 0.0\\ 
+1 & $5.678974503\times 10^{20}$ & $1.326291193\times 10^9$ & 1.0 & 1.0\\ 
 2 & $4.462664015\times 10^{19}$ & $0$ & 1.0 & 0.0 \\ \hline
 \end{tabular}
 \label{table:PVDF_bimorph_time_dependent_solution_coefficients}
@@ -481,7 +476,6 @@ The cubic approximation of the electro-mechanical coupling is close enough to th
 \label{fig:electric_volt_vs_displacement_three_layer_beam}
 \end{figure}
 
-
 \subsection{Effect of Frequency on the Hysteresis Responses of Active Beams}
 The effect of different histories of electric potential inputs is also analyzed.
 Consider a bimorph beam consisting of two layers of polarized piezoelectric ceramics and an elastic layer, as shown in figure \ref{fig:PVDF_beam_geometry}. % TK .
@@ -490,14 +484,12 @@ The beam is fixed at one end and the other end is left free;
  the top and bottom surfaces are under a traction free condition.
  A potential is applied at the top and bottom surfaces of the beam and the corresponding displacement is monitored.
 
-
 \begin{figure}
 \centering
 \includegraphics[width=6.0in]{./chap_4_structural_analyses/pdf_beam/result_tip_deflection_of_bimorph_beam_frequencies.pdf}
 \caption{Tip deflection of bimorph beam, comparing observing effect of frequency of applied electric field}
 \label{fig:result_tip_deflection_of_bimorph_beam_frequency}
 \end{figure}
-
 
 A bimorph beam without an elastic layer placed in between the piezoelectric layers is studied as it is shown in figure \ref{fig:bimorph_PVDF_beam_geometry}.
 It is assumed that the beam is relatively slender so that it is sensible to adopt Euler-Bernoulli beam theory in finding the corresponding displacement of the bimorph beam.
@@ -521,9 +513,7 @@ the effect of time-dependent material properties on the hysteretic response beco
 as shown by the response with frequencies of 0.05Hz and 0.1Hz.
 When the rate of loading is relatively fast (or slow) with regards to the characteristics time, i.e. f=0.01Hz and 1Hz,
  insignificant (less pronounced) time-dependent effect is shown, indicated by narrow ellipsoidal shapes.
-\\
-
-
+ 
 % \section{Large Deformation Analyses}
 % In this section, large deformation analyses of slender beams is discussed.
 % We use the bimorph beam geometry that was discussed in the previous example for large deformation analyses.
@@ -587,8 +577,6 @@ When the rate of loading is relatively fast (or slow) with regards to the charac
 % \caption{Folding of bimorph PVDF beam under very high electric potential}
 % \label{fig:pvdf_beam_folding} 
 % \end{figure}
-
-
 \section{Active Fiber Composites}
 Active Fiber Composite (AFC) is an active material that is designed to amplify the deflection due to piezo-electric effect. In AFCs PZT5A fibers are embedded in the epoxy matrix and are aligned along the longitudinal direction. The electric field is applied to PZT5A fiber through the aluminum electrode fingers that are placed on the top and bottom of the fibers. Aluminum electrode fingers are aligned perpendicular to the longitudinal axis of fiber in the width direction of AFCs. Electrodes that are placed on the top and bottom surfaces of the AFC have the same electric potential. Therefore, the electric field on the central plane of the AFC is zero. Electrodes that are adjacent to each other in the longitudinal direction of the AFC have the opposite electric potentials. As a result, an electric field is formed along the longitudinal direction of fibers and the electric field is not uniformly distributed along the fibers. The electric field in the gap between electrodes is directly proportional to the value of applied potential and inversely proportional to the distance between electrodes. An example of AFCs is shown in figure \ref{fig:afc_picture_from_lap}.
 A schematic of the placement of fibers and electrodes is shown in figure \ref{fig:schematic_afc_unit_cell} \cite{jemai2014mathematical}.
@@ -617,10 +605,10 @@ The electric potential applied to the aluminum electrodes induces electric field
 \begin{figure} 
 \centering
 \includegraphics[width=3.0in]{./chap_4_structural_analyses/afc_unit_cell/schematic_afc_unit_cell.jpg}
-\caption{Schematic for placement of fibers and electrodes in the epoxy matrix* \cite{jemai2014mathematical}  }
+\caption{Schematic for placement of fibers and electrodes in the epoxy matrix \cite{jemai2014mathematical}}
 \label{fig:schematic_afc_unit_cell}
 \end{figure}
-\blfootnote{*Reprinted with permission from "Mathematical modeling of an active-fiber composite energy harvester with interdigitated electrodes" by Jemai, A., Najar, F., Chafra, M., Ounaies, Z., (2014). \textit{Shock and Vibration}, 94, 1-9,  Copyright 2014 Hindawi Publishing Corporation}
+% \blfootnote{*Reprinted with permission from "Mathematical modeling of an active-fiber composite energy harvester with interdigitated electrodes" by Jemai, A., Najar, F., Chafra, M., Ounaies, Z., (2014). \textit{Shock and Vibration}, 94, 1-9,  Copyright 2014 Hindawi Publishing Corporation}
 \begin{figure}
 \centering
 \begin{tikzpicture}  
@@ -729,23 +717,22 @@ In this picture the positive and negative electric potentials applied to the uni
 \begin{table}
 \caption{Material properties of AFC}
 \centering
-\begin{tabular}{|l|c|c|c|r|}
-\hline
+\begin{tabular}{ccccc} \hline
                & PZT5A & epoxy & Aluminum & \\ \hline 
-Young's Modulus&60.06 & 1.5     & 69       &$GPa$    \\ \hline
-Poisson's Ratio&$0.3$ & 0.35    & 0.33 &\\ \hline 
-$e_{113}$      &-59.5 &         &      &$C/m^2$\\ \hline
-$e_{311}$      &8.00&         &      &$C/m^2$\\ \hline
-$e_{333}$      &-27.196  &         &      &$C/m^2$\\ \hline
-$\kappa_{11}=\kappa_{22}$ &  $ 4  $ & $8.854  $ & &  pF/m \\ \hline
-$\kappa_{33}$ & $2  $              & $8.854  $ & &  pF/m \\ \hline
-${}^{0}K_{ijk}^{e}$&1.0& & &  \\ \hline
-${}^{1}K_{ijk}^{e}$&-0.45& & & \\ \hline
-${}^{0}\lambda_{ijk}^{e}$&0& & & s \\ \hline
-${}^{1}\lambda_{ijk}^{e}$&1.5& & & s \\ \hline 
-${}^{0}K_{ijkl}^{c}$& &1.0 & &  \\ \hline 
-${}^{1}K_{ijkl}^{c}$& &0.4 & & \\ \hline
-${}^{0}\lambda_{ijkl}^{c}$& &0&  & s\\ \hline
+Young's Modulus&60.06 & 1.5     & 69       &$GPa$    \\ 
+Poisson's Ratio&$0.3$ & 0.35    & 0.33 &\\  
+$e_{113}$      &-59.5 &         &      &$C/m^2$\\ 
+$e_{311}$      &8.00&         &      &$C/m^2$\\ 
+$e_{333}$      &-27.196  &         &      &$C/m^2$\\ 
+$\kappa_{11}=\kappa_{22}$ &  $ 4  $ & $8.854  $ & &  pF/m \\ 
+$\kappa_{33}$ & $2  $              & $8.854  $ & &  pF/m \\ 
+${}^{0}K_{ijk}^{e}$&1.0& & &  \\ 
+${}^{1}K_{ijk}^{e}$&-0.45& & & \\ 
+${}^{0}\lambda_{ijk}^{e}$&0& & & s \\ 
+${}^{1}\lambda_{ijk}^{e}$&1.5& & & s \\  
+${}^{0}K_{ijkl}^{c}$& &1.0 & &  \\  
+${}^{1}K_{ijkl}^{c}$& &0.4 & & \\ 
+${}^{0}\lambda_{ijkl}^{c}$& &0&  & s\\ 
 ${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\ \hline 
 \end{tabular}
 \label{table:materila_properties_afc} 
@@ -780,8 +767,6 @@ There is good comparison between the experiments and FE analyses.
 The distribution of displacement field in the unit cell is shown in figure \ref{afc_displacement_all:fig}.
 As expected the value of displacement in the longitudinal ($X_3$-axis) direction is significantly larger than the other two directions.
 
-
-
 \begin{figure}
 \centering
 \subcaptionbox{Displacement in $x_1$ (x) direction}
@@ -808,25 +793,24 @@ This effect will cause large deviation between the result from the current analy
 \begin{table}
 \caption{Nonlinear material properties of AFC}
 \centering
-\begin{tabular}{|l|c|c|c|r|}
-\hline
+\begin{tabular}{ccccc} \hline
                & PZT5A & Epoxy & Aluminum & \\ \hline 
-Young's Modulus&60.06 & 1.5     & 69       &$GPa$    \\ \hline
-Poisson's Ratio&$0.3$ & 0.35    & 0.33 &\\ \hline 
-$e_{113}$      &-18.9 &         &      &$C/m^2$\\ \hline
-$e_{311}$      &9.82&         &      &$C/m^2$\\ \hline
-$e_{333}$      &-8.0  &         &      &$C/m^2$\\ \hline
-$\kappa_{11}=\kappa_{22}$ &  $ 4  $ & $8.854  $ & &  pF/m \\ \hline
-$\kappa_{33}$ & $2  $              & $8.854  $ & &  pF/m \\ \hline
-${}^{0}K_{ijk}^{e}$&1.0& & &  \\ \hline
-${}^{1}K_{ijk}^{e}$&-0.6& & & \\ \hline
-${}^{0}\lambda_{ijk}^{e}$&0& & & s \\ \hline
-${}^{1}\lambda_{ijk}^{e}$&1.5& & & s \\ \hline 
-${}^{0}K_{ijkl}^{c}$& &1.0 & &  \\ \hline
-${}^{1}K_{ijkl}^{c}$& &0.1 & & \\ \hline
-${}^{0}\lambda_{ijkl}^{c}$& &0&  & s\\ \hline
-${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\ \hline 
-$\widehat{b}_{3333}$ & $1.5 \times 10^{-5}$ &  $ N/V^2 $\\ \hline
+Young's Modulus&60.06 & 1.5     & 69       &$GPa$    \\ 
+Poisson's Ratio&$0.3$ & 0.35    & 0.33 &\\  
+$e_{113}$      &-18.9 &         &      &$C/m^2$\\ 
+$e_{311}$      &9.82&         &      &$C/m^2$\\ 
+$e_{333}$      &-8.0  &         &      &$C/m^2$\\ 
+$\kappa_{11}=\kappa_{22}$ &  $ 4  $ & $8.854  $ & &  pF/m \\ 
+$\kappa_{33}$ & $2  $              & $8.854  $ & &  pF/m \\ 
+${}^{0}K_{ijk}^{e}$&1.0& & &  \\ 
+${}^{1}K_{ijk}^{e}$&-0.6& & & \\ 
+${}^{0}\lambda_{ijk}^{e}$&0& & & s \\ 
+${}^{1}\lambda_{ijk}^{e}$&1.5& & & s \\  
+${}^{0}K_{ijkl}^{c}$& &1.0 & &  \\ 
+${}^{1}K_{ijkl}^{c}$& &0.1 & & \\ 
+${}^{0}\lambda_{ijkl}^{c}$& &0&  & s\\ 
+${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\  
+$\widehat{b}_{3333}$ & $1.5 \times 10^{-5}$ & &&  $ N/V^2 $\\ \hline
 \end{tabular}
 \label{table:non_linear_materila_properties_afc} 
 \end{table} 
@@ -844,7 +828,6 @@ It can be shown that at higher intensity of electric field the piezoelectric mat
 We use the same analogy with thermorheologically simple materials that have widely used for mechanical response of polymers \cite{haj2004numerical, tscharnuter2012nonlinear}.
 The time scale factor is defined as an exponential function with respect to the electric field intensity $|\textbf {E}|$.
 Then the reduced time is defined as:
-
 
 \begin{equation}
 	\phi(t) = \int_0^t \frac{ ds } { a_{( |\textbf {E}| } ) } 
@@ -927,29 +910,28 @@ The mechanical and electrical properties of the constituents of AFC are shown in
 \begin{table}
 \caption{Material properties of AFC with four Prony series}
 \centering
-\begin{tabular}{|l|c|c|c|r|}
-\hline
+\begin{tabular}{ccccc} \hline
                & PZT5A & Epoxy & Aluminum & \\ \hline 
-Young's Modulus&60.06 & 1.5     & 69       &$GPa$    \\ \hline
-Poisson's Ratio&$0.3$ & 0.35    & 0.33 &\\ \hline 
-$e_{113}$      &-12.7764 &         &      &$C/m^2$\\ \hline
-$e_{311}$      &10.3935&         &      &$C/m^2$\\ \hline
-$e_{333}$      &-24.5388  &         &      &$C/m^2$\\ \hline
-$\kappa_{11}=\kappa_{22}$ &  $ 4  $ & $8.854  $ & &  pF/m \\ \hline
-$\kappa_{33}$ & $2  $              & $8.854  $ & &  pF/m \\ \hline
-${}^{0}K_{ijk}^{e}$&1.0& & &  \\ \hline
-${}^{1}K_{ijk}^{e}$&-0.13& & & \\ \hline
-${}^{2}K_{ijk}^{e}$&-0.30& & & \\ \hline
-${}^{3}K_{ijk}^{e}$&-0.10& & & \\ \hline
-${}^{4}K_{ijk}^{e}$&-0.26& & & \\ \hline
-${}^{0}\lambda_{ijk}^{e}$&0& & & s \\ \hline
-${}^{1}\lambda_{ijk}^{e}$&0.2& & & s \\ \hline 
-${}^{1}\lambda_{ijk}^{e}$&1.0& & & s \\ \hline 
-${}^{1}\lambda_{ijk}^{e}$&10& & & s \\ \hline 
-${}^{1}\lambda_{ijk}^{e}$&60& & & s \\ \hline 
-${}^{0}K_{ijkl}^{c}$& &1.0 & &  \\ \hline
-${}^{1}K_{ijkl}^{c}$& &0.1 & & \\ \hline
-${}^{0}\lambda_{ijkl}^{c}$& &0&  & s\\ \hline
+Young's Modulus&60.06 & 1.5     & 69       &$GPa$    \\ 
+Poisson's Ratio&$0.3$ & 0.35    & 0.33 &\\  
+$e_{113}$      &-12.7764 &         &      &$C/m^2$\\ 
+$e_{311}$      &10.3935&         &      &$C/m^2$\\ 
+$e_{333}$      &-24.5388  &         &      &$C/m^2$\\ 
+$\kappa_{11}=\kappa_{22}$ &  $ 4  $ & $8.854  $ & &  pF/m \\ 
+$\kappa_{33}$ & $2  $              & $8.854  $ & &  pF/m \\ 
+${}^{0}K_{ijk}^{e}$&1.0& & &  \\ 
+${}^{1}K_{ijk}^{e}$&-0.13& & & \\ 
+${}^{2}K_{ijk}^{e}$&-0.30& & & \\ 
+${}^{3}K_{ijk}^{e}$&-0.10& & & \\ 
+${}^{4}K_{ijk}^{e}$&-0.26& & & \\ 
+${}^{0}\lambda_{ijk}^{e}$&0& & & s \\ 
+${}^{1}\lambda_{ijk}^{e}$&0.2& & & s \\  
+${}^{1}\lambda_{ijk}^{e}$&1.0& & & s \\  
+${}^{1}\lambda_{ijk}^{e}$&10& & & s \\  
+${}^{1}\lambda_{ijk}^{e}$&60& & & s \\  
+${}^{0}K_{ijkl}^{c}$& &1.0 & &  \\ 
+${}^{1}K_{ijkl}^{c}$& &0.1 & & \\ 
+${}^{0}\lambda_{ijkl}^{c}$& &0&  & s\\ 
 ${}^{1}\lambda_{ijkl}^{c}$& &0.8 & & s \\ \hline 
 \end{tabular}
 \label{table:afc_freq_xp_model:fig}
